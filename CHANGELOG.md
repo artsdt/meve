@@ -1,4 +1,8 @@
-## 0.0.1 (2022-03-04)
+## [0.0.2](https://github.com/artsdt/meve/compare/v0.0.1...v0.0.2) (2022-03-04)
+
+
+
+## [0.0.1](https://github.com/artsdt/meve/compare/a4c458e354f1d52646dd7da5822c1f3e2c44bc1d...v0.0.1) (2022-03-04)
 
 
 ### Bug Fixes
