@@ -5,7 +5,7 @@ on:
     branches: [dev, main]
 
 jobs:
-  deploy-site-sync-gitee:
+  deploy-site:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
