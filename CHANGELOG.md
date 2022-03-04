@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/artsdt/meve/compare/v0.0.3...v0.0.4) (2022-03-04)
+
+
+### Features
+
+* **site:** add github option ([c275000](https://github.com/artsdt/meve/commit/c275000c973c62f3d044957a2d5911fd61a42a76))
+
+
+
 ## [0.0.3](https://github.com/artsdt/meve/compare/v0.0.2...v0.0.3) (2022-03-04)
 
 

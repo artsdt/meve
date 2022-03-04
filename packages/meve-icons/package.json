@@ -1,6 +1,6 @@
 {
   "name": "@meve/icons",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Icons of meve",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

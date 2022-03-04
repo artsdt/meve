@@ -1,6 +1,6 @@
 {
   "name": "@meve/stylelint-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "stylelint config of meve",
   "keywords": [
     "stylelint",
