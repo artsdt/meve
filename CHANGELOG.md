@@ -1,3 +1,15 @@
+## [0.0.5](https://github.com/artsdt/meve/compare/v0.0.4...v0.0.5) (2022-03-04)
+
+
+### Bug Fixes
+
+* fix button shadow and menu highlight color ([3e25fd0](https://github.com/artsdt/meve/commit/3e25fd0fbc47e5d94f49883896e41650793d8104))
+* format box-shadow rgb to rgba ([8d69492](https://github.com/artsdt/meve/commit/8d69492b7c3d28918f5a22ac287dd43020042730))
+* **site:** add css target chrome61 ([3c01ac5](https://github.com/artsdt/meve/commit/3c01ac5884cdc07e7bb7c03ba1b29d7600164fff))
+* **site:** hide code copy tool when code not expaned ([a823f14](https://github.com/artsdt/meve/commit/a823f14e5cb6e2647cc3fbf2a9116ec891236dc2))
+
+
+
 ## [0.0.4](https://github.com/artsdt/meve/compare/v0.0.3...v0.0.4) (2022-03-04)
 
 

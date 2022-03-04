@@ -1,6 +1,6 @@
 {
   "name": "@meve/cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "cli of meve",
   "bin": {
     "meve-cli": "./lib/index.js"
