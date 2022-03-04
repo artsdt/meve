@@ -27,7 +27,7 @@
 <script>
 import Popup from '..'
 import Button from '../../button'
-import Space from '../../Space'
+import Space from '../../space'
 
 export default {
   components: {
