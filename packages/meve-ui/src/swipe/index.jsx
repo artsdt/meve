@@ -1,7 +1,7 @@
 import { createNamespace } from '../utils/create'
 import { props } from './props'
 import { createParentMixin } from '../utils/mixins/relation'
-import { isNumber, toNumber } from '../../es/utils/shared'
+import { isNumber, toNumber } from '../utils/shared'
 
 import '../styles/common.less'
 import './swipe.less'
