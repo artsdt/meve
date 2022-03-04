@@ -1,5 +1,5 @@
 import Loading from '../loading'
-import Ripple from '../Ripple'
+import Ripple from '../ripple'
 import { createNamespace } from '../utils/create'
 import { toPxNum, getParentScroller } from '../utils/elements'
 import { nextTick } from '../utils/components'
