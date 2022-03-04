@@ -143,6 +143,18 @@ tbody {
   border-top: 1px dashed #eee;
 }
 
+.meve-site-introduce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 26px -4px hsla(0, 0%, 8%, .15), 0 8px 9px -5px hsla(0, 0%, 8%, .06);
+  padding: 34px 24px;
+  overflow: auto;
+  margin-top: 20px;
+}
+
 .meve-site-card {
   background: #fff;
   border-radius: 6px;

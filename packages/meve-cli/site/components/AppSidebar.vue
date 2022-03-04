@@ -1,6 +1,6 @@
 <template>
   <div
-    class="app-site-sidebar-scroller"
+    class="app-site-sidebar-container"
     :class="{
       'app-site-sidebar-fixed': fixed,
       'app-site-sidebar-hidden': inSmallScreen
@@ -11,6 +11,7 @@
         <img class="app-site-sidebar-logo" :src="logo" alt="">
       </div>
       <m-menu
+        class="app-site-menu"
         accordion
         :expanded-names.sync="expandedNames"
         :selected-names.sync="selectedNames"
@@ -85,13 +86,16 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.app-site-sidebar-scroller {
+.app-site-sidebar-container {
   width: 245px;
   padding: 14px;
-  height: 100vh;
-  transition: transform .25s;
   background: #fff;
+  transition: all .25s;
   box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+
+.app-site-menu {
+  height: calc(100vh - 80px);
   overflow-y: auto;
 }
 

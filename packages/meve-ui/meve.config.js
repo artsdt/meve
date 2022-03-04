@@ -13,6 +13,11 @@ module.exports = {
           labelCN: '基本介绍',
           labelUS: 'Basic Introduce',
         },
+        {
+          name: 'quickstart',
+          labelCN: '快速开始',
+          labelUS: 'Quickstart',
+        },
       ],
     },
     {

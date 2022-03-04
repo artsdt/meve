@@ -3,15 +3,15 @@
     <img src="https://artsdt.github.io/meve/logo_1.svg" width="150">
   </a>
   <h1>MEVE UI</h1>
-  <p>基于Vue2的 Argon Design 风格组件库</p>
+  <p>Vue2 UI Lib Referenced Argon Design System</p>
   <p>
-    <a href="https://artsdt.github.io/meve/">文档站点</a>
+    <a href="https://artsdt.github.io/meve/">Documentation</a>
   </p>
 </div>
 
 ---
 
-### 快速开始
+### Quickstart
 
 #### CDN
 
@@ -58,6 +58,8 @@ new Vue({
 }).$mount('#app')
 ```
 
-### 仓库当前处于开发阶段!
+### Repo Status WIP!
 
-当前处于开发阶段, 暂不推荐在生产环境中使用.
+Currently in development, do not use in production environment.
+
+Documentation currently only supports Chinese
