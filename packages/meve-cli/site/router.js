@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import config from '@config'
 import routes from '@routes'
+import { LoadingBar } from '@meve/ui'
 import { get } from 'lodash-es'
 
 Vue.use(VueRouter)
@@ -20,5 +21,17 @@ const router = new VueRouter({
   scrollBehavior: () => ({ x: 0, y: 0 }),
   routes,
 })
+
+router.beforeEach((to, from, next) => {
+  LoadingBar.start()
+
+  next()
+})
+
+router.afterEach(() => {
+  LoadingBar.finish()
+})
+
+
 
 export default router

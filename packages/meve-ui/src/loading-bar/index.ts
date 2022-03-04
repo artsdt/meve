@@ -64,6 +64,6 @@ const LoadingBar: LoadingBarApi = {
   error,
 }
 
-export const _LoadingBarComponent = {}
+export const _LoadingBarComponent = LoadingBarComponent
 
 export default LoadingBar
