@@ -1,3 +1,12 @@
+## [0.0.3](https://github.com/artsdt/meve/compare/v0.0.2...v0.0.3) (2022-03-04)
+
+
+### Bug Fixes
+
+* **cli:** fix umd filename and namespace ([4dbbdd5](https://github.com/artsdt/meve/commit/4dbbdd50c329f05d5bf011385fdcd058d14aba7c))
+
+
+
 ## [0.0.2](https://github.com/artsdt/meve/compare/v0.0.1...v0.0.2) (2022-03-04)
 
 
