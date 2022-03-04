@@ -61,3 +61,8 @@ new Vue({
 ### 仓库当前处于开发阶段!
 
 当前处于开发阶段, 暂不推荐在生产环境中使用.
+
+| Vue Version | Dev Progress | Status |
+| --- | --- | --- |
+| Vue2 | 60% | WIP |
+| Vue3 | 0% | PENDING |

@@ -63,3 +63,8 @@ new Vue({
 Currently in development, do not use in production environment.
 
 Documentation currently only supports Chinese
+
+| Vue Version | Dev Progress | Status |
+| --- | --- | --- |
+| Vue2 | 60% | WIP |
+| Vue3 | 0% | PENDING |
