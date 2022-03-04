@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://artsdt.github.io/meve/">
-    <img src="https://artsdt.github.io/meve/logo_1.svg" width="150">
+    <img src="https://artsdt.github.io/meve/logo.svg" width="150">
   </a>
   <h1>MEVE UI</h1>
   <p>Vue2 UI Lib Referenced Argon Design System</p>
@@ -8,8 +8,6 @@
     <a href="https://artsdt.github.io/meve/">Documentation</a>
   </p>
 </div>
-
----
 
 ### Quickstart
 

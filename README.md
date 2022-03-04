@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://artsdt.github.io/meve/">
-    <img src="https://artsdt.github.io/meve/logo_1.svg" width="150">
+    <img src="https://artsdt.github.io/meve/logo.svg" width="150">
   </a>
   <h1>MEVE UI</h1>
   <p>基于Vue2的 Argon Design 风格组件库</p>
@@ -8,8 +8,6 @@
     <a href="https://artsdt.github.io/meve/">文档站点</a>
   </p>
 </div>
-
----
 
 ### 快速开始
 
