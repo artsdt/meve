@@ -5,6 +5,7 @@ module.exports = {
   port: 8080,
   logo: './logo.svg',
   defaultLanguage: 'zh-CN',
+  github: 'https://github.com/artsdt/meve',
   highlight: {
     /**
      * @see https://highlightjs.org/

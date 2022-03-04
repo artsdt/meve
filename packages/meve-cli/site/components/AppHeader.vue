@@ -9,13 +9,34 @@
         <m-icon name="menu-open"/>
       </m-button>
     </div>
-    <div class="app-site-header-tail"></div>
+    <div class="app-site-header-tail">
+      <m-button
+        class="app-site-header-action"
+        round
+        @click="toGithub"
+        v-if="config.github"
+      >
+        <m-icon name="github"/>
+      </m-button>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'AppHeader',
+
+  inject: ['config'],
+
+  methods: {
+    toGithub() {
+      window.location.href = this.config.github
+    }
+  },
+
+  mounted() {
+    console.log(this.config)
+  }
 }
 </script>
 
@@ -32,6 +53,7 @@ export default {
   padding: 0 30px;
   background: #fff;
   border-bottom: 1px solid #eee;
+  transition: all .25s;
 
   .app-site-header-action {
     padding: 8px;

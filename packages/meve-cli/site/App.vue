@@ -3,7 +3,7 @@
     <app-sidebar :in-small-screen="inSmallScreen || forceShowSidebar" />
 
     <div class="site-main" :class="{'site-main-padding': !inSmallScreen && !forceShowSidebar}">
-      <app-header @menu-action-click="handleMenuActionClick" />
+      <app-header :class="{'site-header-width': !inSmallScreen && !forceShowSidebar}" @menu-action-click="handleMenuActionClick" />
 
       <div class="site-router-view">
         <router-view />
@@ -193,6 +193,10 @@ code {
 
   .site-main-padding {
     padding-left: 245px;
+  }
+
+  .site-header-width {
+    width: calc(100% - 245px);
   }
 }
 </style>
