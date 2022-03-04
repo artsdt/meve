@@ -1,0 +1,1 @@
+import{V as r}from"./vendor.9049838c.js";function i(n,u,c={}){const e=new(r.extend(n))(c),t=e.$mount().$el,o=document.querySelector(u);return o.appendChild(t),{instance:e,unmount(){e.$destroy(),o.removeChild(t)}}}function s(){return new Promise(n=>r.nextTick(n))}export{i as m,s as n};
