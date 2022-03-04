@@ -141,8 +141,6 @@ test('test dropdown children', async () => {
     attachTo: document.body,
   })
 
-  console.log(document.body.innerHTML)
-
   const childNode = document.querySelectorAll('.m-dropdown__cell')[0]
   const parentNode = document.querySelectorAll('.m-dropdown__cell')[1]
 
