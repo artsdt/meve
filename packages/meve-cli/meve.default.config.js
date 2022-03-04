@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'Meve UI',
+  name: 'Meve',
   namespace: 'm',
   host: 'localhost',
   port: 8080,
