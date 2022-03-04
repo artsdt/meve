@@ -527,7 +527,7 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@auto-complete-options-box-shadow` | `0 50px 100px rgb(50 50 93 / 10%), 0 15px 35px rgb(50 50 93 / 15%), 0 5px 15px rgb(0 0 0 / 10%)` |
+| `@auto-complete-options-box-shadow` | `0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1)` |
 | `@auto-complete-options-border-radius` | `6px` |
 | `@auto-complete-options-background` | `#fff` |
 | `@auto-complete-option-text-color` | `#333` |

@@ -375,7 +375,7 @@ Select Variables
 | `@select-small-options-padding` | `7px 0` |
 | `@select-mini-options-padding` | `5px 0` |
 | `@select-options-background` | `#fff` |
-| `@select-options-box-shadow` | `0 50px 100px rgb(50 50 93 / 10%), 0 15px 35px rgb(50 50 93 / 15%), 0 5px 15px rgb(0 0 0 / 10%)` |
+| `@select-options-box-shadow` | `0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1)` |
 | `@select-options-border-radius` | `6px` |
 | `@select-arrow-size` | `20px` |
 | `@select-tag-vertical-space` | `3px` |
