@@ -23,7 +23,6 @@
 </template>
 
 <script>
-import config from '@config'
 import { get } from 'lodash-es'
 import { buildTreeRelation, findNodeRelationChain, getLang, getMenuName } from '../utils/shared'
 
@@ -39,15 +38,16 @@ export default {
       default: false
     }
   },
+  inject: ['config'],
   data() {
-    const { tree, flatTree } = buildTreeRelation(get(config, 'menu', []))
+    const { tree, flatTree } = buildTreeRelation(get(this.config, 'menu', []))
 
     return {
       labelField: 'labelCN',
       options: tree,
       flatOptions: flatTree,
-      logo: get(config, 'logo'),
-      name: get(config, 'name'),
+      logo: get(this.config, 'sidebarLogo'),
+      name: get(this.config, 'name'),
       expandedNames: [],
       selectedNames: []
     }

@@ -4,6 +4,7 @@ module.exports = {
   host: 'localhost',
   port: 8080,
   logo: './logo.svg',
+  sidebarLogo: './logo_text.svg',
   defaultLanguage: 'zh-CN',
   github: 'https://github.com/artsdt/meve',
   highlight: {
