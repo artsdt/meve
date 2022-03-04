@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test popover click trigger 1`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(0.8); transform-origin: top; opacity: 0; z-index: 2002; display: none;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover click trigger 2`] = `
+"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button>
+  <div class=\\"m-teleport\\"></div>
+</div>"
+`;
+
+exports[`test popover click trigger 3`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(0.8); transform-origin: top; opacity: 0; z-index: 2004;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover click trigger 4`] = `
+"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button>
+  <div class=\\"m-teleport\\"></div>
+</div>"
+`;
+
+exports[`test popover disabled click 1`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(0.8); transform-origin: top; opacity: 0; z-index: 2017; display: none;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover disabled click 2`] = `
+"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button>
+  <div class=\\"m-teleport\\"></div>
+</div>"
+`;
+
+exports[`test popover nest with click 1`] = `"<div class=\\"m-popover\\"><button class=\\"parentTrigger\\">parent trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: top; z-index: 2015; top: 0px; left: 0px; display: none;\\"> <div class=\\"child\\">hello</div></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: top; z-index: 2016; top: 0px; left: 0px;\\"> <div class=\\"childSibling\\">hello</div></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: top; z-index: 2014; top: 0px; left: 0px;\\"> <div><div class=\\"m-popover\\"><button class=\\"childTrigger\\">child trigger</button><div class=\\"m-teleport\\"></div></div> <div class=\\"m-popover\\"><button class=\\"childSiblingTrigger\\">child trigger</button><div class=\\"m-teleport\\"></div></div></div></div></div>"`;
+
+exports[`test popover nest with click 2`] = `
+"<div class=\\"m-popover\\"><button class=\\"parentTrigger\\">parent trigger</button>
+  <div class=\\"m-teleport\\"></div>
+</div>"
+`;
+
+exports[`test popover nest with hover 1`] = `"<div class=\\"m-popover\\"><button class=\\"rootTrigger\\">root trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(0.8); transform-origin: top; opacity: 0; z-index: 2010;\\"> <div>hello</div></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(0.8); transform-origin: top; opacity: 0; z-index: 2009;\\"> <div class=\\"m-popover\\"><button class=\\"childTrigger\\">child trigger</button><div class=\\"m-teleport\\"></div></div></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(0.8); transform-origin: top; opacity: 0; z-index: 2008;\\"> <div class=\\"m-popover\\"><button class=\\"parentTrigger\\">parent trigger</button><div class=\\"m-teleport\\"></div></div></div></div>"`;
+
+exports[`test popover nest with hover 2`] = `
+"<div class=\\"m-popover\\"><button class=\\"rootTrigger\\">root trigger</button>
+  <div class=\\"m-teleport\\"></div>
+</div>"
+`;
+
+exports[`test popover placement 1`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(0.8); transform-origin: top; opacity: 0; z-index: 2020;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover placement 2`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: left top; z-index: 2020; top: 0px; left: 0px;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover placement 3`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: left top; z-index: 2020; top: 0px; left: 0px;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover placement 4`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: left top; z-index: 2020; top: 0px; left: 0px;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover placement 5`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: left top; z-index: 2020; top: 0px; left: 0px;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover placement 6`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: left top; z-index: 2020; top: 0px; left: 0px;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover placement 7`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: left top; z-index: 2020; top: 0px; left: 0px;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover placement 8`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: left top; z-index: 2020; top: 0px; left: 0px;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover placement 9`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: left top; z-index: 2020; top: 0px; left: 0px;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover placement 10`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: left top; z-index: 2020; top: 0px; left: 0px;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover placement 11`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: left top; z-index: 2020; top: 0px; left: 0px;\\"> <div>hello</div></div></div>"`;
+
+exports[`test popover placement 12`] = `"<div class=\\"m-popover\\"><button class=\\"trigger\\">trigger</button><div class=\\"m-teleport\\"></div></div><div><div class=\\"m-popover__container m-popover--default-style\\" style=\\"transform: scale(1); transform-origin: left top; z-index: 2020; top: 0px; left: 0px;\\"> <div>hello</div></div></div>"`;

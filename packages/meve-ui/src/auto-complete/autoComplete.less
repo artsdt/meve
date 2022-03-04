@@ -1,0 +1,73 @@
+@import '../styles/var';
+
+@auto-complete-options-box-shadow: 0 50px 100px rgb(50 50 93 / 10%), 0 15px 35px rgb(50 50 93 / 15%),
+  0 5px 15px rgb(0 0 0 / 10%);
+@auto-complete-options-border-radius: 6px;
+@auto-complete-options-background: #fff;
+@auto-complete-option-text-color: #333;
+@auto-complete-option-active-text-color: #fff;
+@auto-complete-option-active-background: @color-primary;
+@auto-complete-normal-options-padding: 9px 0;
+@auto-complete-normal-option-padding: 9px 14px;
+@auto-complete-normal-option-font-size: 15px;
+@auto-complete-small-options-padding: 7px 0;
+@auto-complete-small-option-padding: 7px 14px;
+@auto-complete-small-option-font-size: 14px;
+@auto-complete-mini-options-padding: 5px 0;
+@auto-complete-mini-option-padding: 5px 14px;
+@auto-complete-mini-option-font-size: 13px;
+
+.m-auto-complete {
+  &__popover[auto-complete-cover] {
+    display: block;
+  }
+
+  &__options {
+    background: @auto-complete-options-background;
+    box-shadow: @auto-complete-options-box-shadow;
+    border-radius: @auto-complete-options-border-radius;
+  }
+
+  &__option {
+    cursor: pointer;
+    color: @auto-complete-option-text-color;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.15s, color 0.15s;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+  }
+
+  &--normal-options {
+    padding: @auto-complete-normal-options-padding;
+  }
+
+  &--small-options {
+    padding: @auto-complete-small-options-padding;
+  }
+
+  &--mini-options {
+    padding: @auto-complete-mini-options-padding;
+  }
+
+  &--normal-option {
+    font-size: @auto-complete-normal-option-font-size;
+    padding: @auto-complete-normal-option-padding;
+  }
+
+  &--small-option {
+    font-size: @auto-complete-small-option-font-size;
+    padding: @auto-complete-small-option-padding;
+  }
+
+  &--mini-option {
+    font-size: @auto-complete-mini-option-font-size;
+    padding: @auto-complete-mini-option-padding;
+  }
+
+  &--active {
+    background: @auto-complete-option-active-background;
+    color: @auto-complete-option-active-text-color;
+  }
+}

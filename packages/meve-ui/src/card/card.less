@@ -1,0 +1,36 @@
+@card-title-wrapper-padding: 20px;
+@card-description-padding: 22px;
+@card-background-color: #fff;
+@card-title-text-color: #333;
+@card-description-text-color: #555;
+@card-subtitle-text-color: #888;
+@card-title-font-size: 18px;
+@card-subtitle-font-size: 12px;
+@card-border-radius: 6px;
+
+.m-card {
+  box-shadow: 0 8px 26px -4px hsl(0deg 0% 8% / 15%), 0 8px 9px -5px hsl(0deg 0% 8% / 6%);
+  background: @card-background-color;
+  border-radius: @card-border-radius;
+
+  &__title-wrapper {
+    padding: @card-title-wrapper-padding;
+    border-bottom: thin dashed #ddd;
+  }
+
+  &__title {
+    color: @card-title-text-color;
+    font-size: @card-title-font-size;
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    color: @card-subtitle-text-color;
+    font-size: @card-subtitle-font-size;
+  }
+
+  &__description {
+    padding: @card-description-padding;
+    color: @card-description-text-color;
+  }
+}

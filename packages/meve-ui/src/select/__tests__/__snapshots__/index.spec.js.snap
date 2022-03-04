@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test select disabled 1`] = `
+"<div class=\\"m-select m--box\\">
+  <div class=\\"m-form-item\\">
+    <div class=\\"m-popover m-select__popover\\" select-cover=\\"true\\">
+      <div class=\\"m-select__select m-select--normal m-select--disabled\\"><input id=\\"m-select-10\\" autocomplete=\\"off\\" disabled=\\"disabled\\" readonly=\\"true\\" class=\\"m-select__input\\"><i input-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-close-circle m-select__clear-icon m-select--clear-icon-visible\\"></i><i select-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-select__arrow\\"></i></div>
+      <div class=\\"m-teleport\\"></div>
+    </div>
+    <transition-stub name=\\"m-form-details\\"></transition-stub>
+  </div>
+</div>"
+`;
+
+exports[`test select readonly 1`] = `
+"<div class=\\"m-select m--box\\">
+  <div class=\\"m-form-item\\">
+    <div class=\\"m-popover m-select__popover\\" select-cover=\\"true\\">
+      <div class=\\"m-select__select m-select--normal m-select--outline-hover\\"><input id=\\"m-select-11\\" autocomplete=\\"off\\" readonly=\\"true\\" class=\\"m-select__input\\"><i input-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-close-circle m-select__clear-icon m-select--clear-icon-visible\\"></i><i select-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-select__arrow\\"></i></div>
+      <div class=\\"m-teleport\\"></div>
+    </div>
+    <transition-stub name=\\"m-form-details\\"></transition-stub>
+  </div>
+</div>"
+`;
+
+exports[`test select size 1`] = `
+"<div>
+  <div class=\\"m-select m--box\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-popover m-select__popover\\" select-cover=\\"true\\">
+        <div class=\\"m-select__select m-select--normal m-select--outline-hover\\"><input id=\\"m-select-3\\" autocomplete=\\"off\\" readonly=\\"true\\" class=\\"m-select__input\\"><i select-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-select__arrow\\"></i></div>
+        <div class=\\"m-teleport\\"></div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+  </div>
+  <div class=\\"m-select m--box\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-popover m-select__popover\\" select-cover=\\"true\\">
+        <div class=\\"m-select__select m-select--small m-select--outline-hover\\"><input id=\\"m-select-4\\" autocomplete=\\"off\\" readonly=\\"true\\" class=\\"m-select__input\\"><i select-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-select__arrow\\"></i></div>
+        <div class=\\"m-teleport\\"></div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+  </div>
+  <div class=\\"m-select m--box\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-popover m-select__popover\\" select-cover=\\"true\\">
+        <div class=\\"m-select__select m-select--mini m-select--outline-hover\\"><input id=\\"m-select-5\\" autocomplete=\\"off\\" readonly=\\"true\\" class=\\"m-select__input\\"><i select-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-select__arrow\\"></i></div>
+        <div class=\\"m-teleport\\"></div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test select slots 1`] = `
+"<div class=\\"m-select m--box\\">
+  <div class=\\"m-form-item\\">
+    <div class=\\"m-popover m-select__popover\\" select-cover=\\"true\\">
+      <div class=\\"m-select__select m-select--normal m-select--outline-hover\\">
+        <div>prepend icon</div><input id=\\"m-select-19\\" autocomplete=\\"off\\" readonly=\\"true\\" class=\\"m-select__input\\">
+        <div>append icon</div><i select-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-select__arrow\\"></i>
+      </div>
+      <div class=\\"m-teleport\\"></div>
+    </div>
+    <transition-stub name=\\"m-form-details\\"></transition-stub>
+  </div>
+</div>"
+`;
+
+exports[`test select validation 1`] = `
+"<div class=\\"m-select m--box\\">
+  <div class=\\"m-form-item\\">
+    <div class=\\"m-popover m-select__popover\\" select-cover=\\"true\\">
+      <div class=\\"m-select__select m-select--normal m-select--outline-hover m-select--validation-error-border\\"><input id=\\"m-select-12\\" autocomplete=\\"off\\" readonly=\\"true\\" class=\\"m-select__input\\"><i select-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-select__arrow\\"></i></div>
+      <div class=\\"m-teleport\\"></div>
+    </div>
+    <div class=\\"m-form-details\\">不能为空</div>
+  </div>
+</div>"
+`;
+
+exports[`test select validation 2`] = `
+"<div class=\\"m-select m--box\\">
+  <div class=\\"m-form-item\\">
+    <div class=\\"m-popover m-select__popover\\" select-cover=\\"true\\">
+      <div class=\\"m-select__select m-select--normal m-select--outline-hover\\"><input id=\\"m-select-12\\" autocomplete=\\"off\\" readonly=\\"true\\" class=\\"m-select__input\\"><i select-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-select__arrow\\"></i></div>
+      <div class=\\"m-teleport\\"></div>
+    </div>
+    <!---->
+  </div>
+</div>"
+`;
+
+exports[`test select validation in multiple 1`] = `
+"<div class=\\"m-select m--box\\">
+  <div class=\\"m-form-item\\">
+    <div class=\\"m-popover m-select__popover\\" select-cover=\\"true\\">
+      <div class=\\"m-select__select m-select--normal m-select--outline-hover m-select--validation-error-border\\">
+        <div class=\\"m-select__tags\\" style=\\"padding-bottom: 0px;\\"><input readonly=\\"true\\" class=\\"m-select__placeholder\\"></div><i select-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-select__arrow\\"></i>
+      </div>
+      <div class=\\"m-teleport\\"></div>
+    </div>
+    <div class=\\"m-form-details\\">不能为空</div>
+  </div>
+</div>"
+`;
+
+exports[`test select validation in multiple 2`] = `
+"<div class=\\"m-select m--box\\">
+  <div class=\\"m-form-item\\">
+    <div class=\\"m-popover m-select__popover\\" select-cover=\\"true\\">
+      <div class=\\"m-select__select m-select--normal m-select--outline-hover\\">
+        <div class=\\"m-select__tags\\" style=\\"padding-bottom: 0px;\\"><input readonly=\\"true\\" class=\\"m-select__placeholder\\"></div><i select-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-select__arrow\\"></i>
+      </div>
+      <div class=\\"m-teleport\\"></div>
+    </div>
+    <!---->
+  </div>
+</div>"
+`;

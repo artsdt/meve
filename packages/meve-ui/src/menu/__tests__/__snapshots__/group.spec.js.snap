@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test menu item group disabled 1`] = `
+"<div class=\\"m-menu m--box\\">
+  <div class=\\"m-menu-item-group m--box\\">
+    <div class=\\"m-menu-item-group__trigger m-menu-item-group--disabled\\">
+      <div class=\\"m-menu-item-group__indent\\" style=\\"padding-left: -24px;\\"></div><i menu-item-group-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-error m-menu-item-group__icon\\"></i>
+      <div class=\\"m-menu-item-group__label\\">level 1</div><i menu-item-group-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-menu-item-group__arrow\\"></i>
+    </div>
+    <div class=\\"m-menu-item-group__list m-menu-item-group--list-height-transition\\" style=\\"height: 0px;\\">
+      <div class=\\"m-menu-item m--box\\">
+        <div class=\\"m-menu-item__indent\\" style=\\"padding-left: 0px;\\"></div><i menu-item-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-error m-menu-item__icon\\"></i>
+        <div class=\\"m-menu-item__label\\">level 1-1</div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test menu item group icon pass object 1`] = `
+"<div class=\\"m-menu m--box\\">
+  <div class=\\"m-menu-item-group m--box\\">
+    <div class=\\"m-menu-item-group__trigger\\">
+      <div class=\\"m-menu-item-group__indent\\" style=\\"padding-left: -24px;\\"></div><i menu-item-group-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-error m-menu-item-group__icon\\" style=\\"color: red; font-size: 30px;\\"></i>
+      <div class=\\"m-menu-item-group__label\\">level 1</div><i menu-item-group-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-menu-item-group__arrow\\"></i>
+    </div>
+    <div class=\\"m-menu-item-group__list m-menu-item-group--list-height-transition\\" style=\\"height: 0px;\\">
+      <div class=\\"m-menu-item m--box\\">
+        <div class=\\"m-menu-item__indent\\" style=\\"padding-left: 0px;\\"></div><i menu-item-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-error m-menu-item__icon\\"></i>
+        <div class=\\"m-menu-item__label\\">level 1-1</div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test menu item group pass render function 1`] = `
+"<div class=\\"m-menu m--box\\">
+  <div class=\\"m-menu-item-group m--box\\">
+    <div class=\\"m-menu-item-group__trigger\\">
+      <div class=\\"m-menu-item-group__indent\\" style=\\"padding-left: -24px;\\"></div>
+      <div>custom icon</div>
+      <div>custom label</div><i menu-item-group-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-menu-item-group__arrow\\"></i>
+    </div>
+    <div class=\\"m-menu-item-group__list m-menu-item-group--list-height-transition\\" style=\\"height: 0px;\\">
+      <div class=\\"m-menu-item m--box\\">
+        <div class=\\"m-menu-item__indent\\" style=\\"padding-left: 0px;\\"></div><i menu-item-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-error m-menu-item__icon\\"></i>
+        <div class=\\"m-menu-item__label\\">level 1-1</div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test menu item group props 1`] = `
+"<div class=\\"m-menu m--box\\">
+  <div class=\\"m-menu-item-group m--box\\">
+    <div class=\\"m-menu-item-group__trigger\\">
+      <div class=\\"m-menu-item-group__indent\\" style=\\"padding-left: -24px;\\"></div><i menu-item-group-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-error m-menu-item-group__icon\\"></i>
+      <div class=\\"m-menu-item-group__label\\">level 1</div><i menu-item-group-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-menu-item-group__arrow\\"></i>
+    </div>
+    <div class=\\"m-menu-item-group__list m-menu-item-group--list-height-transition\\" style=\\"height: 0px;\\">
+      <div class=\\"m-menu-item m--box\\">
+        <div class=\\"m-menu-item__indent\\" style=\\"padding-left: 0px;\\"></div><i menu-item-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-error m-menu-item__icon\\"></i>
+        <div class=\\"m-menu-item__label\\">level 1-1</div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test menu item group slots 1`] = `
+"<div class=\\"m-menu m--box\\">
+  <div class=\\"m-menu-item-group m--box\\">
+    <div class=\\"m-menu-item-group__trigger\\">
+      <div class=\\"m-menu-item-group__indent\\" style=\\"padding-left: -24px;\\"></div>
+      <div>custom icon</div>
+      <div>custom label</div><i menu-item-group-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-menu-item-group__arrow\\"></i>
+    </div>
+    <div class=\\"m-menu-item-group__list m-menu-item-group--list-height-transition\\" style=\\"height: 0px;\\">
+      <div class=\\"m-menu-item m--box\\">
+        <div class=\\"m-menu-item__indent\\" style=\\"padding-left: 0px;\\"></div><i menu-item-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-error m-menu-item__icon\\"></i>
+        <div class=\\"m-menu-item__label\\">level 1-1</div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test menu item disabled 1`] = `
+"<div class=\\"m-menu m--box\\">
+  <div class=\\"m-menu-item m--box m-menu-item--disabled\\">
+    <div class=\\"m-menu-item__indent\\"></div><i menu-item-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-error m-menu-item__icon\\"></i>
+    <div class=\\"m-menu-item__label\\">level 1</div>
+  </div>
+</div>"
+`;
+
+exports[`test menu item icon pass object 1`] = `
+"<div class=\\"m-menu m--box\\">
+  <div class=\\"m-menu-item m--box\\">
+    <div class=\\"m-menu-item__indent\\"></div><i menu-item-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-error m-menu-item__icon\\" style=\\"color: red; font-size: 30px;\\"></i>
+    <div class=\\"m-menu-item__label\\">level i</div>
+  </div>
+</div>"
+`;
+
+exports[`test menu item pass render function 1`] = `
+"<div class=\\"m-menu m--box\\">
+  <div class=\\"m-menu-item m--box\\">
+    <div class=\\"m-menu-item__indent\\"></div>
+    <div>custom icon</div>
+    <div>custom label</div>
+  </div>
+</div>"
+`;
+
+exports[`test menu item props 1`] = `
+"<div class=\\"m-menu m--box\\">
+  <div class=\\"m-menu-item m--box\\">
+    <div class=\\"m-menu-item__indent\\"></div><i menu-item-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-error m-menu-item__icon\\"></i>
+    <div class=\\"m-menu-item__label\\">level 1</div>
+  </div>
+</div>"
+`;
+
+exports[`test menu item slots 1`] = `
+"<div class=\\"m-menu m--box\\">
+  <div class=\\"m-menu-item m--box\\">
+    <div class=\\"m-menu-item__indent\\"></div>
+    <div>custom icon</div>
+    <div>custom label</div>
+  </div>
+</div>"
+`;

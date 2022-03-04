@@ -1,0 +1,25 @@
+@import '../styles/var';
+
+@popover-cubic-bezier: @cubic-bezier;
+@popover-box-shadow: 0 50px 100px rgb(50 50 93 / 10%), 0 15px 35px rgb(50 50 93 / 15%), 0 5px 15px rgb(0 0 0 / 10%);
+@popover-padding: 10px 14px;
+@popover-border-radius: 6px;
+@popover-background: #fff;
+
+.m-popover {
+  display: inline-flex;
+
+  &__container {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    transition: transform 0.25s @cubic-bezier, opacity 0.25s @cubic-bezier;
+  }
+
+  &--default-style {
+    background: @popover-background;
+    box-shadow: @popover-box-shadow;
+    padding: @popover-padding;
+    border-radius: @popover-border-radius;
+  }
+}

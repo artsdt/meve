@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test auto-complete clear 1`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-8\\" autocomplete=\\"off\\" type=\\"text\\" class=\\"m-input__input\\"><i input-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-close-circle m-input__clear-icon m-input--clear-icon-visible\\"></i></div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete clear 2`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-8\\" autocomplete=\\"off\\" type=\\"text\\" class=\\"m-input__input\\"><i input-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-close-circle m-input__clear-icon\\"></i></div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete focus & blur 1`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal m-input--outline\\"><input id=\\"m-input-4\\" autocomplete=\\"off\\" type=\\"text\\" class=\\"m-input__input\\"></div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete focus & blur 2`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-4\\" autocomplete=\\"off\\" type=\\"text\\" class=\\"m-input__input\\"></div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete maxlength 1`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-6\\" autocomplete=\\"off\\" type=\\"text\\" maxlength=\\"6\\" class=\\"m-input__input\\">
+        <div class=\\"m-input__maxlength\\">0 / 6</div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete maxlength 2`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-6\\" autocomplete=\\"off\\" type=\\"text\\" maxlength=\\"6\\" class=\\"m-input__input\\">
+        <div class=\\"m-input__maxlength\\">5 / 6</div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete size 1`] = `
+"<div>
+  <div class=\\"m-auto-complete\\">
+    <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+      <div class=\\"m-form-item\\">
+        <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-1\\" autocomplete=\\"off\\" type=\\"text\\" class=\\"m-input__input\\"></div>
+        <transition-stub name=\\"m-form-details\\"></transition-stub>
+      </div>
+      <div class=\\"m-teleport\\"></div>
+    </div>
+  </div>
+  <div class=\\"m-auto-complete\\">
+    <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+      <div class=\\"m-form-item\\">
+        <div class=\\"m-input m--box m-input--small\\"><input id=\\"m-input-2\\" autocomplete=\\"off\\" type=\\"text\\" class=\\"m-input__input\\"></div>
+        <transition-stub name=\\"m-form-details\\"></transition-stub>
+      </div>
+      <div class=\\"m-teleport\\"></div>
+    </div>
+  </div>
+  <div class=\\"m-auto-complete\\">
+    <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+      <div class=\\"m-form-item\\">
+        <div class=\\"m-input m--box m-input--mini\\"><input id=\\"m-input-3\\" autocomplete=\\"off\\" type=\\"text\\" class=\\"m-input__input\\"></div>
+        <transition-stub name=\\"m-form-details\\"></transition-stub>
+      </div>
+      <div class=\\"m-teleport\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete slots 1`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal\\">
+        <div>prepend icon</div><input id=\\"m-input-9\\" autocomplete=\\"off\\" type=\\"text\\" class=\\"m-input__input\\">
+        <div>append icon</div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete textarea focus & blur 1`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal m-input--outline m-input--resizeable\\" style=\\"height: auto;\\"><textarea id=\\"m-input-5\\" autocomplete=\\"off\\" rows=\\"5\\" class=\\"m-input__textarea m-input--normal-textarea\\"></textarea></div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete textarea focus & blur 2`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal m-input--resizeable\\" style=\\"height: auto;\\"><textarea id=\\"m-input-5\\" autocomplete=\\"off\\" rows=\\"5\\" class=\\"m-input__textarea m-input--normal-textarea\\"></textarea></div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete validation 1`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal m-input--validation-error-border\\"><input id=\\"m-input-12\\" autocomplete=\\"off\\" type=\\"text\\" class=\\"m-input__input\\"></div>
+      <div class=\\"m-form-details\\">长度必须大于6</div>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete validation 2`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-12\\" autocomplete=\\"off\\" type=\\"text\\" class=\\"m-input__input\\"></div>
+      <!---->
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete value binding 1`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-0\\" autocomplete=\\"off\\" type=\\"text\\" class=\\"m-input__input\\"></div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test auto-complete value binding 2`] = `
+"<div class=\\"m-auto-complete\\">
+  <div class=\\"m-popover m-auto-complete__popover\\" auto-complete-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-0\\" autocomplete=\\"off\\" type=\\"text\\" class=\\"m-input__input\\"></div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;

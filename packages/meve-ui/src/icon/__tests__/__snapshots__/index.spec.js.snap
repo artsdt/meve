@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test icon color 1`] = `"<i class=\\"m-icon m--box meve-icon--set meve-icon-checkbox-marked-circle\\" style=\\"color: red;\\"></i>"`;
+
+exports[`test icon size 1`] = `"<i class=\\"m-icon m--box meve-icon--set meve-icon-checkbox-marked-circle\\" style=\\"font-size: 30px;\\"></i>"`;

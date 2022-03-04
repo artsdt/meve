@@ -1,0 +1,50 @@
+@import '../styles/var';
+
+@scroller-bar-border-radius: 4px;
+@scroller-bar-width: 6px;
+@scroller-bar-right: 4px;
+@scroller-cubic-bezier: @cubic-bezier;
+@scroller-bar-background: #ddd;
+@scroller-bar-hover-background: #c0c0c0;
+
+.scrollbar-fade-enter-active,
+.scrollbar-fade-leave-active {
+  transition: opacity 0.2s @scroller-cubic-bezier;
+}
+
+.scrollbar-fade-enter,
+.scrollbar-fade-leave-to {
+  opacity: 0;
+}
+
+.m-scroller {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+
+  &__scrollbar {
+    position: absolute;
+    top: 0;
+    right: @scroller-bar-right;
+    width: @scroller-bar-width;
+    height: 100%;
+  }
+
+  &__scrollbar-inner {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: @scroller-bar-background;
+    border-radius: @scroller-bar-border-radius;
+
+    &:hover {
+      cursor: pointer;
+      background: @scroller-bar-hover-background;
+    }
+  }
+
+  &--mobile {
+    overflow: auto;
+  }
+}

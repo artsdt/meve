@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test card pass description 1`] = `
+"<div description=\\"description\\" class=\\"m-card\\">
+  <div class=\\"m-card__description\\">description</div>
+</div>"
+`;
+
+exports[`test card pass string prop 1`] = `
+"<div title=\\"title\\" subtitle=\\"subtitle\\" description=\\"description\\" class=\\"m-card\\">
+  <div class=\\"m-card__title-wrapper\\">
+    <div class=\\"m-card__title\\">title</div><small class=\\"m-card__subtitle\\">subtitle</small>
+  </div>
+  <div class=\\"m-card__description\\">description</div>
+</div>"
+`;
+
+exports[`test card slots 1`] = `
+"<div title=\\"title\\" subtitle=\\"subtitle\\" description=\\"description\\" class=\\"m-card\\">
+  <div class=\\"m-card__title-wrapper\\">
+    <div>title</div>
+    <div>subtitle</div>
+  </div>
+  <div>description</div>
+  <div>extra</div>
+</div>"
+`;

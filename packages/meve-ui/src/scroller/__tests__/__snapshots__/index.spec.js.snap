@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test scroller view height 1`] = `
+"<div class=\\"m-scroller\\" style=\\"max-height: 300px;\\">
+  <div class=\\"m-scroller__scroll-view\\" style=\\"transform: translateY(0px); transition: transform 0ms;\\">
+    <div style=\\"height: 100px;\\"></div>
+    <div style=\\"height: 100px;\\"></div>
+    <div style=\\"height: 100px;\\"></div>
+    <div style=\\"height: 100px;\\"></div>
+    <div style=\\"height: 100px;\\"></div>
+    <div style=\\"height: 100px;\\"></div>
+  </div>
+  <div class=\\"m-scroller__scrollbar\\" style=\\"display: none;\\">
+    <div class=\\"m-scroller__scrollbar-inner\\" style=\\"height: 0%; transition: top 0ms; top: 0px;\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test scroller view height 2`] = `
+"<div class=\\"m-scroller\\" style=\\"max-height: 300px;\\">
+  <div class=\\"m-scroller__scroll-view\\" style=\\"transform: translateY(0px); transition: transform 0ms;\\">
+    <div style=\\"height: 100px;\\"></div>
+    <div style=\\"height: 100px;\\"></div>
+    <div style=\\"height: 100px;\\"></div>
+    <div style=\\"height: 100px;\\"></div>
+    <div style=\\"height: 100px;\\"></div>
+    <div style=\\"height: 100px;\\"></div>
+  </div>
+  <div class=\\"m-scroller__scrollbar scrollbar-fade-enter scrollbar-fade-enter-active\\" style=\\"\\">
+    <div class=\\"m-scroller__scrollbar-inner\\" style=\\"height: 50%; transition: top 0ms; top: 0px;\\"></div>
+  </div>
+</div>"
+`;

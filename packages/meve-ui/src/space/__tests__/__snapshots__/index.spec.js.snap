@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test custom size  1`] = `
+"<div class=\\"m-space m--box\\" style=\\"flex-direction: row; justify-content: start; flex-wrap: wrap; margin: -25px 0px;\\">
+  <div style=\\"margin: 25px 50px 25px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 25px 50px 25px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 25px 0px;\\"><span>hello</span></div>
+</div>"
+`;
+
+exports[`test internal size  1`] = `
+"<div class=\\"m-space m--box\\" style=\\"flex-direction: row; justify-content: start; flex-wrap: wrap; margin: -6px 0px;\\">
+  <div style=\\"margin: 6px 20px 6px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 6px 20px 6px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 6px 0px;\\"><span>hello</span></div>
+</div>"
+`;
+
+exports[`test space align center 1`] = `
+"<div class=\\"m-space m--box\\" style=\\"flex-direction: row; justify-content: start; align-items: center; flex-wrap: wrap; margin: -4px 0px;\\">
+  <div style=\\"margin: 4px 12px 4px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 12px 4px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 0px;\\"><span>hello</span></div>
+</div>"
+`;
+
+exports[`test space basic use 1`] = `
+"<div class=\\"m-space m--box\\" style=\\"flex-direction: row; justify-content: start; flex-wrap: wrap; margin: -4px 0px;\\">
+  <div style=\\"margin: 4px 12px 4px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 12px 4px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 0px;\\"><span>hello</span></div>
+</div>"
+`;
+
+exports[`test space direction 1`] = `
+"<div class=\\"m-space m--box\\" style=\\"flex-direction: column; justify-content: start; flex-wrap: wrap;\\">
+  <div style=\\"margin: 0px 0px 8px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 0px 0px 8px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 0px;\\"><span>hello</span></div>
+</div>"
+`;
+
+exports[`test space inline 1`] = `
+"<div class=\\"m-space m--box m--inline-flex\\" style=\\"flex-direction: row; justify-content: start; flex-wrap: wrap; margin: -4px 0px;\\">
+  <div style=\\"margin: 4px 12px 4px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 12px 4px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 0px;\\"><span>hello</span></div>
+</div>"
+`;
+
+exports[`test space justify around 1`] = `
+"<div class=\\"m-space m--box\\" style=\\"flex-direction: row; justify-content: space-around; flex-wrap: wrap; margin: -4px 0px;\\">
+  <div style=\\"margin: 4px 6px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 6px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 6px;\\"><span>hello</span></div>
+</div>"
+`;
+
+exports[`test space justify between 1`] = `
+"<div class=\\"m-space m--box\\" style=\\"flex-direction: row; justify-content: space-between; flex-wrap: wrap; margin: -4px 0px;\\">
+  <div style=\\"margin: 4px 6px 4px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 6px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 0px 4px 6px;\\"><span>hello</span></div>
+</div>"
+`;
+
+exports[`test space justify center 1`] = `
+"<div class=\\"m-space m--box\\" style=\\"flex-direction: row; justify-content: center; flex-wrap: wrap; margin: -4px 0px;\\">
+  <div style=\\"margin: 4px 12px 4px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 12px 4px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 0px;\\"><span>hello</span></div>
+</div>"
+`;
+
+exports[`test space wrap 1`] = `
+"<div class=\\"m-space m--box\\" style=\\"flex-direction: row; justify-content: start; flex-wrap: nowrap; margin: -4px 0px;\\">
+  <div style=\\"margin: 4px 12px 4px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 12px 4px 0px;\\"><span>hello</span></div>
+  <div style=\\"margin: 4px 0px;\\"><span>hello</span></div>
+</div>"
+`;

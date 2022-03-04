@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test tag block 1`] = `
+"<div class=\\"m-tag m--box m-tag--normal m--flex m-tag--block m-tag--default\\">
+  <div class=\\"m-tag__content\\"></div>
+</div>"
+`;
+
+exports[`test tag closeable 1`] = `
+"<div class=\\"m-tag m--box m-tag--normal m--inline-flex m-tag--default\\">
+  <div class=\\"m-tag__content\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--text-default m-button--text m-button--round m-tag__close-button\\" tag-cover=\\"true\\">
+      <div class=\\"m-button__content\\"><i tag-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-close m-tag__close-icon\\"></i></div>
+    </button></div>
+</div>"
+`;
+
+exports[`test tag closeable with disabled 1`] = `
+"<div class=\\"m-tag m--box m-tag--normal m--inline-flex m-tag--default m-tag--disabled\\">
+  <div class=\\"m-tag__content\\"><button tabindex=\\"-1\\" disabled=\\"disabled\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--text-default m-button--text m-button--round m-button--text-disabled m-tag__close-button\\" tag-cover=\\"true\\">
+      <div class=\\"m-button__content\\"><i tag-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-close m-tag__close-icon\\"></i></div>
+    </button></div>
+</div>"
+`;
+
+exports[`test tag closeable with readonly 1`] = `
+"<div class=\\"m-tag m--box m-tag--normal m--inline-flex m-tag--default\\">
+  <div class=\\"m-tag__content\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--text-default m-button--text m-button--round m-tag__close-button\\" tag-cover=\\"true\\">
+      <div class=\\"m-button__content\\"><i tag-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-close m-tag__close-icon\\"></i></div>
+    </button></div>
+</div>"
+`;
+
+exports[`test tag disabled 1`] = `
+"<div class=\\"m-tag m--box m-tag--normal m--inline-flex m-tag--default m-tag--disabled\\">
+  <div class=\\"m-tag__content\\"></div>
+</div>"
+`;
+
+exports[`test tag size 1`] = `
+"<div>
+  <div class=\\"m-tag m--box m-tag--mini m--inline-flex m-tag--default\\">
+    <div class=\\"m-tag__content\\">hello</div>
+  </div>
+  <div class=\\"m-tag m--box m-tag--small m--inline-flex m-tag--default\\">
+    <div class=\\"m-tag__content\\">hello</div>
+  </div>
+  <div class=\\"m-tag m--box m-tag--normal m--inline-flex m-tag--default\\">
+    <div class=\\"m-tag__content\\">hello</div>
+  </div>
+  <div class=\\"m-tag m--box m-tag--large m--inline-flex m-tag--default\\">
+    <div class=\\"m-tag__content\\">hello</div>
+  </div>
+</div>"
+`;
+
+exports[`test tag text and outline 1`] = `
+"<div class=\\"m-tag m--box m-tag--normal m--inline-flex m-tag--text-default m-tag--text m-tag--outline\\">
+  <div class=\\"m-tag__content\\"></div>
+</div>"
+`;
+
+exports[`test tag type 1`] = `
+"<div>
+  <div class=\\"m-tag m--box m-tag--normal m--inline-flex m-tag--default\\">
+    <div class=\\"m-tag__content\\">hello</div>
+  </div>
+  <div class=\\"m-tag m--box m-tag--normal m--inline-flex m-tag--primary\\">
+    <div class=\\"m-tag__content\\">hello</div>
+  </div>
+  <div class=\\"m-tag m--box m-tag--normal m--inline-flex m-tag--warning\\">
+    <div class=\\"m-tag__content\\">hello</div>
+  </div>
+  <div class=\\"m-tag m--box m-tag--normal m--inline-flex m-tag--info\\">
+    <div class=\\"m-tag__content\\">hello</div>
+  </div>
+  <div class=\\"m-tag m--box m-tag--normal m--inline-flex m-tag--success\\">
+    <div class=\\"m-tag__content\\">hello</div>
+  </div>
+  <div class=\\"m-tag m--box m-tag--normal m--inline-flex m-tag--error\\">
+    <div class=\\"m-tag__content\\">hello</div>
+  </div>
+</div>"
+`;

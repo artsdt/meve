@@ -1,0 +1,18 @@
+@import '../styles/var';
+
+@loading-bar-primary-color: @color-primary;
+@loading-bar-error-color: @color-error;
+@loading-bar-height: 3px;
+
+.m-loading-bar {
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: @loading-bar-height;
+  background: @loading-bar-primary-color;
+
+  &--error {
+    background-color: @loading-bar-error-color;
+  }
+}

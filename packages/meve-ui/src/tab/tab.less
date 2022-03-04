@@ -1,0 +1,84 @@
+@import '../styles/var';
+
+@tab-margin: 6px;
+@tab-padding: 12px;
+@tab-active-color: #fff;
+@tab-active-background: @color-primary;
+@tab-inactive-color: @color-primary;
+@tab-inactive-background: #fff;
+@tab-border-radius: 4px;
+@tab-disabled-color: @color-text-disabled;
+@tab-disabled-background: @color-disabled;
+@tab-font-size: 14px;
+
+.m-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+  font-size: @tab-font-size;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 98%;
+    padding: 0 @tab-padding;
+    border-radius: @tab-border-radius;
+    transition: all 0.25s;
+  }
+
+  &--vertical-margin {
+    margin: @tab-margin 0;
+  }
+
+  &--horizontal-margin {
+    margin: 0 @tab-margin;
+  }
+
+  &--clear-margin-left {
+    margin-left: 0;
+  }
+
+  &--clear-margin-top {
+    margin-top: 0;
+  }
+
+  &--clear-margin-bottom {
+    margin-bottom: 0;
+  }
+
+  &--clear-margin-right {
+    margin-right: 0;
+  }
+
+  &--active {
+    color: @tab-active-color;
+    background: @tab-active-background;
+    box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  }
+
+  &--inactive {
+    color: @tab-inactive-color;
+    background: @tab-inactive-background;
+    box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  }
+
+  &--disabled {
+    color: @tab-disabled-color;
+    background: @tab-disabled-background;
+    cursor: not-allowed;
+  }
+
+  &--horizontal {
+    flex-direction: row;
+  }
+
+  &--vertical {
+    flex-direction: column;
+  }
+}

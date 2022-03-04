@@ -1,0 +1,51 @@
+@tabs-item-horizontal-height: 58px;
+@tabs-item-vertical-height: 74px;
+@tabs-padding: 8px;
+
+.m-tabs {
+  overflow: hidden;
+  margin: -@tabs-padding;
+
+  &__tab-wrap {
+    position: relative;
+    display: flex;
+    height: 100%;
+    padding: @tabs-padding;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      background: transparent;
+    }
+  }
+
+  &--layout-horizontal {
+    flex-direction: row;
+
+    &-scrollable {
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+  }
+
+  &--layout-vertical {
+    flex-direction: column;
+
+    &-scrollable {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    &-padding {
+      padding: 0;
+    }
+  }
+
+  &--item-horizontal {
+    height: @tabs-item-horizontal-height;
+  }
+
+  &--item-vertical {
+    height: @tabs-item-vertical-height;
+  }
+}

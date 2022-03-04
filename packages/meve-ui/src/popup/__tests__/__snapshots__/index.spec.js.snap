@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test popup custom class and style for overlay 1`] = `
+"<div class=\\"m--box m-popup\\" style=\\"z-index: 2001; display: none;\\">
+  <div class=\\"m-popup__overlay custom-class\\" style=\\"z-index: 2002; background-color: blue;\\"></div>
+  <!---->
+</div>"
+`;
+
+exports[`test popup open and close 1`] = `
+"<div class=\\"m--box m-popup\\" style=\\"z-index: 1999;\\">
+  <div class=\\"m-popup__overlay\\" style=\\"z-index: 2000;\\"></div>
+  <div class=\\"m-popup__content m-popup--center\\" style=\\"z-index: 2001;\\">content</div>
+</div>"
+`;
+
+exports[`test popup open and close 2`] = `
+"<div class=\\"m--box m-popup\\" style=\\"z-index: 1999; display: none;\\">
+  <div class=\\"m-popup__overlay\\" style=\\"z-index: 2000;\\"></div>
+  <!---->
+</div>"
+`;
+
+exports[`test popup remove overlay 1`] = `
+"<div class=\\"m--box m-popup\\" style=\\"z-index: 2001; display: none;\\">
+  <!---->
+</div>"
+`;

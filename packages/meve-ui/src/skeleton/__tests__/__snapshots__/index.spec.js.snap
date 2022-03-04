@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test skeleton fullscreen 1`] = `
+"<div class=\\"m-skeleton m--box\\">
+  <div class=\\"m-skeleton__fullscreen\\" style=\\"z-index: 999;\\">
+    <div class=\\"m-skeleton--animation\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test skeleton styles 1`] = `
+"<div class=\\"m-skeleton m--box\\">
+  <div class=\\"m-skeleton__content\\">
+    <div class=\\"m-skeleton__card\\" style=\\"height: 100px;\\">
+      <div class=\\"m-skeleton--animation\\"></div>
+    </div>
+    <div class=\\"m-skeleton__article\\">
+      <div class=\\"m-skeleton__avatar\\" style=\\"width: 100px; height: 100px;\\">
+        <div class=\\"m-skeleton--animation\\"></div>
+      </div>
+      <div class=\\"m-skeleton__section\\">
+        <div class=\\"m-skeleton__title\\" style=\\"width: 100px;\\">
+          <div class=\\"m-skeleton--animation\\"></div>
+        </div>
+        <div class=\\"m-skeleton__row\\" style=\\"width: 600px;\\">
+          <div class=\\"m-skeleton--animation\\"></div>
+        </div>
+        <div class=\\"m-skeleton__row\\" style=\\"width: 500px;\\">
+          <div class=\\"m-skeleton--animation\\"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

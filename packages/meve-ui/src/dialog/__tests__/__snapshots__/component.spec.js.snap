@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test dialog hide button 1`] = `
+"<div class=\\"m--box m-popup m-dialog\\" style=\\"z-index: 2000;\\">
+  <div class=\\"m-popup__overlay\\" style=\\"z-index: 2001;\\"></div>
+  <div dialog-cover=\\"true\\" class=\\"m-popup__content m-popup--center\\" style=\\"z-index: 2002;\\">
+    <div class=\\"m-dialog__container\\">
+      <div class=\\"m-dialog__title-wrapper\\">
+        <div class=\\"m-dialog__title\\">提示</div><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--text-default m-button--text m-button--round m-dialog__close-button\\" dialog-cover=\\"true\\">
+          <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-close\\"></i></div>
+        </button>
+      </div>
+      <div class=\\"m-dialog__footer\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test dialog open and close 1`] = `
+"<div class=\\"m--box m-popup m-dialog\\" style=\\"z-index: 1998; display: none;\\">
+  <div class=\\"m-popup__overlay\\" style=\\"z-index: 1999;\\"></div>
+  <!---->
+</div>"
+`;
+
+exports[`test dialog open and close 2`] = `
+"<div class=\\"m--box m-popup m-dialog m-fade-enter m-fade-enter-active\\" style=\\"z-index: 1999;\\">
+  <div class=\\"m-popup__overlay\\" style=\\"z-index: 2000;\\"></div>
+  <div dialog-cover=\\"true\\" class=\\"m-popup__content m-popup--center m-pop-center-enter m-pop-center-enter-active\\" style=\\"z-index: 2001;\\">
+    <div class=\\"m-dialog__container\\">
+      <div class=\\"m-dialog__title-wrapper\\">
+        <div class=\\"m-dialog__title\\">标题</div><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--text-default m-button--text m-button--round m-dialog__close-button\\" dialog-cover=\\"true\\">
+          <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-close\\"></i></div>
+        </button>
+      </div>
+      <div class=\\"m-dialog__message\\" style=\\"text-align: left;\\">测试信息</div>
+      <div class=\\"m-dialog__footer\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--large m--inline-flex m-button--primary m-button--shadow m-dialog__confirm-button\\" dialog-cover=\\"true\\">
+          <div class=\\"m-button__content\\">确认</div>
+        </button><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--large m--inline-flex m-button--text-primary m-button--text m-dialog__cancel-button\\" dialog-cover=\\"true\\">
+          <div class=\\"m-button__content\\">取消</div>
+        </button></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test dialog open and close 3`] = `
+"<div class=\\"m--box m-popup m-dialog m-fade-leave m-fade-leave-active\\" style=\\"z-index: 1999;\\">
+  <div class=\\"m-popup__overlay\\" style=\\"z-index: 2000;\\"></div>
+  <div dialog-cover=\\"true\\" class=\\"m-popup__content m-popup--center m-pop-center-leave m-pop-center-leave-active\\" style=\\"z-index: 2001;\\">
+    <div class=\\"m-dialog__container\\">
+      <div class=\\"m-dialog__title-wrapper\\">
+        <div class=\\"m-dialog__title\\">标题</div><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--text-default m-button--text m-button--round m-dialog__close-button\\" dialog-cover=\\"true\\">
+          <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-close\\"></i></div>
+        </button>
+      </div>
+      <div class=\\"m-dialog__message\\" style=\\"text-align: left;\\">测试信息</div>
+      <div class=\\"m-dialog__footer\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--large m--inline-flex m-button--primary m-button--shadow m-dialog__confirm-button\\" dialog-cover=\\"true\\">
+          <div class=\\"m-button__content\\">确认</div>
+        </button><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--large m--inline-flex m-button--text-primary m-button--text m-dialog__cancel-button\\" dialog-cover=\\"true\\">
+          <div class=\\"m-button__content\\">取消</div>
+        </button></div>
+    </div>
+  </div>
+  <!---->
+</div>"
+`;
+
+exports[`test dialog slots 1`] = `
+"<div class=\\"m--box m-popup m-dialog\\" style=\\"z-index: 2004;\\">
+  <div class=\\"m-popup__overlay\\" style=\\"z-index: 2005;\\"></div>
+  <div dialog-cover=\\"true\\" class=\\"m-popup__content m-popup--center\\" style=\\"z-index: 2006;\\">
+    <div class=\\"m-dialog__container\\">
+      <div class=\\"m-dialog__title-wrapper\\">title slot<button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--text-default m-button--text m-button--round m-dialog__close-button\\" dialog-cover=\\"true\\">
+          <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-close\\"></i></div>
+        </button></div>default slotfooter slot
+    </div>
+  </div>
+</div>"
+`;

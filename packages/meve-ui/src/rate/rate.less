@@ -1,0 +1,104 @@
+@import '../styles/var';
+
+@rate-inactive-color: #dbdbdf;
+@rate-disabled-color: @color-disabled;
+@rate-error-color: @color-warning;
+@rate-active-color: #f7ce55;
+@rate-normal-rate-size: 26px;
+@rate-normal-half-rate-size: 13px;
+@rate-small-rate-size: 22px;
+@rate-small-half-rate-size: 11px;
+@rate-mini-rate-size: 18px;
+@rate-mini-half-rate-size: 9px;
+
+.m-rate {
+  &__rates {
+    display: inline-flex;
+    flex-wrap: wrap;
+    vertical-align: bottom;
+  }
+
+  &__rate-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  &__rate-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__rate {
+    color: @rate-inactive-color;
+    cursor: pointer;
+    transition: color 0.25s, opacity 0.25s;
+    font-size: inherit;
+  }
+
+  &--normal-rate {
+    width: @rate-normal-rate-size;
+    height: @rate-normal-rate-size;
+    font-size: @rate-normal-rate-size;
+  }
+
+  &--normal-half-rate {
+    width: @rate-normal-half-rate-size;
+    height: @rate-normal-rate-size;
+    font-size: @rate-normal-rate-size;
+  }
+
+  &--small-rate {
+    width: @rate-small-rate-size;
+    height: @rate-small-rate-size;
+    font-size: @rate-small-rate-size;
+  }
+
+  &--small-half-rate {
+    width: @rate-small-half-rate-size;
+    height: @rate-small-rate-size;
+    font-size: @rate-small-rate-size;
+  }
+
+  &--mini-rate {
+    width: @rate-mini-rate-size;
+    height: @rate-mini-rate-size;
+    font-size: @rate-mini-rate-size;
+  }
+
+  &--mini-half-rate {
+    width: @rate-mini-half-rate-size;
+    height: @rate-mini-rate-size;
+    font-size: @rate-mini-rate-size;
+  }
+
+  &--active {
+    color: @rate-active-color;
+  }
+
+  &--half {
+    overflow: hidden;
+  }
+
+  &--disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &--left-rate {
+    position: absolute;
+    left: 0;
+  }
+
+  &--right-rate {
+    position: absolute;
+    right: 0;
+  }
+
+  &--error {
+    color: @rate-error-color;
+  }
+}

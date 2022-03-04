@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test col span 1`] = `
+"<div class=\\"m-row m--box\\" style=\\"justify-content: flex-start; align-items: flex-start; margin: 0px 0px;\\">
+  <div class=\\"m-col m--box m-col--span-8\\" style=\\"padding: 0px 0px;\\">span: 8</div>
+  <div class=\\"m-col m--box m-col--span-8\\" style=\\"padding: 0px 0px;\\">span: 8</div>
+  <div class=\\"m-col m--box m-col--span-8\\" style=\\"padding: 0px 0px;\\">span: 8</div>
+</div>"
+`;
+
+exports[`test row gutter 1`] = `
+"<div class=\\"m-row m--box\\" style=\\"justify-content: flex-start; align-items: flex-start; margin: 0px -10px;\\">
+  <div class=\\"m-col m--box m-col--span-8\\" style=\\"padding: 0px 5px;\\">span: 8</div>
+  <div class=\\"m-col m--box m-col--span-8\\" style=\\"padding: 0px 5px;\\">span: 8</div>
+  <div class=\\"m-col m--box m-col--span-8\\" style=\\"padding: 0px 5px;\\">span: 8</div>
+</div>"
+`;
+
+exports[`test row offset 1`] = `
+"<div class=\\"m-row m--box\\" style=\\"justify-content: flex-start; align-items: flex-start; margin: 0px 0px;\\">
+  <div class=\\"m-col m--box m-col--span-6\\" style=\\"padding: 0px 0px;\\">span: 6</div>
+  <div class=\\"m-col m--box m-col--span-8 m-col--offset-2\\" style=\\"padding: 0px 0px;\\">offset: 2 span: 8</div>
+  <div class=\\"m-col m--box m-col--span-8\\" style=\\"padding: 0px 0px;\\">span: 8</div>
+</div>"
+`;
+
+exports[`test row responsive 1`] = `
+"<div class=\\"m-row m--box\\" style=\\"justify-content: flex-start; align-items: flex-start; margin: 0px 0px;\\">
+  <div class=\\"m-col m--box m-col--span-24 m-col--span-xs-24 m-col--span-sm-12 m-col--span-md-8 m-col--span-lg-4 m-col--span-xl-2\\" style=\\"padding: 0px 0px;\\">Responsive</div>
+</div>"
+`;
+
+exports[`test row responsive pass object 1`] = `
+"<div class=\\"m-row m--box\\" style=\\"justify-content: flex-start; align-items: flex-start; margin: 0px 0px;\\">
+  <div class=\\"m-col m--box m-col--span-24 m-col--span-xs-22 m-col--offset-xs-2 m-col--span-sm-10 m-col--offset-sm-2 m-col--span-md-6 m-col--offset-md-2 m-col--span-lg-3 m-col--offset-lg-1 m-col--span-xl-2\\" style=\\"padding: 0px 0px;\\">
+    Responsive
+  </div>
+</div>"
+`;

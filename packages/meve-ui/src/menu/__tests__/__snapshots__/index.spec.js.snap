@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test menu recursion for options 1`] = `
+"<div class=\\"m-menu m--box\\">
+  <div class=\\"m-menu-item-group m--box\\">
+    <div class=\\"m-menu-item-group__trigger\\">
+      <div class=\\"m-menu-item-group__indent\\" style=\\"padding-left: -24px;\\"></div>
+      <div class=\\"m-menu-item-group__label\\">level 1</div><i menu-item-group-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-menu-item-group__arrow\\"></i>
+    </div>
+    <div class=\\"m-menu-item-group__list m-menu-item-group--list-height-transition\\" style=\\"height: 0px;\\">
+      <div class=\\"m-menu-item m--box\\">
+        <div class=\\"m-menu-item__indent\\" style=\\"padding-left: 0px;\\"></div>
+        <div class=\\"m-menu-item__label\\">level 1-1</div>
+      </div>
+      <div class=\\"m-menu-item-group m--box\\">
+        <div class=\\"m-menu-item-group__trigger\\">
+          <div class=\\"m-menu-item-group__indent\\" style=\\"padding-left: 0px;\\"></div>
+          <div class=\\"m-menu-item-group__label\\">level 1-2</div><i menu-item-group-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-menu-item-group__arrow\\"></i>
+        </div>
+        <div class=\\"m-menu-item-group__list m-menu-item-group--list-height-transition\\" style=\\"height: 0px;\\">
+          <div class=\\"m-menu-item m--box\\">
+            <div class=\\"m-menu-item__indent\\" style=\\"padding-left: 24px;\\"></div>
+            <div class=\\"m-menu-item__label\\">level 1-2-1</div>
+          </div>
+          <div class=\\"m-menu-item-group m--box\\">
+            <div class=\\"m-menu-item-group__trigger\\">
+              <div class=\\"m-menu-item-group__indent\\" style=\\"padding-left: 24px;\\"></div>
+              <div class=\\"m-menu-item-group__label\\">level 1-2-2</div><i menu-item-group-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-menu-item-group__arrow\\"></i>
+            </div>
+            <div class=\\"m-menu-item-group__list m-menu-item-group--list-height-transition\\" style=\\"height: 0px;\\">
+              <div class=\\"m-menu-item m--box\\">
+                <div class=\\"m-menu-item__indent\\" style=\\"padding-left: 48px;\\"></div>
+                <div class=\\"m-menu-item__label\\">level 1-2-2-1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

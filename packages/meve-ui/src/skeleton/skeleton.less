@@ -1,0 +1,120 @@
+@skeleton-content-padding: 16px;
+@skeleton-animation-background: linear-gradient(
+  90deg,
+  hsla(0, 0%, 100%, 0),
+  hsla(0, 0%, 100%, 0.3),
+  hsla(0, 0%, 100%, 0)
+);
+@skeleton-avatar-size: 40px;
+@skeleton-avatar-border-radius: 50%;
+@skeleton-avatar-margin-right: 16px;
+@skeleton-avatar-background-color: rgba(0, 0, 0, 0.12);
+@skeleton-title-width: 50%;
+@skeleton-title-border-radius: 0px;
+@skeleton-title-background-color: rgba(0, 0, 0, 0.12);
+@skeleton-row-height: 12px;
+@skeleton-row-border-radius: 0px;
+@skeleton-row-margin-top: 12px;
+@skeleton-card-height: 160px;
+@skeleton-card-border-radius: 0px;
+@skeleton-card-margin-bottom: 16px;
+@skeleton-card-background-color: rgba(0, 0, 0, 0.12);
+
+@keyframes m-skeleton-animation {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.m-skeleton {
+  width: 100%;
+
+  &__content {
+    padding: @skeleton-content-padding;
+  }
+
+  &__card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: @skeleton-card-height;
+    background-color: @skeleton-card-background-color;
+    margin-bottom: @skeleton-card-margin-bottom;
+    border-radius: @skeleton-card-border-radius;
+    transition: background-color 0.25s;
+  }
+
+  &__article {
+    display: flex;
+    width: 100%;
+  }
+
+  &__avatar {
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: @skeleton-avatar-size;
+    height: @skeleton-avatar-size;
+    border-radius: @skeleton-avatar-border-radius;
+    background-color: @skeleton-avatar-background-color;
+    margin-right: @skeleton-avatar-margin-right;
+    transition: 0.25s background-color;
+  }
+
+  &__section {
+    width: 100%;
+    padding-top: 8px;
+  }
+
+  &__title {
+    position: relative;
+    overflow: hidden;
+    width: @skeleton-title-width;
+    height: @skeleton-row-height;
+    background-color: @skeleton-title-background-color;
+    border-radius: @skeleton-title-border-radius;
+    transition: 0.25s background-color;
+  }
+
+  &__row {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: @skeleton-row-height;
+    background-color: @skeleton-title-background-color;
+    margin-top: @skeleton-row-margin-top;
+    border-radius: @skeleton-row-border-radius;
+    transition: 0.25s background-color;
+  }
+
+  &__fullscreen {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: @skeleton-title-background-color;
+    transition: 0.25s background-color;
+  }
+
+  &--animation {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      animation: m-skeleton-animation 1s infinite;
+      background: @skeleton-animation-background;
+      transition: 0.25s background-color;
+    }
+  }
+}

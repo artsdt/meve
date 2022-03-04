@@ -1,0 +1,33 @@
+@import '../styles/var';
+
+@breadcrumb-item-active-color: @color-primary;
+@breadcrumb-item-active-hover-color: #233dd2;
+@breadcrumb-item-text-color: #888;
+@breadcrumb-item-separator-margin: 0 6px;
+@breadcrumb-item-separator-font-size: 14px;
+
+.m-breadcrumb-item {
+  display: flex;
+  align-items: center;
+  color: @breadcrumb-item-text-color;
+
+  &__separator {
+    margin: @breadcrumb-item-separator-margin;
+    font-size: @breadcrumb-item-separator-font-size;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &--active {
+    color: @breadcrumb-item-active-color;
+    transition: 0.1s color;
+
+    &:hover {
+      cursor: pointer;
+      color: @breadcrumb-item-active-hover-color;
+    }
+  }
+}

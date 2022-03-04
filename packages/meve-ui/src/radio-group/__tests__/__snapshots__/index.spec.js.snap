@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test radio disabled 1`] = `
+"<div class=\\"m-form-item\\" radio-cover=\\"true\\"><label class=\\"m-radio m--box m-radio--normal m-radio--text-disabled\\"><input type=\\"radio\\" disabled=\\"disabled\\" class=\\"m-radio__input\\">
+    <div class=\\"m-radio__radio-container m-radio--normal-radio-container\\">
+      <div class=\\"m-radio__radio m-radio--normal-radio m-radio--border-visible m-radio--disabled\\"></div>
+    </div>
+    <div class=\\"m-radio__label\\"></div>
+  </label>
+  <transition-stub name=\\"m-form-details\\"></transition-stub>
+</div>"
+`;
+
+exports[`test radio group layout direction 1`] = `
+"<div class=\\"m-form-item\\" radio-group-cover=\\"true\\">
+  <div radio-group-cover=\\"true\\" class=\\"m-space m--box m-radio-group\\" style=\\"flex-direction: column; justify-content: start; flex-wrap: wrap;\\">
+    <div style=\\"margin: 0px 0px 8px 0px;\\">
+      <div class=\\"m-form-item\\" radio-cover=\\"true\\"><label class=\\"m-radio m--box m-radio--normal\\"><input type=\\"radio\\" class=\\"m-radio__input\\">
+          <div class=\\"m-radio__radio-container m-radio--normal-radio-container\\">
+            <div class=\\"m-radio__radio m-radio--normal-radio m-radio--border-visible\\"></div>
+          </div>
+          <div class=\\"m-radio__label\\"></div>
+        </label>
+        <transition-stub name=\\"m-form-details\\"></transition-stub>
+      </div>
+    </div>
+    <div style=\\"margin: 0px 0px 8px 0px;\\"> </div>
+    <div style=\\"margin: 0px;\\">
+      <div class=\\"m-form-item\\" radio-cover=\\"true\\"><label class=\\"m-radio m--box m-radio--normal\\"><input type=\\"radio\\" class=\\"m-radio__input\\">
+          <div class=\\"m-radio__radio-container m-radio--normal-radio-container\\">
+            <div class=\\"m-radio__radio m-radio--normal-radio m-radio--border-visible\\"></div>
+          </div>
+          <div class=\\"m-radio__label\\"></div>
+        </label>
+        <transition-stub name=\\"m-form-details\\"></transition-stub>
+      </div>
+    </div>
+  </div>
+  <transition-stub name=\\"m-form-details\\"></transition-stub>
+</div>"
+`;
+
+exports[`test radio group validation 1`] = `
+"<div class=\\"m-form-item\\" radio-group-cover=\\"true\\">
+  <div radio-group-cover=\\"true\\" class=\\"m-space m--box m-radio-group\\" style=\\"flex-direction: row; justify-content: start; flex-wrap: wrap; margin: -4px 0px;\\">
+    <div style=\\"margin: 4px 12px 4px 0px;\\">
+      <div class=\\"m-form-item\\" radio-cover=\\"true\\"><label class=\\"m-radio m--box m-radio--normal m-radio--text-error\\"><input type=\\"radio\\" class=\\"m-radio__input\\">
+          <div class=\\"m-radio__radio-container m-radio--normal-radio-container\\">
+            <div class=\\"m-radio__radio m-radio--normal-radio m-radio--border-visible m-radio--border-error\\"></div>
+          </div>
+          <div class=\\"m-radio__label\\"></div>
+        </label>
+        <!---->
+      </div>
+    </div>
+    <div style=\\"margin: 4px 12px 4px 0px;\\"> </div>
+    <div style=\\"margin: 4px 0px;\\">
+      <div class=\\"m-form-item\\" radio-cover=\\"true\\"><label class=\\"m-radio m--box m-radio--normal m-radio--text-error\\"><input type=\\"radio\\" class=\\"m-radio__input\\">
+          <div class=\\"m-radio__radio-container m-radio--normal-radio-container\\">
+            <div class=\\"m-radio__radio m-radio--normal-radio m-radio--normal-svg m-radio--checked m-radio--background-error\\"></div>
+          </div>
+          <div class=\\"m-radio__label\\"></div>
+        </label>
+        <!---->
+      </div>
+    </div>
+  </div>
+  <div class=\\"m-form-details\\">必须选第一个</div>
+</div>"
+`;
+
+exports[`test radio group validation 2`] = `
+"<div class=\\"m-form-item\\" radio-group-cover=\\"true\\">
+  <div radio-group-cover=\\"true\\" class=\\"m-space m--box m-radio-group\\" style=\\"flex-direction: row; justify-content: start; flex-wrap: wrap; margin: -4px 0px;\\">
+    <div style=\\"margin: 4px 12px 4px 0px;\\">
+      <div class=\\"m-form-item\\" radio-cover=\\"true\\"><label class=\\"m-radio m--box m-radio--normal\\"><input type=\\"radio\\" class=\\"m-radio__input\\">
+          <div class=\\"m-radio__radio-container m-radio--normal-radio-container\\">
+            <div class=\\"m-radio__radio m-radio--normal-radio m-radio--border-visible\\"></div>
+          </div>
+          <div class=\\"m-radio__label\\"></div>
+        </label>
+        <!---->
+      </div>
+    </div>
+    <div style=\\"margin: 4px 12px 4px 0px;\\"> </div>
+    <div style=\\"margin: 4px 0px;\\">
+      <div class=\\"m-form-item\\" radio-cover=\\"true\\"><label class=\\"m-radio m--box m-radio--normal\\"><input type=\\"radio\\" class=\\"m-radio__input\\">
+          <div class=\\"m-radio__radio-container m-radio--normal-radio-container\\">
+            <div class=\\"m-radio__radio m-radio--normal-radio m-radio--normal-svg m-radio--checked\\"></div>
+          </div>
+          <div class=\\"m-radio__label\\"></div>
+        </label>
+        <!---->
+      </div>
+    </div>
+  </div>
+  <!---->
+</div>"
+`;
+
+exports[`test radio readonly 1`] = `
+"<div class=\\"m-form-item\\" radio-cover=\\"true\\"><label class=\\"m-radio m--box m-radio--normal\\"><input type=\\"radio\\" readonly=\\"true\\" class=\\"m-radio__input\\">
+    <div class=\\"m-radio__radio-container m-radio--normal-radio-container\\">
+      <div class=\\"m-radio__radio m-radio--normal-radio m-radio--border-visible\\"></div>
+    </div>
+    <div class=\\"m-radio__label\\"></div>
+  </label>
+  <transition-stub name=\\"m-form-details\\"></transition-stub>
+</div>"
+`;
+
+exports[`test radio validation 1`] = `
+"<div class=\\"m-form-item\\" radio-cover=\\"true\\"><label class=\\"m-radio m--box m-radio--normal m-radio--text-error\\"><input type=\\"radio\\" class=\\"m-radio__input\\">
+    <div class=\\"m-radio__radio-container m-radio--normal-radio-container\\">
+      <div class=\\"m-radio__radio m-radio--normal-radio m-radio--border-visible m-radio--border-error\\"></div>
+    </div>
+    <div class=\\"m-radio__label\\"></div>
+  </label>
+  <div class=\\"m-form-details\\">必须选中</div>
+</div>"
+`;
+
+exports[`test radio validation 2`] = `
+"<div class=\\"m-form-item\\" radio-cover=\\"true\\"><label class=\\"m-radio m--box m-radio--normal\\"><input type=\\"radio\\" class=\\"m-radio__input\\">
+    <div class=\\"m-radio__radio-container m-radio--normal-radio-container\\">
+      <div class=\\"m-radio__radio m-radio--normal-radio m-radio--border-visible\\"></div>
+    </div>
+    <div class=\\"m-radio__label\\"></div>
+  </label>
+  <!---->
+</div>"
+`;

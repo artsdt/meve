@@ -1,0 +1,52 @@
+@import '../styles/var';
+
+@option-text-color: #333;
+@option-selected-text-color: #fff;
+@option-selected-background: @color-primary;
+@option-key-active-background: rgba(0, 0, 0, 0.06);
+@option-normal-padding: 9px 14px;
+@option-normal-font-size: 15px;
+@option-small-padding: 7px 14px;
+@option-small-font-size: 14px;
+@option-mini-padding: 5px 14px;
+@option-mini-font-size: 13px;
+@option-disabled-text-color: @color-text-disabled;
+
+.m-option {
+  cursor: pointer;
+  color: @option-text-color;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.15s, color 0.15s;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+
+  &--normal {
+    font-size: @option-normal-font-size;
+    padding: @option-normal-padding;
+  }
+
+  &--small {
+    font-size: @option-small-font-size;
+    padding: @option-small-padding;
+  }
+
+  &--mini {
+    font-size: @option-mini-font-size;
+    padding: @option-mini-padding;
+  }
+
+  &--key-active {
+    background: @option-key-active-background;
+  }
+
+  &--selected {
+    background: @option-selected-background;
+    color: @option-selected-text-color;
+  }
+
+  &--disabled {
+    color: @option-disabled-text-color;
+  }
+}

@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test tabs active 1`] = `
+"<div>
+  <div class=\\"m-tabs m--box m-tabs--item-horizontal\\">
+    <div class=\\"m-tabs__tab-wrap m-tabs--layout-horizontal\\">
+      <div class=\\"m-tab m--box m-tab--horizontal-margin m-tab--clear-margin-left\\">
+        <div class=\\"m-tab__content m-tab--inactive m-tab--horizontal\\">选项1</div>
+      </div>
+      <div class=\\"m-tab m--box m-tab--horizontal-margin\\">
+        <div class=\\"m-tab__content m-tab--inactive m-tab--horizontal\\">选项2</div>
+      </div>
+      <div class=\\"m-tab m--box m-tab--horizontal-margin m-tab--clear-margin-right\\">
+        <div class=\\"m-tab__content m-tab--active m-tab--horizontal\\">选项3</div>
+      </div>
+    </div>
+  </div>
+  <div class=\\"m-swipe m-tabs-items\\">
+    <div class=\\"m-swipe__track\\" style=\\"width: 0px; transform: translateX(0px); transition-duration: 300ms;\\">
+      <div class=\\"m-swipe-item m-tab-item m-tab-item--inactive\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\"></div>
+      <div class=\\"m-swipe-item m-tab-item m-tab-item--inactive\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\"></div>
+      <div class=\\"m-swipe-item m-tab-item\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\">视图3</div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test tabs disabled 1`] = `
+"<div>
+  <div class=\\"m-tabs m--box m-tabs--item-horizontal\\">
+    <div class=\\"m-tabs__tab-wrap m-tabs--layout-horizontal\\">
+      <div class=\\"m-tab m--box m-tab--horizontal-margin m-tab--clear-margin-left\\">
+        <div class=\\"m-tab__content m-tab--disabled m-tab--horizontal\\">选项1</div>
+      </div>
+      <div class=\\"m-tab m--box m-tab--horizontal-margin\\">
+        <div class=\\"m-tab__content m-tab--inactive m-tab--horizontal\\">选项2</div>
+      </div>
+      <div class=\\"m-tab m--box m-tab--horizontal-margin m-tab--clear-margin-right\\">
+        <div class=\\"m-tab__content m-tab--active m-tab--horizontal\\">选项3</div>
+      </div>
+    </div>
+  </div>
+  <div class=\\"m-swipe m-tabs-items\\">
+    <div class=\\"m-swipe__track\\" style=\\"width: 0px; transform: translateX(0px); transition-duration: 300ms;\\">
+      <div class=\\"m-swipe-item m-tab-item m-tab-item--inactive\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\"></div>
+      <div class=\\"m-swipe-item m-tab-item m-tab-item--inactive\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\"></div>
+      <div class=\\"m-swipe-item m-tab-item\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\">视图3</div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test tabs relation tabsItems 1`] = `
+"<div>
+  <div class=\\"m-tabs m--box m-tabs--item-horizontal\\">
+    <div class=\\"m-tabs__tab-wrap m-tabs--layout-horizontal\\">
+      <div class=\\"m-tab m--box m-tab--horizontal-margin m-tab--clear-margin-left\\">
+        <div class=\\"m-tab__content m-tab--inactive m-tab--horizontal\\">选项1</div>
+      </div>
+      <div class=\\"m-tab m--box m-tab--horizontal-margin\\">
+        <div class=\\"m-tab__content m-tab--inactive m-tab--horizontal\\">选项2</div>
+      </div>
+      <div class=\\"m-tab m--box m-tab--horizontal-margin m-tab--clear-margin-right\\">
+        <div class=\\"m-tab__content m-tab--active m-tab--horizontal\\">选项3</div>
+      </div>
+    </div>
+  </div>
+  <div class=\\"m-swipe m-tabs-items\\">
+    <div class=\\"m-swipe__track\\" style=\\"width: 0px; transform: translateX(0px); transition-duration: 300ms;\\">
+      <div class=\\"m-swipe-item m-tab-item m-tab-item--inactive\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\"></div>
+      <div class=\\"m-swipe-item m-tab-item m-tab-item--inactive\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\"></div>
+      <div class=\\"m-swipe-item m-tab-item\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\">视图3</div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test tabs relation tabsItems 2`] = `
+"<div>
+  <div class=\\"m-tabs m--box m-tabs--item-horizontal\\">
+    <div class=\\"m-tabs__tab-wrap m-tabs--layout-horizontal\\">
+      <div class=\\"m-tab m--box m-tab--horizontal-margin m-tab--clear-margin-left\\">
+        <div class=\\"m-tab__content m-tab--inactive m-tab--horizontal\\">选项1</div>
+      </div>
+      <div class=\\"m-tab m--box m-tab--horizontal-margin\\">
+        <div class=\\"m-tab__content m-tab--active m-tab--horizontal\\">选项2</div>
+      </div>
+      <div class=\\"m-tab m--box m-tab--horizontal-margin m-tab--clear-margin-right\\">
+        <div class=\\"m-tab__content m-tab--inactive m-tab--horizontal\\">选项3</div>
+      </div>
+    </div>
+  </div>
+  <div class=\\"m-swipe m-tabs-items\\">
+    <div class=\\"m-swipe__track\\" style=\\"width: 0px; transform: translateX(0px); transition-duration: 300ms;\\">
+      <div class=\\"m-swipe-item m-tab-item m-tab-item--inactive\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\"></div>
+      <div class=\\"m-swipe-item m-tab-item\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\">视图2</div>
+      <div class=\\"m-swipe-item m-tab-item m-tab-item--inactive\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\">视图3</div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test tabs sticky mode 1`] = `
+"<div>
+  <div class=\\"m-sticky\\" style=\\"z-index: 10; width: 0px; height: 0px;\\">
+    <div class=\\"m-sticky__wrapper\\" style=\\"z-index: 10; position: fixed; width: 0px; height: 0px; left: 0px; top: 0px;\\">
+      <div class=\\"m-tabs m--box m-tabs--item-horizontal\\">
+        <div class=\\"m-tabs__tab-wrap m-tabs--layout-horizontal\\">
+          <div class=\\"m-tab m--box m-tab--horizontal-margin m-tab--clear-margin-left\\">
+            <div class=\\"m-tab__content m-tab--inactive m-tab--horizontal\\">选项1</div>
+          </div>
+          <div class=\\"m-tab m--box m-tab--horizontal-margin\\">
+            <div class=\\"m-tab__content m-tab--inactive m-tab--horizontal\\">选项2</div>
+          </div>
+          <div class=\\"m-tab m--box m-tab--horizontal-margin m-tab--clear-margin-right\\">
+            <div class=\\"m-tab__content m-tab--active m-tab--horizontal\\">选项3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=\\"m-swipe m-tabs-items\\">
+    <div class=\\"m-swipe__track\\" style=\\"width: 0px; transform: translateX(0px); transition-duration: 300ms;\\">
+      <div class=\\"m-swipe-item m-tab-item m-tab-item--inactive\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\"></div>
+      <div class=\\"m-swipe-item m-tab-item m-tab-item--inactive\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\"></div>
+      <div class=\\"m-swipe-item m-tab-item\\" style=\\"width: 0px; transform: translateX(0px);\\" tab-item-cover=\\"true\\">视图3</div>
+    </div>
+  </div>
+</div>"
+`;

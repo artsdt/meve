@@ -1,0 +1,13 @@
+packages/meve-cli/lib/**
+packages/meve-cli/site/**
+
+packages/meve-icons/dist/**
+
+packages/meve-ui/coverage/**
+packages/meve-ui/es/**
+packages/meve-ui/umd/**
+packages/meve-ui/site/**
+packages/meve-ui/public/**
+
+*.md
+

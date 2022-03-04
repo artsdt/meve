@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test loading bar error 1`] = `"<div class=\\"m-loading-bar\\" style=\\"z-index: 2000; width: 100%; opacity: 0; transition: width .3s linear, opacity 1s linear, background-color 2s;\\"></div>"`;
+
+exports[`test loading bar error 2`] = `"<div class=\\"m-loading-bar m-loading-bar--error\\" style=\\"z-index: 2000; width: 100%; opacity: 0; transition: width .3s linear, opacity 1s linear, background-color 2s;\\"></div>"`;
+
+exports[`test loading bar start to finish 1`] = `"<div class=\\"m-loading-bar\\" style=\\"z-index: 2000; width: 0%; opacity: 0;\\"></div>"`;
+
+exports[`test loading bar start to finish 2`] = `"<div class=\\"m-loading-bar\\" style=\\"z-index: 2000; width: 80%; opacity: 1; transition: width 4s linear, opacity 1s linear, background-color 2s;\\"></div>"`;
+
+exports[`test loading bar start to finish 3`] = `"<div class=\\"m-loading-bar\\" style=\\"z-index: 2000; width: 100%; opacity: 0; transition: width .3s linear, opacity 1s linear, background-color 2s;\\"></div>"`;

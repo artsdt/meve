@@ -1,0 +1,136 @@
+@import '../styles/var';
+
+@message-text-color: #fff;
+@message-loading-background-color: #3f4d67;
+@message-info-background-color: @color-info;
+@message-warning-background-color: @color-warning;
+@message-success-background-color: @color-success;
+@message-error-background-color: @color-error;
+@message-loading-color: #fff;
+@message-cubic-bezier: @cubic-bezier;
+@message-offset-top: 30px;
+@message-offset-bottom: 30px;
+@message-content-margin: 0 16px;
+@message-icon-size: 20px;
+@message-close-icon-size: 18px;
+@message-close-button-margin: 0 -10px 0 0;
+
+.m-message {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  min-height: 100vh;
+  color: @message-text-color;
+  pointer-events: none;
+
+  &-fade-enter,
+  &-fade-leave-to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  &-fade-enter-active,
+  &-fade-leave-active {
+    transition: all 0.3s @message-cubic-bezier;
+  }
+
+  &-fade-move {
+    transition: all 0.3s @message-cubic-bezier;
+  }
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  &__message-item {
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    padding: 14px 18px;
+    border-radius: 4px;
+    font-size: 14px;
+    pointer-events: visible;
+    margin-bottom: 10px;
+  }
+
+  &__close-button[message-cover] {
+    flex-shrink: 0;
+    background: transparent;
+    opacity: 0.8;
+    margin: @message-close-button-margin;
+
+    &:hover {
+      opacity: 1;
+      transform: none;
+      background: transparent;
+    }
+  }
+
+  &__close-icon[message-cover] {
+    font-size: @message-close-icon-size;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon[message-cover] {
+    width: @message-icon-size;
+    height: @message-icon-size;
+  }
+
+  &__content {
+    margin: @message-content-margin;
+  }
+
+  &__loading[message-cover] svg {
+    color: @message-loading-color;
+    width: 20px;
+    height: 20px;
+  }
+
+  &--loading {
+    background-color: @message-loading-background-color;
+  }
+
+  &--info {
+    background-color: @message-info-background-color;
+  }
+
+  &--warning {
+    background-color: @message-warning-background-color;
+  }
+
+  &--success {
+    background-color: @message-success-background-color;
+  }
+
+  &--error {
+    background-color: @message-error-background-color;
+  }
+
+  &--top {
+    top: @message-offset-top;
+  }
+
+  &--bottom {
+    bottom: @message-offset-bottom;
+  }
+
+  &--forbid-click {
+    pointer-events: visible;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../styles/var';
+
+@form-details-error-color: @color-warning;
+@form-details-margin-top: 6px;
+@form-details-font-size: 12px;
+
+.m {
+  &-form-details-enter,
+  &-form-details-leave-to {
+    opacity: 0;
+    margin-top: 2px !important;
+  }
+
+  &-form-details-enter-active,
+  &-form-details-leave-active {
+    transition: 0.2s all @cubic-bezier;
+  }
+}
+
+.m-form-details {
+  font-size: @form-details-font-size;
+  margin-top: @form-details-margin-top;
+  color: @form-details-error-color;
+}

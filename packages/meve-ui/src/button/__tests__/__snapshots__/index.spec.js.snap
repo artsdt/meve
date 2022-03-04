@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test button block 1`] = `
+"<button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--flex m-button--block m-button--default m-button--shadow\\">
+  <div class=\\"m-button__content\\"></div>
+</button>"
+`;
+
+exports[`test button disabled 1`] = `
+"<button tabindex=\\"-1\\" disabled=\\"disabled\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--default m-button--shadow m-button--disabled\\">
+  <div class=\\"m-button__content\\"></div>
+</button>"
+`;
+
+exports[`test button loading 1`] = `
+"<button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--default m-button--shadow\\">
+  <div class=\\"m-button__content\\"></div>
+  <div button-cover=\\"true\\" svgclass=\\"m-button--normal-loading\\" class=\\"m-loading m--box m-button__loading\\">
+    <div class=\\"m-loading__mask-container\\">
+      <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+      <div class=\\"m-loading__circle m-loading--rotate\\"><svg viewBox=\\"25 25 50 50\\">
+          <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+        </svg></div>
+      <div class=\\"m-loading__description-container\\"></div>
+    </div>
+  </div>
+</button>"
+`;
+
+exports[`test button loading size 1`] = `
+"<button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--default m-button--shadow\\">
+  <div class=\\"m-button__content\\"></div>
+  <div button-cover=\\"true\\" svgclass=\\"m-button--normal-loading\\" class=\\"m-loading m--box m-button__loading\\">
+    <div class=\\"m-loading__mask-container\\">
+      <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+      <div class=\\"m-loading__circle m-loading--rotate\\"><svg viewBox=\\"25 25 50 50\\" style=\\"width: 100px; height: 100px;\\">
+          <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+        </svg></div>
+      <div class=\\"m-loading__description-container\\"></div>
+    </div>
+  </div>
+</button>"
+`;
+
+exports[`test button round 1`] = `
+"<button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--default m-button--shadow m-button--round\\">
+  <div class=\\"m-button__content\\"></div>
+</button>"
+`;
+
+exports[`test button size 1`] = `
+"<div><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--mini m--inline-flex m-button--default m-button--shadow\\">
+    <div class=\\"m-button__content\\">hello</div>
+  </button> <button tabindex=\\"-1\\" class=\\"m-button m--box m-button--small m--inline-flex m-button--default m-button--shadow\\">
+    <div class=\\"m-button__content\\">hello</div>
+  </button> <button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--default m-button--shadow\\">
+    <div class=\\"m-button__content\\">hello</div>
+  </button> <button tabindex=\\"-1\\" class=\\"m-button m--box m-button--large m--inline-flex m-button--default m-button--shadow\\">
+    <div class=\\"m-button__content\\">hello</div>
+  </button></div>"
+`;
+
+exports[`test button text and outline 1`] = `
+"<button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--text-default m-button--text m-button--outline\\">
+  <div class=\\"m-button__content\\"></div>
+</button>"
+`;
+
+exports[`test button text disabled 1`] = `
+"<button tabindex=\\"-1\\" disabled=\\"disabled\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--text-default m-button--text m-button--text-disabled\\">
+  <div class=\\"m-button__content\\"></div>
+</button>"
+`;
+
+exports[`test button type 1`] = `
+"<div><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--default m-button--shadow\\">
+    <div class=\\"m-button__content\\">hello</div>
+  </button> <button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow\\">
+    <div class=\\"m-button__content\\">hello</div>
+  </button> <button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--warning m-button--shadow\\">
+    <div class=\\"m-button__content\\">hello</div>
+  </button> <button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--info m-button--shadow\\">
+    <div class=\\"m-button__content\\">hello</div>
+  </button> <button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--success m-button--shadow\\">
+    <div class=\\"m-button__content\\">hello</div>
+  </button> <button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--error m-button--shadow\\">
+    <div class=\\"m-button__content\\">hello</div>
+  </button></div>"
+`;

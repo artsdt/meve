@@ -1,0 +1,181 @@
+@import '../styles/var';
+
+@radio-checked-color: @color-primary;
+@radio-error-color: @color-warning;
+@radio-disabled-color: @color-disabled;
+@radio-disabled-text-color: @color-text-disabled;
+@radio-radio-container-margin: 0 2px 0 0;
+@radio-normal-radio-container-padding: 6px;
+@radio-normal-radio-container-padding: 6px;
+@radio-normal-radio-size: 20px;
+@radio-normal-radio-font-size: 15px;
+@radio-normal-svg-size: 10px;
+@radio-small-radio-container-padding: 4px;
+@radio-small-radio-container-padding: 4px;
+@radio-small-radio-size: 16px;
+@radio-small-radio-font-size: 14px;
+@radio-small-svg-size: 8px;
+@radio-mini-radio-container-padding: 3px;
+@radio-mini-radio-container-padding: 3px;
+@radio-mini-radio-size: 14px;
+@radio-mini-radio-font-size: 12px;
+@radio-mini-svg-size: 6px;
+@radio-text-color: #525f7f;
+
+.m-radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: @radio-text-color;
+  -webkit-tap-highlight-color: transparent;
+
+  &__input {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  &__radio-container {
+    margin: @radio-radio-container-margin;
+    border-radius: 50%;
+  }
+
+  &__radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+    transition: background-color 0.25s;
+    border: thin solid transparent;
+  }
+
+  &--border-visible {
+    border: thin solid #cad1d7;
+  }
+
+  &--checked {
+    background: @radio-checked-color;
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  &--text-disabled {
+    color: @radio-disabled-text-color;
+    cursor: not-allowed;
+  }
+
+  &--normal {
+    margin-top: -@radio-normal-radio-container-padding;
+    margin-left: -@radio-normal-radio-container-padding;
+    margin-bottom: -@radio-normal-radio-container-padding;
+    font-size: @radio-normal-radio-font-size;
+  }
+
+  &--normal-svg {
+    &::after {
+      display: block;
+      width: @radio-normal-svg-size;
+      height: @radio-normal-svg-size;
+      content: '';
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
+    }
+  }
+
+  &--normal-radio {
+    width: @radio-normal-radio-size;
+    height: @radio-normal-radio-size;
+
+    &::after {
+      display: block;
+      width: @radio-normal-svg-size;
+      height: @radio-normal-svg-size;
+      content: '';
+    }
+  }
+
+  &--normal-radio-container {
+    padding: @radio-normal-radio-container-padding;
+  }
+
+  &--small {
+    margin-top: -@radio-small-radio-container-padding;
+    margin-left: -@radio-small-radio-container-padding;
+    margin-bottom: -@radio-small-radio-container-padding;
+    font-size: @radio-small-radio-font-size;
+  }
+
+  &--small-svg {
+    &::after {
+      display: block;
+      width: @radio-small-svg-size;
+      height: @radio-small-svg-size;
+      content: '';
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
+    }
+  }
+
+  &--small-radio {
+    width: @radio-small-radio-size;
+    height: @radio-small-radio-size;
+
+    &::after {
+      display: block;
+      width: @radio-small-svg-size;
+      height: @radio-small-svg-size;
+      content: '';
+    }
+  }
+
+  &--small-radio-container {
+    padding: @radio-small-radio-container-padding;
+  }
+
+  &--mini {
+    margin-top: -@radio-mini-radio-container-padding;
+    margin-left: -@radio-mini-radio-container-padding;
+    margin-bottom: -@radio-mini-radio-container-padding;
+    font-size: @radio-mini-radio-font-size;
+  }
+
+  &--mini-svg {
+    &::after {
+      display: block;
+      width: @radio-mini-svg-size;
+      height: @radio-mini-svg-size;
+      content: '';
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
+    }
+  }
+
+  &--mini-radio {
+    width: @radio-mini-radio-size;
+    height: @radio-mini-radio-size;
+
+    &::after {
+      display: block;
+      width: @radio-mini-svg-size;
+      height: @radio-mini-svg-size;
+      content: '';
+    }
+  }
+
+  &--mini-radio-container {
+    padding: @radio-mini-radio-container-padding;
+  }
+
+  &--text-error {
+    color: @radio-error-color;
+  }
+
+  &--background-error {
+    background: @radio-error-color;
+  }
+
+  &--border-error {
+    border-color: @radio-error-color;
+  }
+}

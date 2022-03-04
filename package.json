@@ -1,0 +1,77 @@
+{
+  "name": "root",
+  "private": true,
+  "useWorkspaces": true,
+  "version": "0.0.3",
+  "author": "haoziqaq <357229046@qq.com>",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "bootstrap": "pnpm install && node scripts/bootstrap.mjs",
+    "lint": "meve-cli lint",
+    "changelog": "meve-cli changelog",
+    "release": "node scripts/publish.mjs && meve-cli release"
+  },
+  "license": "MIT",
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged --allow-empty --concurrent false",
+    "commit-msg": "npx --no-install meve-cli commit-lint $1"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,vue,less}": "prettier --write",
+    "*.{ts,tsx,js,jsx,vue}": "eslint --fix",
+    "*.{vue,css,less}": "stylelint --fix"
+  },
+  "eslintConfig": {
+    "root": true,
+    "ignorePatterns": [
+      "packages/meve-cli/lib/**",
+      "packages/meve-cli/site/**",
+      "packages/meve-ui/lib/**",
+      "packages/meve-ui/es/**",
+      "packages/meve-ui/umd/**",
+      "packages/meve-ui/site/**",
+      "packages/meve-ui/public/**",
+      "packages/meve-ui/src/*/__tests__/**",
+      "packages/meve-ui/.meve/**",
+      "packages/meve-ui/types/**",
+      "packages/meve-ui/global.d.ts"
+    ],
+    "extends": [
+      "@meve"
+    ]
+  },
+  "stylelint": {
+    "extends": [
+      "@meve/stylelint-config"
+    ],
+    "ignoreFiles": [
+      "packages/meve-cli/lib/**",
+      "packages/meve-cli/site/**",
+      "packages/meve-icons/dist/**",
+      "packages/meve-ui/lib/**",
+      "packages/meve-ui/es/**",
+      "packages/meve-ui/umd/**",
+      "packages/meve-ui/site/**",
+      "packages/meve-ui/coverage/**",
+      "packages/meve-ui/highlight/**",
+      "packages/meve-ui/public/**"
+    ]
+  },
+  "devDependencies": {
+    "@meve/cli": "workspace:*",
+    "@meve/eslint-config": "workspace:*",
+    "@meve/icons": "workspace:*",
+    "@meve/stylelint-config": "workspace:*",
+    "simple-git-hooks": "^2.7.0",
+    "eslint": "^7.30.0",
+    "lint-staged": "^10.5.0",
+    "stylelint": "^13.13.1",
+    "prettier": "^2.3.2",
+    "surge": "^0.23.0",
+    "execa": "^5.0.0",
+    "ora": "^5.4.0",
+    "vue": "^2.6.14",
+    "typescript": "^4.4.4"
+  },
+  "packageManager": "pnpm@6.24.3"
+}

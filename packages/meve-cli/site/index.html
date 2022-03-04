@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= title %></title>
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link href="<%= logo %>" rel="icon" type="image/png" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+        name="viewport" />
+  <script>
+    if ('<%= baidu %>') {
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement('script')
+        hm.src = '<%= baidu %>'
+        var s = document.getElementsByTagName('script')[0]
+        s.parentNode.insertBefore(hm, s)
+      })()
+    }
+  </script>
+</head>
+<body>
+<div id="app"></div>
+
+<script type="module" src="/main.js"></script>
+</body>
+</html>

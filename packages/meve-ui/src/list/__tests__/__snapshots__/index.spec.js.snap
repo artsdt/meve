@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test click error text reload 1`] = `
+"<div class=\\"m-list m--box\\">
+  <div class=\\"m-list__error\\">点击重试</div>
+  <div class=\\"m-list__detector\\"></div>
+</div>"
+`;
+
+exports[`test click error text reload 2`] = `
+"<div class=\\"m-list m--box\\">
+  <div class=\\"m-list__loading\\">
+    <div class=\\"m-list__loading-text\\">正在加载</div>
+    <div list-cover=\\"true\\" class=\\"m-loading m--box m-list__loading-icon\\">
+      <div class=\\"m-loading__mask-container\\">
+        <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+        <div class=\\"m-loading__circle m-loading--rotate\\"><svg viewBox=\\"25 25 50 50\\" style=\\"width: 22px; height: 22px;\\">
+            <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+          </svg></div>
+        <div class=\\"m-loading__description-container\\"></div>
+      </div>
+    </div>
+  </div>
+  <div class=\\"m-list__detector\\"></div>
+</div>"
+`;
+
+exports[`test list finished 1`] = `
+"<div class=\\"m-list m--box\\">
+  <div class=\\"m-list__finished\\">暂无更多</div>
+  <div class=\\"m-list__detector\\"></div>
+</div>"
+`;
+
+exports[`test list immediate check 1`] = `
+"<div class=\\"m-list m--box\\">
+  <div class=\\"m-list__detector\\"></div>
+</div>"
+`;
+
+exports[`test list slots 1`] = `
+"<div class=\\"m-list m--box\\">
+  <div>custom loading</div>
+  <div class=\\"m-list__detector\\"></div>
+</div>"
+`;
+
+exports[`test list slots 2`] = `
+"<div class=\\"m-list m--box\\">
+  <div>custom error</div>
+  <div class=\\"m-list__detector\\"></div>
+</div>"
+`;
+
+exports[`test list slots 3`] = `
+"<div class=\\"m-list m--box\\">
+  <div>custom finished</div>
+  <div class=\\"m-list__detector\\"></div>
+</div>"
+`;

@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test image fit 1`] = `
+"<div class=\\"m-image m--box\\" style=\\"border-radius: 0px;\\">
+  <div class=\\"m-image__image-container m--box\\" style=\\"border-radius: 0px;\\"><img class=\\"m-image__image\\" style=\\"object-fit: fill;\\"></div>
+</div>"
+`;
+
+exports[`test image fit 2`] = `
+"<div class=\\"m-image m--box\\" style=\\"border-radius: 0px;\\">
+  <div class=\\"m-image__image-container m--box\\" style=\\"border-radius: 0px;\\"><img class=\\"m-image__image\\" style=\\"object-fit: cover;\\"></div>
+</div>"
+`;
+
+exports[`test image fit 3`] = `
+"<div class=\\"m-image m--box\\" style=\\"border-radius: 0px;\\">
+  <div class=\\"m-image__image-container m--box\\" style=\\"border-radius: 0px;\\"><img class=\\"m-image__image\\" style=\\"object-fit: none;\\"></div>
+</div>"
+`;
+
+exports[`test image fit 4`] = `
+"<div class=\\"m-image m--box\\" style=\\"border-radius: 0px;\\">
+  <div class=\\"m-image__image-container m--box\\" style=\\"border-radius: 0px;\\"><img class=\\"m-image__image\\" style=\\"object-fit: scale-down;\\"></div>
+</div>"
+`;
+
+exports[`test image fit 5`] = `
+"<div class=\\"m-image m--box\\" style=\\"border-radius: 0px;\\">
+  <div class=\\"m-image__image-container m--box\\" style=\\"border-radius: 0px;\\"><img class=\\"m-image__image\\" style=\\"object-fit: contain;\\"></div>
+</div>"
+`;
+
+exports[`test image preview 1`] = `
+"<div class=\\"m-image m--box\\" style=\\"border-radius: 0px;\\">
+  <div class=\\"m-image__image-container m--box\\" style=\\"border-radius: 0px;\\"><img src=\\"https://varlet.gitee.io/varlet-ui/cat.png\\" class=\\"m-image__image\\" style=\\"object-fit: fill;\\"></div>
+  <transition-stub name=\\"m-fade\\" class=\\"m-image__popup\\">
+    <div class=\\"m--box m-popup\\" style=\\"z-index: 1999;\\">
+      <div class=\\"m-popup__overlay\\" style=\\"z-index: 2000;\\"></div>
+      <transition-stub name=\\"m-pop-center\\">
+        <div image-cover=\\"true\\" class=\\"m-popup__content m-popup--center\\" style=\\"z-index: 2001;\\">
+          <div class=\\"m-image__preview-container\\" style=\\"transform: scale(0.5) translate(0px, 0px); transition-duration: 200ms;\\"><img src=\\"https://varlet.gitee.io/varlet-ui/cat.png\\" class=\\"m-image__preview-image\\" style=\\"transform: rotate(0deg); transition-duration: 200ms;\\"></div>
+          <div class=\\"m-image__preview-toolbar\\">
+            <div class=\\"m-space m--box\\" style=\\"flex-direction: row; justify-content: start; flex-wrap: nowrap; margin: -4px 0px;\\">
+              <div style=\\"margin: 4px 12px 4px 0px;\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round m-image__reset-all\\" image-cover=\\"true\\">
+                  <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-map-marker-outline\\"></i></div>
+                </button></div>
+              <div style=\\"margin: 4px 12px 4px 0px;\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round m-image__rotate-left\\" image-cover=\\"true\\">
+                  <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-rotate-left\\"></i></div>
+                </button></div>
+              <div style=\\"margin: 4px 12px 4px 0px;\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round m-image__rotate-right\\" image-cover=\\"true\\">
+                  <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-rotate-right\\"></i></div>
+                </button></div>
+              <div style=\\"margin: 4px 12px 4px 0px;\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round m-image__zoom-in\\" image-cover=\\"true\\">
+                  <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-magnify-plus-outline\\"></i></div>
+                </button></div>
+              <div style=\\"margin: 4px 12px 4px 0px;\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round m-image__zoom-out\\" image-cover=\\"true\\">
+                  <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-magnify-minus-outline\\"></i></div>
+                </button></div>
+              <div style=\\"margin: 4px 0px;\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round m-image__close-preview\\" image-cover=\\"true\\">
+                  <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-close\\"></i></div>
+                </button></div>
+            </div>
+          </div>
+        </div>
+      </transition-stub>
+    </div>
+  </transition-stub>
+</div>"
+`;
+
+exports[`test image preview 2`] = `
+"<div class=\\"m-image m--box\\" style=\\"border-radius: 0px;\\">
+  <div class=\\"m-image__image-container m--box\\" style=\\"border-radius: 0px;\\"><img src=\\"https://varlet.gitee.io/varlet-ui/cat.png\\" class=\\"m-image__image\\" style=\\"object-fit: fill;\\"></div>
+  <transition-stub name=\\"m-fade\\" class=\\"m-image__popup\\">
+    <div class=\\"m--box m-popup\\" style=\\"z-index: 1999; display: none;\\">
+      <div class=\\"m-popup__overlay\\" style=\\"z-index: 2000;\\"></div>
+      <transition-stub name=\\"m-pop-center\\"></transition-stub>
+    </div>
+  </transition-stub>
+</div>"
+`;
+
+exports[`test image preview disabled 1`] = `
+"<div class=\\"m-image m--box\\" style=\\"border-radius: 0px;\\">
+  <div class=\\"m-image__image-container m--box\\" style=\\"border-radius: 0px;\\"><img src=\\"https://varlet.gitee.io/varlet-ui/cat.png\\" class=\\"m-image__image m-image--preview-disabled\\" style=\\"object-fit: fill;\\"></div>
+</div>"
+`;
+
+exports[`test image src 1`] = `
+"<div class=\\"m-image m--box\\" style=\\"border-radius: 0px;\\">
+  <div class=\\"m-image__image-container m--box\\" style=\\"border-radius: 0px;\\"><img src=\\"https://varlet.gitee.io/varlet-ui/cat.png\\" class=\\"m-image__image\\" style=\\"object-fit: fill;\\"></div>
+</div>"
+`;
+
+exports[`test image styles 1`] = `
+"<div class=\\"m-image m--box m--inline-block\\" style=\\"width: 100px; height: 100px; border-radius: 10px;\\">
+  <div class=\\"m-image__image-container m--box m--inline-block\\" style=\\"width: 100px; height: 100px; border-radius: 10px;\\"><img alt=\\"alt\\" src=\\"https://varlet.gitee.io/varlet-ui/cat.png\\" class=\\"m-image__image\\" style=\\"object-fit: fill;\\"></div>
+</div>"
+`;

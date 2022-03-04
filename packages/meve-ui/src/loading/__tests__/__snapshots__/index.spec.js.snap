@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test loading slots 1`] = `
+"<div class=\\"m-loading m--box\\">default slot<div class=\\"m-loading__mask-container m-loading--overlay\\">
+    <div class=\\"m-loading__mask m-loading--opacity-visible\\"></div>
+    <div class=\\"m-loading__circle m-loading--rotate\\">icon slot</div>
+    <div class=\\"m-loading__description-container\\">description slot</div>
+  </div>
+</div>"
+`;
+
+exports[`test loading styles 1`] = `
+"<div class=\\"m-loading m--box\\">
+  <div class=\\"m-loading__mask-container\\">
+    <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+    <div class=\\"m-loading__circle\\"><svg viewBox=\\"25 25 50 50\\" style=\\"width: 40px; height: 40px; color: rgb(0, 0, 0);\\">
+        <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+      </svg></div>
+    <div class=\\"m-loading__description-container\\" style=\\"color: rgb(0, 0, 0);\\">
+      <div class=\\"m-loading__description\\">description text</div>
+    </div>
+  </div>
+</div>"
+`;

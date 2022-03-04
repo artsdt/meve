@@ -1,0 +1,62 @@
+{
+  "name": "@meve/ui",
+  "version": "0.0.3",
+  "description": "Argon design system components library",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "types/index.d.ts",
+  "vetur": {
+    "tags": "highlight/tags.json",
+    "attributes": "highlight/attributes.json"
+  },
+  "web-types": "highlight/web-types.json",
+  "keywords": [
+    "Vue",
+    "Argon Design System",
+    "UI"
+  ],
+  "files": [
+    "json",
+    "es",
+    "umd",
+    "highlight",
+    "types",
+    "CHANGELOG.md",
+    "README.md",
+    "README.zh-CN.md"
+  ],
+  "author": "haoziqaq <357229046@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "meve-cli dev",
+    "build": "meve-cli build",
+    "preview": "meve-cli preview",
+    "compile": "meve-cli compile",
+    "test": "meve-cli jest",
+    "lint": "meve-cli lint"
+  },
+  "peerDependencies": {
+    "vue": ">= 2.6.0"
+  },
+  "gitHead": "ee9c3866bedad96c86365b0f9888a3a6bb781b1f",
+  "dependencies": {
+    "@babel/runtime": "^7.16.0",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1"
+  },
+  "devDependencies": {
+    "@meve/ui": "workspace:*",
+    "@meve/cli": "workspace:*",
+    "@meve/touch-emulator": "workspace:*",
+    "@vue/test-utils": "^1.2.2",
+    "@babel/runtime": "^7.16.0",
+    "vue-template-compiler": "^2.6.14",
+    "vue": "^2.6.14",
+    "live-server": "^1.2.1",
+    "lodash-es": "^4.17.21",
+    "clipboard": "^2.0.8",
+    "vue-router": "^3.5.3"
+  },
+  "browserslist": [
+    "ie >= 11"
+  ]
+}

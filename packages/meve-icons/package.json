@@ -1,0 +1,31 @@
+{
+  "name": "@meve/icons",
+  "version": "0.0.3",
+  "description": "Icons of meve",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "bin": {
+    "meve-icons": "lib/index.js"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "builder",
+    "meve"
+  ],
+  "author": "haoziqaq <357229046@qq.com>",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "scripts": {
+    "build": "meve-icons build"
+  },
+  "dependencies": {
+    "commander": "^8.3.0",
+    "fs-extra": "^9.0.1",
+    "webfont": "^9.0.0"
+  },
+  "gitHead": "42554856ff028f6f411a35f468e0f763978270b0"
+}

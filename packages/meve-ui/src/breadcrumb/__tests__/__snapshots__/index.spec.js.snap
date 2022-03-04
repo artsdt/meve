@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test breadcrumb basic usage 1`] = `
+"<div class=\\"m-breadcrumb\\">
+  <div class=\\"m-breadcrumb-item\\">
+    <div class=\\"m-breadcrumb-item__content m-breadcrumb-item--active\\">Page 1</div>
+    <div class=\\"m-breadcrumb-item__separator\\">/</div>
+  </div>
+  <div class=\\"m-breadcrumb-item\\">
+    <div class=\\"m-breadcrumb-item__content m-breadcrumb-item--active\\">Page 2</div>
+    <div class=\\"m-breadcrumb-item__separator\\">/</div>
+  </div>
+  <div class=\\"m-breadcrumb-item\\">
+    <div class=\\"m-breadcrumb-item__content\\">Page 3</div>
+  </div>
+</div>"
+`;
+
+exports[`test breadcrumb item separator 1`] = `
+"<div class=\\"m-breadcrumb\\">
+  <div class=\\"m-breadcrumb-item\\">
+    <div class=\\"m-breadcrumb-item__content m-breadcrumb-item--active\\">Page 1</div>
+    <div class=\\"m-breadcrumb-item__separator\\">|</div>
+  </div>
+  <div class=\\"m-breadcrumb-item\\">
+    <div class=\\"m-breadcrumb-item__content m-breadcrumb-item--active\\">Page 2</div>
+    <div class=\\"m-breadcrumb-item__separator\\">~</div>
+  </div>
+  <div class=\\"m-breadcrumb-item\\">
+    <div class=\\"m-breadcrumb-item__content\\">Page 3</div>
+  </div>
+</div>"
+`;
+
+exports[`test breadcrumb item slots 1`] = `
+"<div class=\\"m-breadcrumb\\">
+  <div class=\\"m-breadcrumb-item\\">
+    <div class=\\"m-breadcrumb-item__content m-breadcrumb-item--active\\">
+      Page 1
+    </div>
+  </div>
+  <div class=\\"m-breadcrumb-item\\">
+    <div class=\\"m-breadcrumb-item__content m-breadcrumb-item--active\\">Page 2</div>
+    <div class=\\"m-breadcrumb-item__separator\\">/</div>
+  </div>
+  <div class=\\"m-breadcrumb-item\\">
+    <div class=\\"m-breadcrumb-item__content\\">Page 3</div>
+  </div>
+</div>"
+`;

@@ -1,0 +1,28 @@
+@import '../styles/var';
+
+@back-top-right: 40px;
+@back-top-bottom: 40px;
+@back-top-button-size: 40px;
+@back-top-icon-size: 22px;
+
+.m-back-top {
+  position: fixed;
+  right: @back-top-right;
+  bottom: @back-top-bottom;
+  transform: scale(0);
+  transition: transform 0.3s @cubic-bezier;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  .m-button[back-top-cover] {
+    width: @back-top-button-size;
+    height: @back-top-button-size;
+
+    .m-icon {
+      font-size: @back-top-icon-size;
+    }
+  }
+
+  &--active {
+    transform: scale(1);
+  }
+}

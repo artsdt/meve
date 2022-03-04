@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test back top slots 1`] = `
+"<div class=\\"m-back-top\\">
+  <div>default slot</div>
+</div>"
+`;
+
+exports[`test back top visible 1`] = `
+"<div class=\\"m-back-top\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round\\" back-top-cover=\\"true\\">
+    <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-format-vertical-align-top\\"></i></div>
+  </button></div>"
+`;
+
+exports[`test back top visible 2`] = `
+"<div class=\\"m-back-top m-back-top--active\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round\\" back-top-cover=\\"true\\">
+    <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-format-vertical-align-top\\"></i></div>
+  </button></div>"
+`;
