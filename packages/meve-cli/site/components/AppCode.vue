@@ -19,6 +19,7 @@
         :id="`clip-trigger-${cid}`"
         :data-clipboard-target="`#clip-target-${cid}`"
         round
+        v-if="height > 0"
       >
         <m-icon name="content-copy" size="18" />
       </m-button>

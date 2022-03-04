@@ -33,10 +33,6 @@ export default {
       window.location.href = this.config.github
     }
   },
-
-  mounted() {
-    console.log(this.config)
-  }
 }
 </script>
 
