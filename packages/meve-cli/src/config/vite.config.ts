@@ -62,6 +62,7 @@ export function getBuildConfig(meveConfig: Record<string, any>): InlineConfig {
       outDir: SITE_OUTPUT_PATH,
       brotliSize: false,
       emptyOutDir: true,
+      cssTarget: 'chrome61',
       rollupOptions: {
         input: {
           main: resolve(SITE_DIR, 'index.html'),
