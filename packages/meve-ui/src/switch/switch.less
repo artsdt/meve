@@ -1,0 +1,135 @@
+@import '../styles/var';
+
+@switch-active-color: @color-primary;
+@switch-inactive-color: #cad1d7;
+@switch-loading-color: #fff;
+@switch-error-color: @color-warning;
+@switch-normal-width: 50px;
+@switch-normal-height: 24px;
+@switch-normal-button-size: 18px;
+@switch-normal-loading-size: 16px;
+@switch-small-width: 40px;
+@switch-small-height: 20px;
+@switch-small-button-size: 14px;
+@switch-small-loading-size: 12px;
+@switch-mini-width: 32px;
+@switch-mini-height: 18px;
+@switch-mini-button-size: 12px;
+@switch-mini-loading-size: 10px;
+@switch-button-offset: 2px;
+
+.m-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.25s;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: background-color 0.25s, left 0.25s;
+    border-radius: 50%;
+  }
+
+  &__loading[switch-cover] {
+    .m-loading__circle svg {
+      color: @switch-loading-color;
+    }
+  }
+
+  &--normal-loading[switch-cover] {
+    .m-loading__circle svg {
+      width: @switch-normal-loading-size;
+      height: @switch-normal-loading-size;
+    }
+  }
+
+  &--small-loading[switch-cover] {
+    .m-loading__circle svg {
+      width: @switch-small-loading-size;
+      height: @switch-small-loading-size;
+    }
+  }
+
+  &--mini-loading[switch-cover] {
+    .m-loading__circle svg {
+      width: @switch-mini-loading-size;
+      height: @switch-mini-loading-size;
+    }
+  }
+
+  &--normal {
+    width: @switch-normal-width;
+    height: @switch-normal-height;
+  }
+
+  &--small {
+    width: @switch-small-width;
+    height: @switch-small-height;
+  }
+
+  &--mini {
+    width: @switch-mini-width;
+    height: @switch-mini-height;
+  }
+
+  &--normal-button {
+    width: @switch-normal-button-size;
+    height: @switch-normal-button-size;
+  }
+
+  &--small-button {
+    width: @switch-small-button-size;
+    height: @switch-small-button-size;
+  }
+
+  &--mini-button {
+    width: @switch-mini-button-size;
+    height: @switch-mini-button-size;
+  }
+
+  &--normal-button-active {
+    background: @switch-active-color;
+    left: @switch-normal-width - @switch-normal-button-size - @switch-button-offset * 2;
+  }
+
+  &--small-button-active {
+    background: @switch-active-color;
+    left: @switch-small-width - @switch-small-button-size - @switch-button-offset * 2;
+  }
+
+  &--mini-button-active {
+    background: @switch-active-color;
+    left: @switch-mini-width - @switch-mini-button-size - @switch-button-offset * 2;
+  }
+
+  &--button-inactive {
+    background: @switch-inactive-color;
+    left: @switch-button-offset;
+  }
+
+  &--border-active {
+    border: thin solid @switch-active-color;
+  }
+
+  &--border-inactive {
+    border: thin solid @switch-inactive-color;
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  &--border-error {
+    border: thin solid @switch-error-color;
+  }
+
+  &--button-error {
+    background: @switch-error-color;
+  }
+}

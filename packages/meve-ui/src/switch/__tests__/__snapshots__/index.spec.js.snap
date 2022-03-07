@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test switch disabled 1`] = `
+"<div class=\\"m-form-item\\" switch-cover=\\"true\\">
+  <div class=\\"m-switch m--box m-switch--normal m-switch--border-inactive m-switch--disabled\\">
+    <div class=\\"m-switch__button m-switch--normal-button m-switch--button-inactive\\">
+      <div switch-cover=\\"true\\" class=\\"m-loading m--box m-switch__loading m-switch--normal-loading\\">
+        <div class=\\"m-loading__mask-container m-loading--allow-touch\\">
+          <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+          <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+              <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+            </svg></div>
+          <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <transition-stub name=\\"m-form-details\\"></transition-stub>
+</div>"
+`;
+
+exports[`test switch loading 1`] = `
+"<div class=\\"m-form-item\\" switch-cover=\\"true\\">
+  <div class=\\"m-switch m--box m-switch--normal m-switch--border-inactive\\">
+    <div class=\\"m-switch__button m-switch--normal-button m-switch--button-inactive\\">
+      <div switch-cover=\\"true\\" class=\\"m-loading m--box m-switch__loading m-switch--normal-loading\\">
+        <div class=\\"m-loading__mask-container\\">
+          <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+          <div class=\\"m-loading__circle m-loading--rotate\\"><svg viewBox=\\"25 25 50 50\\">
+              <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+            </svg></div>
+          <div class=\\"m-loading__description-container\\"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <transition-stub name=\\"m-form-details\\"></transition-stub>
+</div>"
+`;
+
+exports[`test switch readonly 1`] = `
+"<div class=\\"m-form-item\\" switch-cover=\\"true\\">
+  <div class=\\"m-switch m--box m-switch--normal m-switch--border-inactive\\">
+    <div class=\\"m-switch__button m-switch--normal-button m-switch--button-inactive\\">
+      <div switch-cover=\\"true\\" class=\\"m-loading m--box m-switch__loading m-switch--normal-loading\\">
+        <div class=\\"m-loading__mask-container m-loading--allow-touch\\">
+          <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+          <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+              <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+            </svg></div>
+          <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <transition-stub name=\\"m-form-details\\"></transition-stub>
+</div>"
+`;
+
+exports[`test switch validation 1`] = `
+"<div class=\\"m-form-item\\" switch-cover=\\"true\\">
+  <div class=\\"m-switch m--box m-switch--normal m-switch--border-inactive m-switch--border-error\\">
+    <div class=\\"m-switch__button m-switch--normal-button m-switch--button-inactive m-switch--button-error\\">
+      <div switch-cover=\\"true\\" class=\\"m-loading m--box m-switch__loading m-switch--normal-loading\\">
+        <div class=\\"m-loading__mask-container m-loading--allow-touch\\">
+          <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+          <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+              <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+            </svg></div>
+          <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=\\"m-form-details\\">必须开启</div>
+</div>"
+`;
+
+exports[`test switch validation 2`] = `
+"<div class=\\"m-form-item\\" switch-cover=\\"true\\">
+  <div class=\\"m-switch m--box m-switch--normal m-switch--border-inactive\\">
+    <div class=\\"m-switch__button m-switch--normal-button m-switch--button-inactive\\">
+      <div switch-cover=\\"true\\" class=\\"m-loading m--box m-switch__loading m-switch--normal-loading\\">
+        <div class=\\"m-loading__mask-container m-loading--allow-touch\\">
+          <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+          <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+              <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+            </svg></div>
+          <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---->
+</div>"
+`;

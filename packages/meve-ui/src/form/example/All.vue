@@ -55,6 +55,8 @@
 
       <m-rate label="RATE" v-model="form.rate" :rules="[(v) => v > 0 || 'You must pick one']" />
 
+      <m-switch label="ENABLE?" v-model="form.enable" :rules="[(v) => !!v || 'You must enable it']" />
+
       <div style="margin-top: 10px">
         <m-space>
           <m-button type="primary" @click="$refs.form.validate()">Validate</m-button>
@@ -81,6 +83,7 @@ import RadioGroup from '../../radio-group'
 import Radio from '../../radio'
 import Checkbox from '../../checkbox'
 import CheckboxGroup from '../../checkbox-group'
+import Switch from '../../switch'
 
 export default {
   components: {
@@ -96,6 +99,7 @@ export default {
     [Checkbox.name]: Checkbox,
     [CheckboxGroup.name]: CheckboxGroup,
     [Rate.name]: Rate,
+    [Switch.name]: Switch,
   },
   data: () => ({
     disabled: false,
@@ -107,6 +111,7 @@ export default {
       gender: '',
       favorite: [],
       group: [],
+      enable: false,
       agreement: undefined,
       rate: 0,
     },

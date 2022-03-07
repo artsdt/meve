@@ -198,6 +198,11 @@ module.exports = {
           labelCN: 'Rate 评分',
           labelUS: 'Rate',
         },
+        {
+          name: 'switch',
+          labelCN: 'Switch 开关',
+          labelUS: 'Switch',
+        },
       ],
     },
     {
