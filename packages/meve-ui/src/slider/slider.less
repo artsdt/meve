@@ -33,6 +33,7 @@
     box-shadow: inset 0 1px 2px rgba(90, 97, 105, 0.1);
     cursor: pointer;
     border-radius: @slider-border-radius;
+    transition: background-color 0.25s;
   }
 
   &__button {
@@ -69,7 +70,7 @@
   &__rail {
     position: absolute;
     top: 0;
-    left: -1px;
+    left: 0;
     background: @slider-active-color;
     transition: background-color 0.25s;
     height: 100%;
@@ -80,7 +81,7 @@
   &__reverse-rail {
     position: absolute;
     top: 0;
-    right: -1px;
+    right: 0;
     background: @slider-active-color;
     height: 100%;
     transition: background-color 0.25s;
@@ -135,7 +136,7 @@
     position: absolute;
     width: 100%;
     top: auto;
-    bottom: -1px;
+    bottom: 0;
     height: 0;
     left: 0;
   }
@@ -143,7 +144,7 @@
   &--reverse-rail-vertical {
     position: absolute;
     width: 100%;
-    top: -1px;
+    top: 0;
     right: auto;
     height: 0;
   }

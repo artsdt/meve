@@ -75,11 +75,6 @@ const SliderPlugin = createComponent({
     },
   },
 
-  mounted() {
-    document.addEventListener('touchmove', this.handleTouchmove, { passive: false })
-    document.addEventListener('touchend', this.handleTouchend)
-  },
-
   beforeDestroy() {
     document.removeEventListener('touchmove', this.handleTouchmove)
     document.removeEventListener('touchend', this.handleTouchend)
@@ -113,6 +108,9 @@ const SliderPlugin = createComponent({
         return
       }
 
+      document.addEventListener('touchmove', this.handleTouchmove, { passive: false })
+      document.addEventListener('touchend', this.handleTouchend)
+
       this.resize()
 
       this.touching = true
@@ -135,6 +133,9 @@ const SliderPlugin = createComponent({
     },
 
     handleTouchend() {
+      document.removeEventListener('touchmove', this.handleTouchmove)
+      document.removeEventListener('touchend', this.handleTouchend)
+
       this.touching = false
       this.buttonZIndex = 1
       this.reverseButtonZIndex = 1
@@ -160,9 +161,9 @@ const SliderPlugin = createComponent({
           return true
         }
       } else if (!isNumber(this.value) || this.value < min || this.value > max) {
-          this.$emit('input', min)
-          return true
-        }
+        this.$emit('input', min)
+        return true
+      }
     },
 
     getNext(clientX, clientY, value, ratio, options = {}) {
