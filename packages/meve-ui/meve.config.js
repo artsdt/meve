@@ -203,6 +203,11 @@ module.exports = {
           labelCN: 'Switch 开关',
           labelUS: 'Switch',
         },
+        {
+          name: 'slider',
+          labelCN: 'Slider 滑块',
+          labelUS: 'Slider',
+        },
       ],
     },
     {

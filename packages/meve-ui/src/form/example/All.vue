@@ -57,6 +57,12 @@
 
       <m-switch label="ENABLE?" v-model="form.enable" :rules="[(v) => !!v || 'You must enable it']" />
 
+      <m-slider
+        label="PROGRESS?"
+        v-model="form.progress"
+        :rules="[(v) => v >= 10 || 'You must slide progress >= 10']"
+      />
+
       <div style="margin-top: 10px">
         <m-space>
           <m-button type="primary" @click="$refs.form.validate()">Validate</m-button>
@@ -84,6 +90,7 @@ import Radio from '../../radio'
 import Checkbox from '../../checkbox'
 import CheckboxGroup from '../../checkbox-group'
 import Switch from '../../switch'
+import Slider from '../../slider'
 
 export default {
   components: {
@@ -100,6 +107,7 @@ export default {
     [CheckboxGroup.name]: CheckboxGroup,
     [Rate.name]: Rate,
     [Switch.name]: Switch,
+    [Slider.name]: Slider,
   },
   data: () => ({
     disabled: false,
@@ -114,6 +122,7 @@ export default {
       enable: false,
       agreement: undefined,
       rate: 0,
+      progress: 5,
     },
   }),
   computed: {

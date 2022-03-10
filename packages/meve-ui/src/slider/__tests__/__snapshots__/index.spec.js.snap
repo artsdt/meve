@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test slider tooltip display 1`] = `
+"<div class=\\"m-form-item\\">
+  <div class=\\"m-slider m--box\\">
+    <div class=\\"m-slider__track m-slider--normal-track m-slider--track-range\\">
+      <div class=\\"m-slider__button m-slider--normal-button\\" style=\\"left: 0%; z-index: 1;\\">
+        <div class=\\"m-slider__tooltip m-slider--normal-tooltip\\" style=\\"opacity: 1;\\"></div>
+      </div>
+      <div class=\\"m-slider__rail m-slider--rail-range\\" style=\\"width: 0%;\\"></div>
+      <div class=\\"m-slider__reverse-button m-slider--normal-button\\" style=\\"right: 0%; z-index: 1;\\">
+        <div class=\\"m-slider__tooltip m-slider--normal-tooltip\\" style=\\"opacity: 1;\\"></div>
+      </div>
+      <div class=\\"m-slider__reverse-rail m-slider--reverse-rail-range\\" style=\\"width: 0%;\\"></div>
+    </div>
+  </div>
+  <transition-stub name=\\"m-form-details\\"></transition-stub>
+</div>"
+`;
+
+exports[`test slider tooltip display 2`] = `
+"<div class=\\"m-form-item\\">
+  <div class=\\"m-slider m--box\\">
+    <div class=\\"m-slider__track m-slider--normal-track m-slider--track-range\\">
+      <div class=\\"m-slider__button m-slider--normal-button\\" style=\\"left: 0%; z-index: 1;\\">
+        <div class=\\"m-slider__tooltip m-slider--normal-tooltip\\" style=\\"opacity: 0;\\"></div>
+      </div>
+      <div class=\\"m-slider__rail m-slider--rail-range\\" style=\\"width: 0%;\\"></div>
+      <div class=\\"m-slider__reverse-button m-slider--normal-button\\" style=\\"right: 0%; z-index: 1;\\">
+        <div class=\\"m-slider__tooltip m-slider--normal-tooltip\\" style=\\"opacity: 0;\\"></div>
+      </div>
+      <div class=\\"m-slider__reverse-rail m-slider--reverse-rail-range\\" style=\\"width: 0%;\\"></div>
+    </div>
+  </div>
+  <transition-stub name=\\"m-form-details\\"></transition-stub>
+</div>"
+`;
+
+exports[`test slider validation 1`] = `
+"<div class=\\"m-form-item\\">
+  <div class=\\"m-slider m--box\\">
+    <div class=\\"m-slider__track m-slider--normal-track\\">
+      <div class=\\"m-slider__button m-slider--normal-button m-slider--error\\" style=\\"left: 0%; z-index: 1;\\">
+        <div class=\\"m-slider__tooltip m-slider--normal-tooltip m-slider--tooltip-error\\" style=\\"opacity: 0;\\">0</div>
+      </div>
+      <div class=\\"m-slider__rail m-slider--error\\" style=\\"width: 0%;\\"></div>
+    </div>
+  </div>
+  <div class=\\"m-form-details\\">选择的值大于10</div>
+</div>"
+`;
+
+exports[`test slider validation 2`] = `
+"<div class=\\"m-form-item\\">
+  <div class=\\"m-slider m--box\\">
+    <div class=\\"m-slider__track m-slider--normal-track\\">
+      <div class=\\"m-slider__button m-slider--normal-button\\" style=\\"left: 0%; z-index: 1;\\">
+        <div class=\\"m-slider__tooltip m-slider--normal-tooltip\\" style=\\"opacity: 0;\\">0</div>
+      </div>
+      <div class=\\"m-slider__rail\\" style=\\"width: 0%;\\"></div>
+    </div>
+  </div>
+  <!---->
+</div>"
+`;
