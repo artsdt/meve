@@ -228,4 +228,7 @@ module.exports = {
       ],
     },
   ],
+  moduleCompatible: {
+    "import dayjs from 'dayjs/esm'\n": "import dayjs from 'dayjs'\n",
+  },
 }
