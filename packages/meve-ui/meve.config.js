@@ -208,6 +208,11 @@ module.exports = {
           labelCN: 'Slider 滑块',
           labelUS: 'Slider',
         },
+        {
+          name: 'time-picker',
+          labelCN: 'TimePicker 时间选择器',
+          labelUS: 'TimePicker',
+        },
       ],
     },
     {
@@ -230,5 +235,7 @@ module.exports = {
   ],
   moduleCompatible: {
     "import dayjs from 'dayjs/esm'\n": "import dayjs from 'dayjs'\n",
+    "import customParseFormat from 'dayjs/esm/plugin/customParseFormat'\n":
+      "import customParseFormat from 'dayjs/plugin/customParseFormat'\n",
   },
 }

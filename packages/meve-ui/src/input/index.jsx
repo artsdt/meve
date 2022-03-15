@@ -188,13 +188,13 @@ const InputPlugin = createComponent({
   },
 
   render() {
-    const { isFocus, disabled, textarea, resize, value, rules, label, errorMessage, form, size } = this
+    const { isFocus, disabled, textarea, resize, value, validateValue, rules, label, errorMessage, form, size } = this
 
     return (
       <FormItem
         ref="formItem"
         label={label}
-        value={value}
+        value={validateValue ?? value}
         rules={rules}
         {...{
           on: {

@@ -86,6 +86,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 0 0 0;
 }
 
+a {
+  color: #5e72e4;
+}
 
 p {
   margin-bottom: 0;

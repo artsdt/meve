@@ -41,27 +41,24 @@
         <m-option label="Sleep" />
         <m-option label="Coding" />
       </m-select>
-
+      <m-time-picker
+        label="TIME"
+        placeholder="Please pick time"
+        :rules="[(v) => (v && v.startsWith('10:')) || 'You must pick 10 hour']"
+        v-model="form.time"
+      />
       <m-radio-group label="AGREEMENT" v-model="form.agreement" :rules="[(v) => !!v || 'You must check one']">
         <m-radio :checked-value="1">Agree</m-radio>
         <m-radio :checked-value="2">Disagree</m-radio>
       </m-radio-group>
-
       <m-checkbox-group label="GROUP" v-model="form.group" :rules="[(v) => v.length >= 1 || 'You check at least one']">
         <m-checkbox :checked-value="1">Frontend</m-checkbox>
         <m-checkbox :checked-value="2">Backend</m-checkbox>
         <m-checkbox :checked-value="3">Production Manager</m-checkbox>
       </m-checkbox-group>
-
       <m-rate label="RATE" v-model="form.rate" :rules="[(v) => v > 0 || 'You must pick one']" />
-
       <m-switch label="ENABLE?" v-model="form.enable" :rules="[(v) => !!v || 'You must enable it']" />
-
-      <m-slider
-        label="PROGRESS?"
-        v-model="form.progress"
-        :rules="[(v) => v >= 10 || 'You must slide progress >= 10']"
-      />
+      <m-slider label="PROGRESS" v-model="form.progress" :rules="[(v) => v >= 10 || 'You must slide progress >= 10']" />
 
       <div style="margin-top: 10px">
         <m-space>
@@ -91,6 +88,7 @@ import Checkbox from '../../checkbox'
 import CheckboxGroup from '../../checkbox-group'
 import Switch from '../../switch'
 import Slider from '../../slider'
+import TimePicker from '../../time-picker'
 
 export default {
   components: {
@@ -108,6 +106,7 @@ export default {
     [Rate.name]: Rate,
     [Switch.name]: Switch,
     [Slider.name]: Slider,
+    [TimePicker.name]: TimePicker,
   },
   data: () => ({
     disabled: false,
@@ -123,6 +122,7 @@ export default {
       agreement: undefined,
       rate: 0,
       progress: 5,
+      time: undefined,
     },
   }),
   computed: {

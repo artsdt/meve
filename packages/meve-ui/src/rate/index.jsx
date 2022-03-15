@@ -125,11 +125,7 @@ const RatePlugin = createComponent({
 
         return (
           <div
-            class={[
-              namespace('__rate-wrapper'),
-              namespace('--active'),
-              this.errorMessage ? namespace('--error') : null,
-            ]}
+            class={namespace('__rate-wrapper')}
             style={{ color: this.color }}
             v-ripple={{
               disabled: !this.ripple || this.form?.disabled || this.form?.readonly || this.disabled || this.readonly,

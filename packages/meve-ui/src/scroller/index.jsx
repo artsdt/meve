@@ -20,7 +20,7 @@ const ScrollerPlugin = createComponent({
     scrollY: 0,
     maxScrollY: 0,
     scrollViewTranslateY: 0,
-    transitionDuration: 0,
+    transitionDuration: 100,
     scrollbarRatio: 0,
     mouseEnter: false,
     touching: false,
@@ -106,6 +106,14 @@ const ScrollerPlugin = createComponent({
       this.scrollViewTranslateY = this.scrollY / this.scrollbarRatio
     },
 
+    enableTransitionDuration() {
+      this.transitionDuration = 100
+    },
+
+    disableTransitionDuration() {
+      this.transitionDuration = 0
+    },
+
     handleMouseEnter() {
       if (this.isMobile) {
         return
@@ -127,7 +135,7 @@ const ScrollerPlugin = createComponent({
         return
       }
 
-      this.transitionDuration = 100
+      this.enableTransitionDuration()
       this.scrollY += deltaY * this.scrollbarRatio
       this.scrollY = range(this.scrollY, 0, this.maxScrollY)
       this.scrollViewTranslateY = this.scrollY / this.scrollbarRatio
@@ -149,7 +157,8 @@ const ScrollerPlugin = createComponent({
     handleTouchMove(event) {
       const { touchY } = this
 
-      this.transitionDuration = 0
+      this.disableTransitionDuration()
+
       const { clientY } = event.touches[0]
       const deltaY = clientY - touchY
       this.touchY = clientY
@@ -162,11 +171,13 @@ const ScrollerPlugin = createComponent({
       this.touching = false
       document.removeEventListener('touchmove', this.handleTouchMove)
       document.removeEventListener('touchend', this.handleTouchend)
+      this.enableTransitionDuration()
     },
   },
 
   render() {
     const {
+      right,
       height,
       showScrollbar,
       isMobile,
@@ -198,7 +209,7 @@ const ScrollerPlugin = createComponent({
         </div>
 
         <transition name="scrollbar-fade">
-          <div class={namespace('__scrollbar')} v-show={showScrollbar}>
+          <div class={namespace('__scrollbar')} style={{ right }} v-show={showScrollbar}>
             <div
               class={namespace('__scrollbar-inner')}
               style={{

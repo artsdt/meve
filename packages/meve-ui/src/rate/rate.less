@@ -23,6 +23,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    color: @rate-active-color;
   }
 
   &__rate-item {
@@ -32,7 +33,7 @@
     align-items: center;
   }
 
-  &__rate {
+  &__rate[rate-cover] {
     color: @rate-inactive-color;
     cursor: pointer;
     transition: color 0.25s, opacity 0.25s;
@@ -75,7 +76,7 @@
     font-size: @rate-mini-rate-size;
   }
 
-  &--active {
+  &--active[rate-cover] {
     color: @rate-active-color;
   }
 
@@ -83,7 +84,7 @@
     overflow: hidden;
   }
 
-  &--disabled {
+  &--disabled[rate-cover] {
     opacity: 0.6;
     cursor: not-allowed;
   }
@@ -98,7 +99,7 @@
     right: 0;
   }
 
-  &--error {
+  &--error[rate-cover] {
     color: @rate-error-color;
   }
 }

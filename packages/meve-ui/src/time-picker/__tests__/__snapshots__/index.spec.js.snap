@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test time picker disabled 1`] = `
+"<div class=\\"m-time-picker m-time-picker--disabled\\">
+  <div class=\\"m-popover m-time-picker__popover\\" time-picker-cover=\\"true\\">
+    <div class=\\"m-form-item\\" time-picker-cover=\\"true\\">
+      <div class=\\"m-input m--box m-input--normal m-input--disabled\\"><input id=\\"m-input-2\\" autocomplete=\\"off\\" type=\\"text\\" disabled=\\"disabled\\" readonly=\\"true\\" class=\\"m-input__input\\">
+        <div class=\\"m-time-picker__append-icon\\"><i time-picker-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-clock-outline m-time-picker__clock-icon\\"></i></div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test time picker disabled 2`] = `
+"<div class=\\"m-time-picker\\">
+  <div class=\\"m-popover m-time-picker__popover\\" time-picker-cover=\\"true\\">
+    <div class=\\"m-form-item\\" time-picker-cover=\\"true\\">
+      <div class=\\"m-input m--box m-input--normal m-input--outline\\"><input id=\\"m-input-2\\" autocomplete=\\"off\\" type=\\"text\\" readonly=\\"true\\" class=\\"m-input__input\\">
+        <div class=\\"m-time-picker__append-icon\\"><i time-picker-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-clock-outline m-time-picker__clock-icon\\"></i></div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test time picker readonly 1`] = `
+"<div class=\\"m-time-picker\\">
+  <div class=\\"m-popover m-time-picker__popover\\" time-picker-cover=\\"true\\">
+    <div class=\\"m-form-item\\" time-picker-cover=\\"true\\">
+      <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-3\\" autocomplete=\\"off\\" type=\\"text\\" readonly=\\"true\\" class=\\"m-input__input\\">
+        <div class=\\"m-time-picker__append-icon\\"><i time-picker-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-clock-outline m-time-picker__clock-icon\\"></i></div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test time picker readonly 2`] = `
+"<div class=\\"m-time-picker\\">
+  <div class=\\"m-popover m-time-picker__popover\\" time-picker-cover=\\"true\\">
+    <div class=\\"m-form-item\\" time-picker-cover=\\"true\\">
+      <div class=\\"m-input m--box m-input--normal m-input--outline\\"><input id=\\"m-input-3\\" autocomplete=\\"off\\" type=\\"text\\" readonly=\\"true\\" class=\\"m-input__input\\">
+        <div class=\\"m-time-picker__append-icon\\"><i time-picker-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-clock-outline m-time-picker__clock-icon\\"></i></div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test time picker validation 1`] = `
+"<div class=\\"m-time-picker\\">
+  <div class=\\"m-popover m-time-picker__popover\\" time-picker-cover=\\"true\\">
+    <div class=\\"m-form-item\\" time-picker-cover=\\"true\\">
+      <div class=\\"m-input m--box m-input--normal m-input--validation-error-border\\"><input id=\\"m-input-7\\" autocomplete=\\"off\\" type=\\"text\\" readonly=\\"true\\" class=\\"m-input__input\\">
+        <div class=\\"m-time-picker__append-icon\\"><i time-picker-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-clock-outline m-time-picker__clock-icon\\"></i></div>
+      </div>
+      <div class=\\"m-form-details\\">不能为空</div>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test time picker validation 2`] = `
+"<div class=\\"m-time-picker\\">
+  <div class=\\"m-popover m-time-picker__popover\\" time-picker-cover=\\"true\\">
+    <div class=\\"m-form-item\\" time-picker-cover=\\"true\\">
+      <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-7\\" autocomplete=\\"off\\" type=\\"text\\" readonly=\\"true\\" class=\\"m-input__input\\">
+        <div class=\\"m-time-picker__append-icon\\"><i time-picker-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-clock-outline m-time-picker__clock-icon\\"></i></div>
+      </div>
+      <!---->
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;

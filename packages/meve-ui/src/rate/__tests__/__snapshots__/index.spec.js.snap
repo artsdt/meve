@@ -3,19 +3,19 @@
 exports[`test rate change 1`] = `
 "<div class=\\"m-form-item\\" rate-cover=\\"true\\">
   <div class=\\"m-rate__rates\\">
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate m-rate--active\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
   </div>
@@ -26,19 +26,19 @@ exports[`test rate change 1`] = `
 exports[`test rate disabled 1`] = `
 "<div class=\\"m-form-item\\" rate-cover=\\"true\\">
   <div class=\\"m-rate__rates\\">
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate m-rate--disabled\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate m-rate--disabled\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate m-rate--disabled\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate m-rate--disabled\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate m-rate--disabled\\"></i></div>
     </div>
   </div>
@@ -49,23 +49,23 @@ exports[`test rate disabled 1`] = `
 exports[`test rate half change 1`] = `
 "<div class=\\"m-form-item\\" rate-cover=\\"true\\">
   <div class=\\"m-rate__rates\\">
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--half m-rate--normal-half-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate m-rate--active\\"></i></div>
       <div class=\\"m-rate__rate-item m-rate--half m-rate--normal-half-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--right-rate m-rate--active\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--half m-rate--normal-half-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
       <div class=\\"m-rate__rate-item m-rate--half m-rate--normal-half-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--right-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--half m-rate--normal-half-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
       <div class=\\"m-rate__rate-item m-rate--half m-rate--normal-half-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--right-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--half m-rate--normal-half-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
       <div class=\\"m-rate__rate-item m-rate--half m-rate--normal-half-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--right-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--half m-rate--normal-half-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
       <div class=\\"m-rate__rate-item m-rate--half m-rate--normal-half-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--right-rate\\"></i></div>
     </div>
@@ -77,19 +77,19 @@ exports[`test rate half change 1`] = `
 exports[`test rate mouse event 1`] = `
 "<div class=\\"m-form-item\\" rate-cover=\\"true\\">
   <div class=\\"m-rate__rates\\">
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
   </div>
@@ -100,19 +100,19 @@ exports[`test rate mouse event 1`] = `
 exports[`test rate mouse event 2`] = `
 "<div class=\\"m-form-item\\" rate-cover=\\"true\\">
   <div class=\\"m-rate__rates\\">
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate m-rate--active\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
   </div>
@@ -123,19 +123,19 @@ exports[`test rate mouse event 2`] = `
 exports[`test rate mouse event 3`] = `
 "<div class=\\"m-form-item\\" rate-cover=\\"true\\">
   <div class=\\"m-rate__rates\\">
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
   </div>
@@ -146,19 +146,19 @@ exports[`test rate mouse event 3`] = `
 exports[`test rate readonly 1`] = `
 "<div class=\\"m-form-item\\" rate-cover=\\"true\\">
   <div class=\\"m-rate__rates\\">
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
   </div>
@@ -169,19 +169,19 @@ exports[`test rate readonly 1`] = `
 exports[`test rate validation 1`] = `
 "<div class=\\"m-form-item\\" rate-cover=\\"true\\">
   <div class=\\"m-rate__rates\\">
-    <div class=\\"m-rate__rate-wrapper m-rate--active m-rate--error\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active m-rate--error\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active m-rate--error\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active m-rate--error\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active m-rate--error\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
   </div>
@@ -192,19 +192,19 @@ exports[`test rate validation 1`] = `
 exports[`test rate validation 2`] = `
 "<div class=\\"m-form-item\\" rate-cover=\\"true\\">
   <div class=\\"m-rate__rates\\">
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
-    <div class=\\"m-rate__rate-wrapper m-rate--active\\">
+    <div class=\\"m-rate__rate-wrapper\\">
       <div class=\\"m-rate__rate-item m-rate--normal-rate\\"><i rate-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-star m-rate__rate m-rate--left-rate\\"></i></div>
     </div>
   </div>
