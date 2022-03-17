@@ -68,6 +68,11 @@ module.exports = {
           labelUS: 'Breadcrumb',
         },
         {
+          name: 'calendar',
+          labelCN: 'Calendar 日历',
+          labelUS: 'Calendar',
+        },
+        {
           name: 'list',
           labelCN: 'List 懒加载列表',
           labelUS: 'List',

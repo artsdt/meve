@@ -286,7 +286,7 @@ const TimePickerPlugin = createComponent({
           return
         }
 
-        const timeDisabled = this.customDisabled(column, time)
+        const timeDisabled = this.customDisabled(column, toNumber(time))
 
         return (
           <div

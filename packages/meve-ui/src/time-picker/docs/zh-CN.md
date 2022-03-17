@@ -241,9 +241,12 @@ export default {
 | `label` | 标签名 | _string \| number_ | **-** |
 | `placeholder` | 占位符 | _string_ | **-** |
 | `size` | 时间选择器尺寸, 可选值为 `normal` `small` `mini` | _string_ | **normal** |
+| `value-format` | 值格式化字符串 | _string_ | **HH:mm:ss** |
 | `readonly` | 是否只读 | _boolean_ | **false** |
 | `disabled` | 是否禁用 | _boolean_ | **false** |
 | `clearable` | 是否可清除 | _boolean_ | **false** |
+| `custom-disabled` | 自定义禁用选项方法 | _(column: number, time: number) => _ | **() => false** |
+| `ripple` | 是否开启水波纹 | _boolean_ | **true** |
 | `validate-trigger` | 触发验证的时机，可选值为 `onChange` `onClick` `onClear` | _TimePickerValidateTrigger[]_ | **['onChange', 'onClear']** |
 | `rules` | 验证规则，返回 `true` 表示验证通过，其余的值则转换为文本作为用户提示 | _Array<(v: string) => any>_ | **-** |
 

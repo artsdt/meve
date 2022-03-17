@@ -1,0 +1,608 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test calendar extra slot 1`] = `
+"<div class=\\"m-calendar m--box\\">
+  <div class=\\"m-calendar__header\\">
+    <div class=\\"m-calendar__current\\">2022-03</div>
+    <div class=\\"m-calendar__pager\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round\\">
+        <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-arrow-left\\"></i></div>
+      </button><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-calendar__today\\" calender-cover=\\"true\\">
+        <div class=\\"m-button__content\\">今天</div>
+      </button><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round\\">
+        <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-arrow-right\\"></i></div>
+      </button></div>
+  </div>
+  <div class=\\"m-calendar__calender\\">
+    <div class=\\"m-calendar__day-container\\">
+      <div class=\\"m-calendar__day\\">周日</div>
+      <div class=\\"m-calendar__day\\">周一</div>
+      <div class=\\"m-calendar__day\\">周二</div>
+      <div class=\\"m-calendar__day\\">周三</div>
+      <div class=\\"m-calendar__day\\">周四</div>
+      <div class=\\"m-calendar__day\\">周五</div>
+      <div class=\\"m-calendar__day\\">周六</div>
+    </div>
+    <div class=\\"m-calendar__date-container\\">
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">27</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">28</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">1</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">2</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">3</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">4</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">5</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">6</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">7</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">8</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">9</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">10</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">11</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">12</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">13</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">14</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">15</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">16</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text m-calendar--date-today m-calendar--date-picked\\">17</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">18</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">19</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">20</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">21</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">22</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">23</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">24</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">25</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">26</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">27</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">28</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">29</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">30</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">31</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">1</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">2</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">3</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">4</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">5</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">6</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">7</div>world
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">8</div>hello
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">9</div>world
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test calendar header slot 1`] = `
+"<div class=\\"m-calendar m--box\\">
+  <div>header slot</div>
+  <div class=\\"m-calendar__calender\\">
+    <div class=\\"m-calendar__day-container\\">
+      <div class=\\"m-calendar__day\\">周日</div>
+      <div class=\\"m-calendar__day\\">周一</div>
+      <div class=\\"m-calendar__day\\">周二</div>
+      <div class=\\"m-calendar__day\\">周三</div>
+      <div class=\\"m-calendar__day\\">周四</div>
+      <div class=\\"m-calendar__day\\">周五</div>
+      <div class=\\"m-calendar__day\\">周六</div>
+    </div>
+    <div class=\\"m-calendar__date-container\\">
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">27</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">28</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">1</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">2</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">3</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">4</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">5</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">6</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">7</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">8</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">9</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">10</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">11</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">12</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">13</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">14</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">15</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">16</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text m-calendar--date-today m-calendar--date-picked\\">17</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">18</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">19</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">20</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">21</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">22</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">23</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">24</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">25</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">26</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">27</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">28</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">29</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">30</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">31</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">1</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">2</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">3</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">4</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">5</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">6</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">7</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">8</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">9</div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test calendar v-model 1`] = `
+"<div class=\\"m-calendar m--box\\">
+  <div class=\\"m-calendar__header\\">
+    <div class=\\"m-calendar__current\\">2022-03</div>
+    <div class=\\"m-calendar__pager\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round\\">
+        <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-arrow-left\\"></i></div>
+      </button><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-calendar__today\\" calender-cover=\\"true\\">
+        <div class=\\"m-button__content\\">今天</div>
+      </button><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round\\">
+        <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-arrow-right\\"></i></div>
+      </button></div>
+  </div>
+  <div class=\\"m-calendar__calender\\">
+    <div class=\\"m-calendar__day-container\\">
+      <div class=\\"m-calendar__day\\">周日</div>
+      <div class=\\"m-calendar__day\\">周一</div>
+      <div class=\\"m-calendar__day\\">周二</div>
+      <div class=\\"m-calendar__day\\">周三</div>
+      <div class=\\"m-calendar__day\\">周四</div>
+      <div class=\\"m-calendar__day\\">周五</div>
+      <div class=\\"m-calendar__day\\">周六</div>
+    </div>
+    <div class=\\"m-calendar__date-container\\">
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">27</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">28</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">1</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">2</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">3</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">4</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">5</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">6</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">7</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">8</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">9</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">10</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">11</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">12</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">13</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">14</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">15</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">16</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text m-calendar--date-today m-calendar--date-picked\\">17</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">18</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">19</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">20</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">21</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">22</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">23</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">24</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">25</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">26</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">27</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">28</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">29</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">30</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">31</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">1</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">2</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">3</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">4</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">5</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">6</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">7</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">8</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">9</div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test calendar v-model in range mode 1`] = `
+"<div class=\\"m-calendar m--box\\">
+  <div class=\\"m-calendar__header\\">
+    <div class=\\"m-calendar__current\\">2022-03</div>
+    <div class=\\"m-calendar__pager\\"><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round\\">
+        <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-arrow-left\\"></i></div>
+      </button><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-calendar__today\\" calender-cover=\\"true\\">
+        <div class=\\"m-button__content\\">今天</div>
+      </button><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--primary m-button--shadow m-button--round\\">
+        <div class=\\"m-button__content\\"><i class=\\"m-icon m--box meve-icon--set meve-icon-arrow-right\\"></i></div>
+      </button></div>
+  </div>
+  <div class=\\"m-calendar__calender\\">
+    <div class=\\"m-calendar__day-container\\">
+      <div class=\\"m-calendar__day\\">周日</div>
+      <div class=\\"m-calendar__day\\">周一</div>
+      <div class=\\"m-calendar__day\\">周二</div>
+      <div class=\\"m-calendar__day\\">周三</div>
+      <div class=\\"m-calendar__day\\">周四</div>
+      <div class=\\"m-calendar__day\\">周五</div>
+      <div class=\\"m-calendar__day\\">周六</div>
+    </div>
+    <div class=\\"m-calendar__date-container\\">
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text m-calendar--date-picked\\">27</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text m-calendar--in-range\\">28</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text m-calendar--date-picked\\">1</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">2</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">3</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">4</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">5</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">6</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">7</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">8</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">9</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">10</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">11</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">12</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">13</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">14</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">15</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">16</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text m-calendar--date-today\\">17</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">18</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">19</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">20</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">21</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">22</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">23</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">24</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">25</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">26</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">27</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">28</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">29</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">30</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">31</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">1</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">2</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">3</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">4</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">5</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">6</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">7</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">8</div>
+      </div>
+      <div class=\\"m-calendar__date-cell\\">
+        <div class=\\"m-calendar__date-text\\">9</div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

@@ -2,7 +2,7 @@ const sizeValidator = (type) => ['normal', 'small', 'mini'].includes(type)
 
 export const props = {
   value: {
-    type: [String, Number, Array],
+    type: String,
   },
   label: {
     type: [String, Number],
