@@ -1,11 +1,18 @@
 import Calendar from '..'
 import dayjs from 'dayjs/esm'
 import { mount } from '@vue/test-utils'
+import { delay } from '../../utils/jest'
 
 test('test calendar v-model', async () => {
-  const wrapper = mount(Calendar)
+  const wrapper = mount(Calendar, {
+    propsData: {
+      value: '2022-03-17',
+    },
+  })
 
   wrapper.vm.current = dayjs('2022-03-17')
+  wrapper.vm.now = dayjs('2022-03-17')
+  await delay(16)
 
   await wrapper.find('.m-calendar__date-cell').trigger('click')
 
@@ -30,6 +37,8 @@ test('test calendar v-model in range mode', async () => {
   })
 
   wrapper.vm.current = dayjs('2022-03-17')
+  wrapper.vm.now = dayjs('2022-03-17')
+  await delay(16)
 
   await wrapper.find('.m-calendar__date-cell').trigger('click')
 
@@ -58,9 +67,15 @@ test('test calendar v-model in range mode', async () => {
 })
 
 test('test calendar exposed methods', async () => {
-  const wrapper = mount(Calendar)
+  const wrapper = mount(Calendar, {
+    propsData: {
+      value: '2022-03-17',
+    },
+  })
 
   wrapper.vm.current = dayjs('2022-03-17')
+  wrapper.vm.now = dayjs('2022-03-17')
+  await delay(16)
 
   wrapper.vm.prev()
   expect(wrapper.vm.current.format('YYYY-MM-DD')).toBe('2022-02-17')
@@ -76,10 +91,17 @@ test('test calendar exposed methods', async () => {
 
 test('test calendar header slot', async () => {
   const wrapper = mount(Calendar, {
+    propsData: {
+      value: '2022-03-17',
+    },
     scopedSlots: {
       header: '<div>header slot</div>',
     },
   })
+
+  wrapper.vm.current = dayjs('2022-03-17')
+  wrapper.vm.now = dayjs('2022-03-17')
+  await delay(16)
 
   expect(wrapper.html()).toMatchSnapshot()
   wrapper.destroy()
@@ -87,12 +109,19 @@ test('test calendar header slot', async () => {
 
 test('test calendar extra slot', async () => {
   const wrapper = mount(Calendar, {
+    propsData: {
+      value: '2022-03-17',
+    },
     scopedSlots: {
       extra: ({ date }) => {
         return date.date() % 2 === 0 ? 'hello' : 'world'
       },
     },
   })
+
+  wrapper.vm.current = dayjs('2022-03-17')
+  wrapper.vm.now = dayjs('2022-03-17')
+  await delay(16)
 
   expect(wrapper.html()).toMatchSnapshot()
   wrapper.destroy()
@@ -101,11 +130,14 @@ test('test calendar extra slot', async () => {
 test('test calendar disabled', async () => {
   const wrapper = mount(Calendar, {
     propsData: {
+      value: '2022-03-17',
       disabled: true,
     },
   })
 
   wrapper.vm.current = dayjs('2022-03-17')
+  wrapper.vm.now = dayjs('2022-03-17')
+  await delay(16)
 
   await wrapper.find('.m-calendar__date-cell').trigger('click')
 
@@ -119,11 +151,14 @@ test('test calendar disabled', async () => {
 test('test calendar readonly', async () => {
   const wrapper = mount(Calendar, {
     propsData: {
+      value: '2022-03-17',
       readonly: true,
     },
   })
 
   wrapper.vm.current = dayjs('2022-03-17')
+  wrapper.vm.now = dayjs('2022-03-17')
+  await delay(16)
 
   await wrapper.find('.m-calendar__date-cell').trigger('click')
 
@@ -137,6 +172,7 @@ test('test calendar readonly', async () => {
 test('test calendar custom disabled', async () => {
   const wrapper = mount(Calendar, {
     propsData: {
+      value: '2022-03-17',
       customDisabled(date) {
         return date.date() === 27
       },
@@ -144,6 +180,8 @@ test('test calendar custom disabled', async () => {
   })
 
   wrapper.vm.current = dayjs('2022-03-17')
+  wrapper.vm.now = dayjs('2022-03-17')
+  await delay(16)
 
   await wrapper.find('.m-calendar__date-cell').trigger('click')
 
