@@ -1,0 +1,1 @@
+:root{--loading-bar-primary-color: var(--color-primary);--loading-bar-error-color: var(--color-error);--loading-bar-height: 3px}.m-loading-bar{width:0;position:fixed;top:0;left:0;height:var(--loading-bar-height);background:var(--loading-bar-primary-color)}.m-loading-bar--error{background-color:var(--loading-bar-error-color)}
