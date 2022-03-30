@@ -15,14 +15,32 @@
 @dropdown-cell-arrow-color: #aaa;
 @dropdown-cell-icon-size: 20px;
 @dropdown-cell-icon-margin: 0 4px 0 0;
-@dropdown-cell-disabled-text-color: @color-text-disabled;
+@dropdown-cell-disabled-text-color: var(--color-text-disabled);
+
+:root {
+  --dropdown-box-shadow: @dropdown-box-shadow;
+  --dropdown-padding: @dropdown-padding;
+  --dropdown-border-radius: @dropdown-border-radius;
+  --dropdown-background: @dropdown-background;
+  --dropdown-cell-normal-padding: @dropdown-cell-normal-padding;
+  --dropdown-cell-small-padding: @dropdown-cell-small-padding;
+  --dropdown-cell-large-padding: @dropdown-cell-large-padding;
+  --dropdown-cell-font-size: @dropdown-cell-font-size;
+  --dropdown-cell-hover-background: @dropdown-cell-hover-background;
+  --dropdown-cell-arrow-margin: @dropdown-cell-arrow-margin;
+  --dropdown-cell-arrow-size: @dropdown-cell-arrow-size;
+  --dropdown-cell-arrow-color: @dropdown-cell-arrow-color;
+  --dropdown-cell-icon-size: @dropdown-cell-icon-size;
+  --dropdown-cell-icon-margin: @dropdown-cell-icon-margin;
+  --dropdown-cell-disabled-text-color: @dropdown-cell-disabled-text-color;
+}
 
 .m-dropdown {
   &__wrapper {
-    border-radius: @dropdown-border-radius;
-    background: @dropdown-background;
-    box-shadow: @dropdown-box-shadow;
-    padding: @dropdown-padding;
+    border-radius: var(--dropdown-border-radius);
+    background: var(--dropdown-background);
+    box-shadow: var(--dropdown-box-shadow);
+    padding: var(--dropdown-padding);
   }
 
   &__cell {
@@ -30,38 +48,38 @@
     align-items: center;
     user-select: none;
     cursor: pointer;
-    font-size: @dropdown-cell-font-size;
+    font-size: var(--dropdown-cell-font-size);
     transition: background-color 0.2s;
 
     &:hover {
-      background: @dropdown-cell-hover-background;
+      background: var(--dropdown-cell-hover-background);
     }
   }
 
   &--normal {
-    padding: @dropdown-cell-normal-padding;
+    padding: var(--dropdown-cell-normal-padding);
   }
 
   &--small {
-    padding: @dropdown-cell-small-padding;
+    padding: var(--dropdown-cell-small-padding);
   }
 
   &--large {
-    padding: @dropdown-cell-large-padding;
+    padding: var(--dropdown-cell-large-padding);
   }
 
   &__arrow[dropdown-cover] {
-    margin: @dropdown-cell-arrow-margin;
-    font-size: @dropdown-cell-arrow-size;
-    color: @dropdown-cell-arrow-color;
+    margin: var(--dropdown-cell-arrow-margin);
+    font-size: var(--dropdown-cell-arrow-size);
+    color: var(--dropdown-cell-arrow-color);
   }
 
   &__icon[dropdown-cover] {
-    font-size: @dropdown-cell-icon-size;
-    margin: @dropdown-cell-icon-margin;
+    font-size: var(--dropdown-cell-icon-size);
+    margin: var(--dropdown-cell-icon-margin);
   }
 
   &--disabled {
-    color: @dropdown-cell-disabled-text-color;
+    color: var(--dropdown-cell-disabled-text-color);
   }
 }

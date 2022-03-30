@@ -8,18 +8,31 @@
 @menu-item-text-selected-color: #fff;
 @menu-item-font-size: 14px;
 @menu-item-icon-margin: 0 10px 0 0;
-@menu-item-cubic-bezier: @cubic-bezier;
-@menu-item-selected-background: @color-primary;
+@menu-item-cubic-bezier: var(--cubic-bezier);
+@menu-item-selected-background: var(--color-primary);
+
+:root {
+  --menu-item-padding: @menu-item-padding;
+  --menu-item-margin: @menu-item-margin;
+  --menu-item-border-radius: @menu-item-border-radius;
+  --menu-item-text-disabled-color: @menu-item-text-disabled-color;
+  --menu-item-text-color: @menu-item-text-color;
+  --menu-item-text-selected-color: @menu-item-text-selected-color;
+  --menu-item-font-size: @menu-item-font-size;
+  --menu-item-icon-margin: @menu-item-icon-margin;
+  --menu-item-cubic-bezier: @menu-item-cubic-bezier;
+  --menu-item-selected-background: @menu-item-selected-background;
+}
 
 .m-menu-item {
   display: flex;
   align-items: center;
-  padding: @menu-item-padding;
-  font-size: @menu-item-font-size;
-  color: @menu-item-text-color;
-  border-radius: @menu-item-border-radius;
-  transition: all 0.25s @menu-item-cubic-bezier;
-  margin: @menu-item-margin;
+  padding: var(--menu-item-padding);
+  font-size: var(--menu-item-font-size);
+  color: var(--menu-item-text-color);
+  border-radius: var(--menu-item-border-radius);
+  transition: all 0.25s var(--menu-item-cubic-bezier);
+  margin: var(--menu-item-margin);
   -webkit-tap-highlight-color: transparent;
 
   &:hover {
@@ -27,20 +40,20 @@
   }
 
   &__icon[menu-item-cover] {
-    margin: @menu-item-icon-margin;
+    margin: var(--menu-item-icon-margin);
   }
 
   &--disabled {
-    color: @menu-item-text-disabled-color;
+    color: var(--menu-item-text-disabled-color);
 
     &:hover {
-      color: @menu-item-text-disabled-color;
+      color: var(--menu-item-text-disabled-color);
       cursor: not-allowed;
     }
   }
 
   &--selected {
-    color: @menu-item-text-selected-color;
-    background: @menu-item-selected-background;
+    color: var(--menu-item-text-selected-color);
+    background: var(--menu-item-selected-background);
   }
 }

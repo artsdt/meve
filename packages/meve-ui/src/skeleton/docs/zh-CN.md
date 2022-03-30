@@ -134,20 +134,20 @@ import Skeleton from '../example/Fullscreen.vue'
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@skeleton-content-padding` | `16px` |
-| `@skeleton-animation-background` | `linear-gradient(90deg,hsla(0, 0%, 100%, 0),hsla(0, 0%, 100%, 0.3),hsla(0, 0%, 100%, 0))` |
-| `@skeleton-avatar-size` | `40px` |
-| `@skeleton-avatar-border-radius` | `50%` |
-| `@skeleton-avatar-margin-right` | `16px` |
-| `@skeleton-avatar-background-color` | `rgba(0, 0, 0, 0.12)` |
-| `@skeleton-title-width` | `50%` |
-| `@skeleton-title-border-radius` | `0px` |
-| `@skeleton-title-background-color` | `rgba(0, 0, 0, 0.12)` |
-| `@skeleton-row-height` | `12px` |
-| `@skeleton-row-border-radius` | `0px` |
-| `@skeleton-row-margin-top` | `12px` |
-| `@skeleton-card-height` | `160px` |
-| `@skeleton-card-border-radius` | `0px` |
-| `@skeleton-card-margin-bottom` | `16px` |
-| `@skeleton-card-background-color` | `rgba(0, 0, 0, 0.12)` |
+| `--skeleton-content-padding` | `16px` |
+| `--skeleton-animation-background` | `linear-gradient(90deg,hsla(0, 0%, 100%, 0),hsla(0, 0%, 100%, 0.3),hsla(0, 0%, 100%, 0))` |
+| `--skeleton-avatar-size` | `40px` |
+| `--skeleton-avatar-border-radius` | `50%` |
+| `--skeleton-avatar-margin-right` | `16px` |
+| `--skeleton-avatar-background-color` | `rgba(0, 0, 0, 0.12)` |
+| `--skeleton-title-width` | `50%` |
+| `--skeleton-title-border-radius` | `0px` |
+| `--skeleton-title-background-color` | `rgba(0, 0, 0, 0.12)` |
+| `--skeleton-row-height` | `12px` |
+| `--skeleton-row-border-radius` | `0px` |
+| `--skeleton-row-margin-top` | `12px` |
+| `--skeleton-card-height` | `160px` |
+| `--skeleton-card-border-radius` | `0px` |
+| `--skeleton-card-margin-bottom` | `16px` |
+| `--skeleton-card-background-color` | `rgba(0, 0, 0, 0.12)` |
 

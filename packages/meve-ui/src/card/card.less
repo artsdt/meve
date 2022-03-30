@@ -8,29 +8,41 @@
 @card-subtitle-font-size: 12px;
 @card-border-radius: 6px;
 
+:root {
+  --card-title-wrapper-padding: @card-title-wrapper-padding;
+  --card-description-padding: @card-description-padding;
+  --card-background-color: @card-background-color;
+  --card-title-text-color: @card-title-text-color;
+  --card-description-text-color: @card-description-text-color;
+  --card-subtitle-text-color: @card-subtitle-text-color;
+  --card-title-font-size: @card-title-font-size;
+  --card-subtitle-font-size: @card-subtitle-font-size;
+  --card-border-radius: @card-border-radius;
+}
+
 .m-card {
   box-shadow: 0 8px 26px -4px hsla(0deg, 0%, 8%, 0.15), 0 8px 9px -5px hsla(0deg, 0%, 8%, 0.06);
-  background: @card-background-color;
-  border-radius: @card-border-radius;
+  background: var(--card-background-color);
+  border-radius: var(--card-border-radius);
 
   &__title-wrapper {
-    padding: @card-title-wrapper-padding;
+    padding: var(--card-title-wrapper-padding);
     border-bottom: thin dashed #ddd;
   }
 
   &__title {
-    color: @card-title-text-color;
-    font-size: @card-title-font-size;
+    color: var(--card-title-text-color);
+    font-size: var(--card-title-font-size);
     font-weight: 500;
   }
 
   &__subtitle {
-    color: @card-subtitle-text-color;
-    font-size: @card-subtitle-font-size;
+    color: var(--card-subtitle-text-color);
+    font-size: var(--card-subtitle-font-size);
   }
 
   &__description {
-    padding: @card-description-padding;
-    color: @card-description-text-color;
+    padding: var(--card-description-padding);
+    color: var(--card-description-text-color);
   }
 }

@@ -1,13 +1,13 @@
 @import '../styles/var';
 
 @tag-default-color: #172b4d;
-@tag-primary-color: @color-primary;
-@tag-error-color: @color-error;
-@tag-success-color: @color-success;
-@tag-warning-color: @color-warning;
-@tag-info-color: @color-info;
-@tag-disabled-color: @color-disabled;
-@tag-disabled-text-color: @color-text-disabled;
+@tag-primary-color: var(--color-primary);
+@tag-error-color: var(--color-error);
+@tag-success-color: var(--color-success);
+@tag-warning-color: var(--color-warning);
+@tag-info-color: var(--color-info);
+@tag-disabled-color: var(--color-disabled);
+@tag-disabled-text-color: var(--color-text-disabled);
 @tag-border-radius: 4px;
 @tag-mini-padding: 0 6px;
 @tag-small-padding: 0 8px;
@@ -20,12 +20,34 @@
 @tag-close-icon-size: 16px;
 @tag-close-button-padding: 3px;
 
+:root {
+  --tag-default-color: @tag-default-color;
+  --tag-primary-color: @tag-primary-color;
+  --tag-error-color: @tag-error-color;
+  --tag-success-color: @tag-success-color;
+  --tag-warning-color: @tag-warning-color;
+  --tag-info-color: @tag-info-color;
+  --tag-disabled-color: @tag-disabled-color;
+  --tag-disabled-text-color: @tag-disabled-text-color;
+  --tag-border-radius: @tag-border-radius;
+  --tag-mini-padding: @tag-mini-padding;
+  --tag-small-padding: @tag-small-padding;
+  --tag-normal-padding: @tag-normal-padding;
+  --tag-large-padding: @tag-large-padding;
+  --tag-mini-height: @tag-mini-height;
+  --tag-small-height: @tag-small-height;
+  --tag-normal-height: @tag-normal-height;
+  --tag-large-height: @tag-large-height;
+  --tag-close-icon-size: @tag-close-icon-size;
+  --tag-close-button-padding: @tag-close-button-padding;
+}
+
 .m-tag {
   position: relative;
   justify-content: center;
   align-items: center;
   outline: none;
-  border-radius: @tag-border-radius;
+  border-radius: var(--tag-border-radius);
   font-family: inherit;
   transition: all 0.2s;
   will-change: box-shadow;
@@ -40,32 +62,32 @@
 
   &--default {
     color: #fff;
-    background-color: @tag-default-color;
+    background-color: var(--tag-default-color);
   }
 
   &--primary {
     color: #fff;
-    background-color: @tag-primary-color;
+    background-color: var(--tag-primary-color);
   }
 
   &--info {
     color: #fff;
-    background-color: @tag-info-color;
+    background-color: var(--tag-info-color);
   }
 
   &--success {
     color: #fff;
-    background-color: @tag-success-color;
+    background-color: var(--tag-success-color);
   }
 
   &--warning {
     color: #fff;
-    background-color: @tag-warning-color;
+    background-color: var(--tag-warning-color);
   }
 
   &--error {
     color: #fff;
-    background-color: @tag-error-color;
+    background-color: var(--tag-error-color);
   }
 
   &--block {
@@ -81,47 +103,47 @@
   }
 
   &--text-primary {
-    color: @tag-primary-color;
+    color: var(--tag-primary-color);
   }
 
   &--text-info {
-    color: @tag-info-color;
+    color: var(--tag-info-color);
   }
 
   &--text-success {
-    color: @tag-success-color;
+    color: var(--tag-success-color);
   }
 
   &--text-warning {
-    color: @tag-warning-color;
+    color: var(--tag-warning-color);
   }
 
   &--text-error {
-    color: @tag-error-color;
+    color: var(--tag-error-color);
   }
 
   &--normal {
-    height: @tag-normal-height;
-    padding: @tag-normal-padding;
-    font-size: @font-size-md;
+    height: var(--tag-normal-height);
+    padding: var(--tag-normal-padding);
+    font-size: var(--font-size-md);
   }
 
   &--large {
-    height: @tag-large-height;
-    padding: @tag-large-padding;
-    font-size: @font-size-lg;
+    height: var(--tag-large-height);
+    padding: var(--tag-large-padding);
+    font-size: var(--font-size-lg);
   }
 
   &--small {
-    height: @tag-small-height;
-    padding: @tag-small-padding;
-    font-size: @font-size-sm;
+    height: var(--tag-small-height);
+    padding: var(--tag-small-padding);
+    font-size: var(--font-size-sm);
   }
 
   &--mini {
-    height: @tag-mini-height;
-    padding: @tag-mini-padding;
-    font-size: @font-size-xs;
+    height: var(--tag-mini-height);
+    padding: var(--tag-mini-padding);
+    font-size: var(--font-size-xs);
   }
 
   &--outline {
@@ -129,28 +151,28 @@
   }
 
   &--disabled {
-    background-color: @tag-disabled-color;
-    color: @tag-disabled-text-color;
+    background-color: var(--tag-disabled-color);
+    color: var(--tag-disabled-text-color);
     cursor: not-allowed;
     box-shadow: none !important;
   }
 
   &--text-disabled {
-    color: @tag-disabled-text-color;
+    color: var(--tag-disabled-text-color);
   }
 
   &__close-button[tag-cover] {
-    padding: @tag-close-button-padding;
-    margin-right: -@tag-close-button-padding;
-    transform: translateX(@tag-close-button-padding);
+    padding: var(--tag-close-button-padding);
+    margin-right: calc(-1 * var(--tag-close-button-padding));
+    transform: translateX(var(--tag-close-button-padding));
 
     &:hover {
       background: transparent;
-      transform: translateX(@tag-close-button-padding);
+      transform: translateX(var(--tag-close-button-padding));
     }
   }
 
   &__close-icon[tag-cover] {
-    font-size: @tag-close-icon-size;
+    font-size: var(--tag-close-icon-size);
   }
 }

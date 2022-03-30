@@ -5,6 +5,15 @@
 @swipe-indicator-height: 8px;
 @swipe-indicator-border-radius: 2px;
 
+:root {
+  --swipe-indicator-color: @swipe-indicator-color;
+  --swipe-indicators-offset: @swipe-indicators-offset;
+  --swipe-indicator-offset: @swipe-indicator-offset;
+  --swipe-indicator-width: @swipe-indicator-width;
+  --swipe-indicator-height: @swipe-indicator-height;
+  --swipe-indicator-border-radius: @swipe-indicator-border-radius;
+}
+
 .m-swipe {
   position: relative;
   overflow: hidden;
@@ -20,18 +29,18 @@
   &__indicators {
     position: absolute;
     display: flex;
-    bottom: @swipe-indicators-offset;
+    bottom: var(--swipe-indicators-offset);
     left: 50%;
     transform: translateX(-50%);
   }
 
   &__indicator {
-    width: @swipe-indicator-width;
-    height: @swipe-indicator-height;
-    border-radius: @swipe-indicator-border-radius;
-    background: @swipe-indicator-color;
+    width: var(--swipe-indicator-width);
+    height: var(--swipe-indicator-height);
+    border-radius: var(--swipe-indicator-border-radius);
+    background: var(--swipe-indicator-color);
     opacity: 0.3;
-    margin: 0 @swipe-indicator-offset;
+    margin: 0 var(--swipe-indicator-offset);
     transition: opacity 0.3s;
 
     &:hover {
@@ -45,7 +54,7 @@
 
   &--indicators-vertical {
     flex-direction: column;
-    left: @swipe-indicators-offset;
+    left: var(--swipe-indicators-offset);
     bottom: 50%;
     transform: translateY(50%);
   }
@@ -55,6 +64,6 @@
   }
 
   &--indicator-vertical {
-    margin: @swipe-indicator-offset 0;
+    margin: var(--swipe-indicator-offset) 0;
   }
 }

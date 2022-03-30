@@ -1,11 +1,11 @@
 @import '../styles/var';
 
-@calendar-text-disabled-color: @color-text-disabled;
-@calendar-disabled-color: @color-disabled;
+@calendar-text-disabled-color: var(--color-text-disabled);
+@calendar-disabled-color: var(--color-disabled);
 @calendar-day-text-color: #adb5bd;
 @calendar-date-text-color: #555;
-@calendar-today-date-color: @color-warning;
-@calendar-picked-date-color: @color-primary;
+@calendar-today-date-color: var(--color-warning);
+@calendar-picked-date-color: var(--color-primary);
 @calendar-header-margin: 0 0 14px 0;
 @calendar-current-text-color: #67748e;
 @calendar-current-font-size: 24px;
@@ -16,6 +16,24 @@
 @calendar-day-padding: 10px;
 @calendar-day-font-size: 14px;
 
+:root {
+  --calendar-text-disabled-color: @calendar-text-disabled-color;
+  --calendar-disabled-color: @calendar-disabled-color;
+  --calendar-day-text-color: @calendar-day-text-color;
+  --calendar-date-text-color: @calendar-date-text-color;
+  --calendar-today-date-color: @calendar-today-date-color;
+  --calendar-picked-date-color: @calendar-picked-date-color;
+  --calendar-header-margin: @calendar-header-margin;
+  --calendar-current-text-color: @calendar-current-text-color;
+  --calendar-current-font-size: @calendar-current-font-size;
+  --calendar-today-button-margin: @calendar-today-button-margin;
+  --calendar-background: @calendar-background;
+  --calendar-border-color: @calendar-border-color;
+  --calendar-date-text-box-shadow: @calendar-date-text-box-shadow;
+  --calendar-day-padding: @calendar-day-padding;
+  --calendar-day-font-size: @calendar-day-font-size;
+}
+
 .m-calendar {
   -webkit-tap-highlight-color: transparent;
 
@@ -23,13 +41,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: @calendar-header-margin;
+    margin: var(--calendar-header-margin);
   }
 
   &__current {
-    color: @calendar-current-text-color;
+    color: var(--calendar-current-text-color);
     font-weight: 600;
-    font-size: @calendar-current-font-size;
+    font-size: var(--calendar-current-font-size);
   }
 
   &__pager {
@@ -38,23 +56,23 @@
   }
 
   &__today[calender-cover] {
-    margin: @calendar-today-button-margin;
+    margin: var(--calendar-today-button-margin);
   }
 
   &__calender {
     width: 100%;
-    background: @calendar-background;
+    background: var(--calendar-background);
   }
 
   &__date-container {
     display: flex;
     flex-wrap: wrap;
-    border-right: thin solid @calendar-border-color;
+    border-right: thin solid var(--calendar-border-color);
   }
 
   &__day-container {
     display: flex;
-    border-right: thin solid @calendar-border-color;
+    border-right: thin solid var(--calendar-border-color);
   }
 
   &__day {
@@ -63,12 +81,12 @@
     align-items: center;
     white-space: nowrap;
     width: calc(100% / 7);
-    padding: @calendar-day-padding;
-    color: @calendar-day-text-color;
-    font-size: @calendar-day-font-size;
-    border-top: thin solid @calendar-border-color;
-    border-bottom: thin solid @calendar-border-color;
-    border-left: thin solid @calendar-border-color;
+    padding: var(--calendar-day-padding);
+    color: var(--calendar-day-text-color);
+    font-size: var(--calendar-day-font-size);
+    border-top: thin solid var(--calendar-border-color);
+    border-bottom: thin solid var(--calendar-border-color);
+    border-left: thin solid var(--calendar-border-color);
   }
 
   &__date-cell {
@@ -79,8 +97,8 @@
     width: calc(100% / 7);
     height: 100px;
     padding: 10px;
-    border-bottom: thin solid @calendar-border-color;
-    border-left: thin solid @calendar-border-color;
+    border-bottom: thin solid var(--calendar-border-color);
+    border-left: thin solid var(--calendar-border-color);
     cursor: pointer;
     transition: background-color 0.1s;
 
@@ -98,14 +116,14 @@
     height: 34px;
     font-size: 16px;
     border-radius: 50%;
-    color: @calendar-date-text-color;
+    color: var(--calendar-date-text-color);
     transition: all 0.2s;
   }
 
   &--date-today {
-    background: @calendar-today-date-color;
+    background: var(--calendar-today-date-color);
     color: #fff;
-    box-shadow: @calendar-date-text-box-shadow;
+    box-shadow: var(--calendar-date-text-box-shadow);
   }
 
   &--date-disabled {
@@ -117,24 +135,24 @@
   }
 
   &--date-picked {
-    background: @calendar-picked-date-color;
+    background: var(--calendar-picked-date-color);
     color: #fff;
-    box-shadow: @calendar-date-text-box-shadow;
+    box-shadow: var(--calendar-date-text-box-shadow);
   }
 
   &--in-range {
-    background: @calendar-picked-date-color;
+    background: var(--calendar-picked-date-color);
     color: #fff;
-    box-shadow: @calendar-date-text-box-shadow;
+    box-shadow: var(--calendar-date-text-box-shadow);
     opacity: 0.3;
   }
 
   &--date-text-disabled {
-    color: @calendar-text-disabled-color;
+    color: var(--calendar-text-disabled-color);
   }
 
   &--date-text-background-disabled {
-    background: @calendar-disabled-color;
+    background: var(--calendar-disabled-color);
     opacity: 1;
   }
 }

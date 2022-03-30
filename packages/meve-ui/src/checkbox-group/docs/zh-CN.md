@@ -305,24 +305,26 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@checkbox-checked-color` | `@color-primary` |
-| `@checkbox-error-color` | `@color-warning` |
-| `@checkbox-disabled-color` | `@color-disabled` |
-| `@checkbox-disabled-text-color` | `@color-text-disabled` |
-| `@checkbox-checkbox-container-margin` | `0 2px 0 0` |
-| `@checkbox-normal-checkbox-container-padding` | `6px` |
-| `@checkbox-normal-checkbox-container-padding` | `6px` |
-| `@checkbox-normal-checkbox-size` | `20px` |
-| `@checkbox-normal-checkbox-font-size` | `15px` |
-| `@checkbox-normal-svg-size` | `10px` |
-| `@checkbox-small-checkbox-container-padding` | `4px` |
-| `@checkbox-small-checkbox-container-padding` | `4px` |
-| `@checkbox-small-checkbox-size` | `16px` |
-| `@checkbox-small-checkbox-font-size` | `14px` |
-| `@checkbox-small-svg-size` | `8px` |
-| `@checkbox-mini-checkbox-container-padding` | `3px` |
-| `@checkbox-mini-checkbox-container-padding` | `3px` |
-| `@checkbox-mini-checkbox-size` | `14px` |
-| `@checkbox-mini-checkbox-font-size` | `12px` |
-| `@checkbox-mini-svg-size` | `6px` |
-| `@checkbox-text-color` | `#525f7f` |
+| `--checkbox-checked-color` | `var(--color-primary)` |
+| `--checkbox-error-color` | `var(--color-warning)` |
+| `--checkbox-disabled-color` | `var(--color-disabled)` |
+| `--checkbox-disabled-text-color` | `var(--color-text-disabled)` |
+| `--checkbox-checkbox-container-margin` | `0 2px 0 0` |
+| `--checkbox-normal-checkbox-container-padding` | `6px` |
+| `--checkbox-normal-checkbox-container-padding` | `6px` |
+| `--checkbox-normal-checkbox-size` | `20px` |
+| `--checkbox-normal-checkbox-font-size` | `15px` |
+| `--checkbox-normal-svg-size` | `10px` |
+| `--checkbox-small-checkbox-container-padding` | `4px` |
+| `--checkbox-small-checkbox-container-padding` | `4px` |
+| `--checkbox-small-checkbox-size` | `16px` |
+| `--checkbox-small-checkbox-font-size` | `14px` |
+| `--checkbox-small-svg-size` | `8px` |
+| `--checkbox-mini-checkbox-container-padding` | `3px` |
+| `--checkbox-mini-checkbox-container-padding` | `3px` |
+| `--checkbox-mini-checkbox-size` | `14px` |
+| `--checkbox-mini-checkbox-font-size` | `12px` |
+| `--checkbox-mini-svg-size` | `6px` |
+| `--checkbox-text-color` | `#525f7f` |
+| `--checkbox-background` | `#fff` |
+| `--checkbox-border-color` | `#cad1d7` |

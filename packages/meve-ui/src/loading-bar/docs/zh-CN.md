@@ -62,6 +62,6 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `loading-bar-primary-color` | `@color-primary` |
-| `loading-bar-error-color` | `@color-error` |
-| `loading-bar-height` | `3px` |
+| `--loading-bar-primary-color` | `var(--color-primary)` |
+| `--loading-bar-error-color` | `var(--color-error)` |
+| `--loading-bar-height` | `3px` |

@@ -2,15 +2,21 @@
 @tabs-item-vertical-height: 74px;
 @tabs-padding: 8px;
 
+:root {
+  --tabs-item-horizontal-height: @tabs-item-horizontal-height;
+  --tabs-item-vertical-height: @tabs-item-vertical-height;
+  --tabs-padding: @tabs-padding;
+}
+
 .m-tabs {
   overflow: hidden;
-  margin: -@tabs-padding;
+  margin: calc(-1 * var(--tabs-padding));
 
   &__tab-wrap {
     position: relative;
     display: flex;
     height: 100%;
-    padding: @tabs-padding;
+    padding: var(--tabs-padding);
 
     &::-webkit-scrollbar {
       width: 0;
@@ -42,10 +48,10 @@
   }
 
   &--item-horizontal {
-    height: @tabs-item-horizontal-height;
+    height: var(--tabs-item-horizontal-height);
   }
 
   &--item-vertical {
-    height: @tabs-item-vertical-height;
+    height: var(--tabs-item-vertical-height);
   }
 }

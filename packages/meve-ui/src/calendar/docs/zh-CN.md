@@ -118,18 +118,18 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@calendar-text-disabled-color` | `@color-text-disabled` |
-| `@calendar-disabled-color` | `@color-disabled` |
-| `@calendar-day-text-color` | `#adb5bd` |
-| `@calendar-date-text-color` | `#555` |
-| `@calendar-today-date-color` | `@color-warning` |
-| `@calendar-picked-date-color` | `@color-primary` |
-| `@calendar-header-margin` | `0 0 14px 0` |
-| `@calendar-current-text-color` | `#67748e` |
-| `@calendar-current-font-size` | `24px` |
-| `@calendar-today-button-margin` | `0 14px` |
-| `@calendar-background` | `#fff` |
-| `@calendar-border-color` | `#eee` |
-| `@calendar-date-text-box-shadow` | `0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)` |
-| `@calendar-day-padding` | `10px` |
-| `@calendar-day-font-size` | `14px` |
+| `--calendar-text-disabled-color` | `var(--color-text-disabled)` |
+| `--calendar-disabled-color` | `var(--color-disabled)` |
+| `--calendar-day-text-color` | `#adb5bd` |
+| `--calendar-date-text-color` | `#555` |
+| `--calendar-today-date-color` | `var(--color-warning)` |
+| `--calendar-picked-date-color` | `var(--color-primary)` |
+| `--calendar-header-margin` | `0 0 14px 0` |
+| `--calendar-current-text-color` | `#67748e` |
+| `--calendar-current-font-size` | `24px` |
+| `--calendar-today-button-margin` | `0 14px` |
+| `--calendar-background` | `#fff` |
+| `--calendar-border-color` | `#eee` |
+| `--calendar-date-text-box-shadow` | `0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)` |
+| `--calendar-day-padding` | `10px` |
+| `--calendar-day-font-size` | `14px` |

@@ -2,11 +2,15 @@
 
 @icon-size: 20px;
 
+:root {
+  --icon-size: @icon-size;
+}
+
 .m-icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: @icon-size;
+  font-size: var(--icon-size);
   color: inherit;
   vertical-align: bottom;
 }

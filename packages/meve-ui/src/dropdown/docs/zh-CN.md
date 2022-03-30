@@ -230,7 +230,7 @@ export default {
 
 ### 监听事件
 
-通过`@select`监听选择的配置项, 并且组件提供了下拉框显示隐藏的事件
+通过`--select`监听选择的配置项, 并且组件提供了下拉框显示隐藏的事件
 
 ```vue
 import Events from '../example/Events.vue'
@@ -330,18 +330,18 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@dropdown-box-shadow` | `0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1)` |
-| `@dropdown-padding` | `6px 0` |
-| `@dropdown-border-radius` | `6px` |
-| `@dropdown-background` | `#fff` |
-| `@dropdown-cell-normal-padding` | `6px 16px` |
-| `@dropdown-cell-small-padding` | `2px 10px` |
-| `@dropdown-cell-large-padding` | `10px 24px` |
-| `@dropdown-cell-font-size` | `14px` |
-| `@dropdown-cell-hover-background` | `rgba(0, 0, 0, 0.04)` |
-| `@dropdown-cell-arrow-margin` | `0 -6px 0 14px` |
-| `@dropdown-cell-arrow-size` | `12px` |
-| `@dropdown-cell-arrow-color` | `#aaa` |
-| `@dropdown-cell-icon-size` | `20px` |
-| `@dropdown-cell-icon-margin` | `0 4px 0 0` |
-| `@dropdown-cell-disabled-text-color` | `@color-text-disabled` |
+| `--dropdown-box-shadow` | `0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1)` |
+| `--dropdown-padding` | `6px 0` |
+| `--dropdown-border-radius` | `6px` |
+| `--dropdown-background` | `#fff` |
+| `--dropdown-cell-normal-padding` | `6px 16px` |
+| `--dropdown-cell-small-padding` | `2px 10px` |
+| `--dropdown-cell-large-padding` | `10px 24px` |
+| `--dropdown-cell-font-size` | `14px` |
+| `--dropdown-cell-hover-background` | `rgba(0, 0, 0, 0.04)` |
+| `--dropdown-cell-arrow-margin` | `0 -6px 0 14px` |
+| `--dropdown-cell-arrow-size` | `12px` |
+| `--dropdown-cell-arrow-color` | `#aaa` |
+| `--dropdown-cell-icon-size` | `20px` |
+| `--dropdown-cell-icon-margin` | `0 4px 0 0` |
+| `--dropdown-cell-disabled-text-color` | `var(--color-text-disabled)` |

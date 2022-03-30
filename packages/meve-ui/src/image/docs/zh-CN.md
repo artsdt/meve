@@ -128,7 +128,7 @@ import PreviewDisabled from '../example/PreviewDisabled.vue'
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@image-preview-toolbar-padding` | `10px` |
-| `@image-preview-toolbar-background` | `rgba(0, 0, 0, 0.4)` |
-| `@image-preview-toolbar-border-radius` | `30px` |
-| `@image-preview-toolbar-bottom` | `4vh` |
+| `--image-preview-toolbar-padding` | `10px` |
+| `--image-preview-toolbar-background` | `rgba(0, 0, 0, 0.4)` |
+| `--image-preview-toolbar-border-radius` | `30px` |
+| `--image-preview-toolbar-bottom` | `4vh` |

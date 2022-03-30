@@ -372,21 +372,21 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@tabs-item-horizontal-height` | `58px` |
-| `@tabs-item-vertical-height` | `74px` |
-| `@tabs-padding` | `8px` |
+| `--tabs-item-horizontal-height` | `58px` |
+| `--tabs-item-vertical-height` | `74px` |
+| `--tabs-padding` | `8px` |
 
 #### Tab Variables
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@tab-margin` | `6px` |
-| `@tab-padding` | `12px` |
-| `@tab-active-color` | `#fff` |
-| `@tab-active-background` | `@color-primary` |
-| `@tab-inactive-color` | `#333` |
-| `@tab-inactive-background` | `#f0f1f5` |
-| `@tab-border-radius` | `4px` |
-| `@tab-disabled-color` | `@color-text-disabled` |
-| `@tab-disabled-background` | `@color-disabled` |
-| `@tab-font-size` | `14px` |
+| `--tab-margin` | `6px` |
+| `--tab-padding` | `12px` |
+| `--tab-active-color` | `#fff` |
+| `--tab-active-background` | `var(--color-primary)` |
+| `--tab-inactive-color` | `#333` |
+| `--tab-inactive-background` | `#f0f1f5` |
+| `--tab-border-radius` | `4px` |
+| `--tab-disabled-color` | `var(--color-text-disabled)` |
+| `--tab-disabled-background` | `var(--color-disabled)` |
+| `--tab-font-size` | `14px` |

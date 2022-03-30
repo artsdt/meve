@@ -8,7 +8,7 @@
 @select-mini-font-size: 13px;
 @select-padding: 0 10px;
 @select-background: #fff;
-@select-outline-active-color: @color-primary;
+@select-outline-active-color: var(--color-primary);
 @select-outline-inactive-color: #ccc;
 @select-border-radius: 4px;
 @select-text-color: #666;
@@ -18,7 +18,7 @@
 @select-clear-margin: 0 0 0 6px;
 @select-clear-size: 16px;
 @select-clear-color: #888;
-@select-validation-error-color: @color-warning;
+@select-validation-error-color: var(--color-warning);
 @select-normal-options-padding: 9px 0;
 @select-small-options-padding: 7px 0;
 @select-mini-options-padding: 5px 0;
@@ -29,17 +29,47 @@
 @select-arrow-size: 20px;
 @select-tag-vertical-space: 3px;
 
+:root {
+  --select-normal-height: @select-normal-height;
+  --select-normal-font-size: @select-normal-font-size;
+  --select-small-height: @select-small-height;
+  --select-small-font-size: @select-small-font-size;
+  --select-mini-height: @select-mini-height;
+  --select-mini-font-size: @select-mini-font-size;
+  --select-padding: @select-padding;
+  --select-background: @select-background;
+  --select-outline-active-color: @select-outline-active-color;
+  --select-outline-inactive-color: @select-outline-inactive-color;
+  --select-border-radius: @select-border-radius;
+  --select-text-color: @select-text-color;
+  --select-placeholder-text-color: @select-placeholder-text-color;
+  --select-disabled-background: @select-disabled-background;
+  --select-disabled-text-color: @select-disabled-text-color;
+  --select-clear-margin: @select-clear-margin;
+  --select-clear-size: @select-clear-size;
+  --select-clear-color: @select-clear-color;
+  --select-validation-error-color: @select-validation-error-color;
+  --select-normal-options-padding: @select-normal-options-padding;
+  --select-small-options-padding: @select-small-options-padding;
+  --select-mini-options-padding: @select-mini-options-padding;
+  --select-options-background: @select-options-background;
+  --select-options-box-shadow: @select-options-box-shadow;
+  --select-options-border-radius: @select-options-border-radius;
+  --select-arrow-size: @select-arrow-size;
+  --select-tag-vertical-space: @select-tag-vertical-space;
+}
+
 .m-select {
   display: block;
 
   &__select {
     display: flex;
     align-items: center;
-    background: @select-background;
-    padding: @select-padding;
-    border: thin solid @select-outline-inactive-color;
-    border-radius: @select-border-radius;
-    color: @select-text-color;
+    background: var(--select-background);
+    padding: var(--select-padding);
+    border: thin solid var(--select-outline-inactive-color);
+    border-radius: var(--select-border-radius);
+    color: var(--select-text-color);
     transition: background-color 0.25s, border 0.25s;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -50,9 +80,9 @@
   }
 
   &__options {
-    background: @select-options-background;
-    box-shadow: @select-options-box-shadow;
-    border-radius: @select-options-border-radius;
+    background: var(--select-options-background);
+    box-shadow: var(--select-options-box-shadow);
+    border-radius: var(--select-options-border-radius);
   }
 
   &__input {
@@ -69,12 +99,12 @@
 
     &::placeholder {
       font-size: inherit;
-      color: @select-placeholder-text-color;
+      color: var(--select-placeholder-text-color);
     }
   }
 
   &__tags {
-    padding-bottom: @select-tag-vertical-space;
+    padding-bottom: var(--select-tag-vertical-space);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -96,30 +126,30 @@
 
     &::placeholder {
       font-size: inherit;
-      color: @select-placeholder-text-color;
+      color: var(--select-placeholder-text-color);
     }
   }
 
   &__tag {
     margin-right: 6px;
-    margin-top: @select-tag-vertical-space;
+    margin-top: var(--select-tag-vertical-space);
   }
 
   &__arrow {
-    font-size: @select-arrow-size;
+    font-size: var(--select-arrow-size);
   }
 
   &__clear-icon {
-    margin: @select-clear-margin;
-    font-size: @select-clear-size;
+    margin: var(--select-clear-margin);
+    font-size: var(--select-clear-size);
     opacity: 0;
     transition: opacity 0.1s linear;
-    color: @select-clear-color;
+    color: var(--select-clear-color);
   }
 
   &--disabled {
-    background: @select-disabled-background;
-    color: @select-disabled-text-color;
+    background: var(--select-disabled-background);
+    color: var(--select-disabled-text-color);
     cursor: not-allowed;
 
     * {
@@ -128,42 +158,40 @@
   }
 
   &--normal {
-    min-height: @select-normal-height;
-    //height: @select-normal-height;
-    font-size: @select-normal-font-size;
+    min-height: var(--select-normal-height);
+    font-size: var(--select-normal-font-size);
   }
 
   &--small {
-    min-height: @select-small-height;
-    //height: @select-small-height;
-    font-size: @select-small-font-size;
+    min-height: var(--select-small-height);
+    font-size: var(--select-small-font-size);
   }
 
   &--mini {
-    min-height: @select-mini-height;
+    min-height: var(--select-mini-height);
     //height: @select-mini-height;
-    font-size: @select-mini-font-size;
+    font-size: var(--select-mini-font-size);
   }
 
   &--normal-options {
-    padding: @select-normal-options-padding;
+    padding: var(--select-normal-options-padding);
   }
 
   &--small-options {
-    padding: @select-small-options-padding;
+    padding: var(--select-small-options-padding);
   }
 
   &--mini-options {
-    padding: @select-mini-options-padding;
+    padding: var(--select-mini-options-padding);
   }
 
   &--outline {
-    border: thin solid @select-outline-active-color;
+    border: thin solid var(--select-outline-active-color);
   }
 
   &--outline-hover {
     &:hover {
-      border: thin solid @select-outline-active-color;
+      border: thin solid var(--select-outline-active-color);
     }
   }
 
@@ -173,6 +201,6 @@
   }
 
   &--validation-error-border {
-    border: thin solid @select-validation-error-color !important;
+    border: thin solid var(--select-validation-error-color) !important;
   }
 }

@@ -52,7 +52,7 @@ import BackTop from '../example/BackTop.vue'
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@back-top-right` | `50px` |
-| `@back-top-bottom` | `50px` |
-| `@back-top-button-size` | `40px` |
-| `@back-top-icon-size` | `22px` |
+| `--back-top-right` | `50px` |
+| `--back-top-bottom` | `50px` |
+| `--back-top-button-size` | `40px` |
+| `--back-top-icon-size` | `22px` |

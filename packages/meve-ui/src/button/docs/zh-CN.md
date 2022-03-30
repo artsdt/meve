@@ -182,33 +182,33 @@ import Outline from '../example/Outline.vue'
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@button-default-color` | `@color-default` |
-| `@button-default-hover-color` | `@color-deep-default` |
-| `@button-default-text-color` | `@button-primary-color` |
-| `@button-primary-color` | `@color-primary` |
-| `@button-primary-hover-color` | `@color-deep-primary` |
-| `@button-error-color` | `@color-error` |
-| `@button-error-hover-color` | `@color-deep-error` |
-| `@button-success-color` | `@color-success` |
-| `@button-success-hover-color` | `@color-deep-success` |
-| `@button-warning-color` | `@color-warning` |
-| `@button-warning-hover-color` | `@color-deep-warning` |
-| `@button-info-color` | `@color-info` |
-| `@button-info-hover-color` | `@color-deep-info` |
-| `@button-disabled-color` | `@color-disabled` |
-| `@button-disabled-text-color` | `@color-text-disabled` |
-| `@button-border-radius` | `6px` |
-| `@button-mini-padding` | `0 8px` |
-| `@button-small-padding` | `0 11px` |
-| `@button-normal-padding` | `0 15px` |
-| `@button-large-padding` | `0 22px` |
-| `@button-mini-height` | `20px` |
-| `@button-small-height` | `28px` |
-| `@button-normal-height` | `36px` |
-| `@button-large-height` | `44px` |
-| `@button-round-padding` | `6px` |
-| `@button-small-loading-size` | `16px` |
-| `@button-normal-loading-size` | `20px` |
-| `@button-large-loading-size` | `22px` |
-| `@button-mini-loading-size` | `14px` |
-| `@button-loading-margin` | `0 0 0 6px` |
+| `--button-default-color` | `var(--color-default)` |
+| `--button-default-hover-color` | `var(--color-deep-default)` |
+| `--button-default-text-color` | `var(--button-primary-color)` |
+| `--button-primary-color` | `var(--color-primary)` |
+| `--button-primary-hover-color` | `var(--color-deep-primary)` |
+| `--button-error-color` | `var(--color-error)` |
+| `--button-error-hover-color` | `var(--color-deep-error)` |
+| `--button-success-color` | `var(--color-success)` |
+| `--button-success-hover-color` | `var(--color-deep-success)` |
+| `--button-warning-color` | `var(--color-warning)` |
+| `--button-warning-hover-color` | `var(--color-deep-warning)` |
+| `--button-info-color` | `var(--color-info)` |
+| `--button-info-hover-color` | `var(--color-deep-info)` |
+| `--button-disabled-color` | `var(--color-disabled)` |
+| `--button-disabled-text-color` | `var(--color-text-disabled)` |
+| `--button-border-radius` | `6px` |
+| `--button-mini-padding` | `0 8px` |
+| `--button-small-padding` | `0 11px` |
+| `--button-normal-padding` | `0 15px` |
+| `--button-large-padding` | `0 22px` |
+| `--button-mini-height` | `20px` |
+| `--button-small-height` | `28px` |
+| `--button-normal-height` | `36px` |
+| `--button-large-height` | `44px` |
+| `--button-round-padding` | `6px` |
+| `--button-small-loading-size` | `16px` |
+| `--button-normal-loading-size` | `20px` |
+| `--button-large-loading-size` | `22px` |
+| `--button-mini-loading-size` | `14px` |
+| `--button-loading-margin` | `0 0 0 6px` |

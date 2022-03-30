@@ -527,18 +527,18 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@auto-complete-options-box-shadow` | `0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1)` |
-| `@auto-complete-options-border-radius` | `6px` |
-| `@auto-complete-options-background` | `#fff` |
-| `@auto-complete-option-text-color` | `#333` |
-| `@auto-complete-option-active-text-color` | `#fff` |
-| `@auto-complete-option-active-background` | `@color-primary` |
-| `@auto-complete-normal-options-padding` | `9px 0` |
-| `@auto-complete-normal-option-padding` | `9px 14px` |
-| `@auto-complete-normal-option-font-size` | `15px` |
-| `@auto-complete-small-options-padding` | `7px 0` |
-| `@auto-complete-small-option-padding` | `7px 14px` |
-| `@auto-complete-small-option-font-size` | `14px` |
-| `@auto-complete-mini-options-padding` | `5px 0` |
-| `@auto-complete-mini-option-padding` | `5px 14px` |
-| `@auto-complete-mini-option-font-size` | `13px` |
+| `--auto-complete-options-box-shadow` | `0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1)` |
+| `--auto-complete-options-border-radius` | `6px` |
+| `--auto-complete-options-background` | `#fff` |
+| `--auto-complete-option-text-color` | `#333` |
+| `--auto-complete-option-active-text-color` | `#fff` |
+| `--auto-complete-option-active-background` | `var(--color-primary)` |
+| `--auto-complete-normal-options-padding` | `9px 0` |
+| `--auto-complete-normal-option-padding` | `9px 14px` |
+| `--auto-complete-normal-option-font-size` | `15px` |
+| `--auto-complete-small-options-padding` | `7px 0` |
+| `--auto-complete-small-option-padding` | `7px 14px` |
+| `--auto-complete-small-option-font-size` | `14px` |
+| `--auto-complete-mini-options-padding` | `5px 0` |
+| `--auto-complete-mini-option-padding` | `5px 14px` |
+| `--auto-complete-mini-option-font-size` | `13px` |

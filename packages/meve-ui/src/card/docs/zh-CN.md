@@ -112,12 +112,12 @@ import Slots from '../example/Slots.vue'
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@card-title-wrapper-padding` | `20px` |
-| `@card-description-padding` | `22px` |
-| `@card-background-color` | `#fff` |
-| `@card-title-text-color` | `#333` |
-| `@card-description-text-color` | `#555` |
-| `@card-subtitle-text-color` | `#888` |
-| `@card-title-font-size` | `18px` |
-| `@card-subtitle-font-size` | `12px` |
-| `@card-border-radius` | `6px` |
+| `--card-title-wrapper-padding` | `20px` |
+| `--card-description-padding` | `22px` |
+| `--card-background-color` | `#fff` |
+| `--card-title-text-color` | `#333` |
+| `--card-description-text-color` | `#555` |
+| `--card-subtitle-text-color` | `#888` |
+| `--card-title-font-size` | `18px` |
+| `--card-subtitle-font-size` | `12px` |
+| `--card-border-radius` | `6px` |

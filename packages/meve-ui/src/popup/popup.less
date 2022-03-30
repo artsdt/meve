@@ -1,6 +1,11 @@
 @popup-overlay-background-color: rgba(0, 0, 0, 0.6);
 @popup-content-background-color: #fff;
 
+:root {
+  --popup-overlay-background-color: @popup-overlay-background-color;
+  --popup-content-background-color: @popup-content-background-color;
+}
+
 .m {
   &-fade-enter,
   &-fade-leave-to {
@@ -76,13 +81,13 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: @popup-overlay-background-color;
+    background-color: var(--popup-overlay-background-color);
     transition: all 0.25s;
   }
 
   &__content {
     overflow: auto;
-    background-color: @popup-content-background-color;
+    background-color: var(--popup-content-background-color);
     transition: all 0.25s;
   }
 

@@ -58,6 +58,7 @@
     "vue-router": "^3.5.3"
   },
   "browserslist": [
-    "ie >= 11"
+    "Chrome >= 51",
+    "iOS >= 10"
   ]
 }

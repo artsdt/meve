@@ -3,13 +3,21 @@
 @scroller-bar-border-radius: 4px;
 @scroller-bar-width: 6px;
 @scroller-bar-right: 4px;
-@scroller-cubic-bezier: @cubic-bezier;
+@scroller-cubic-bezier: var(--cubic-bezier);
 @scroller-bar-background: #ddd;
 @scroller-bar-hover-background: #c0c0c0;
 
+:root {
+  --scroller-bar-border-radius: @scroller-bar-border-radius;
+  --scroller-bar-width: @scroller-bar-width;
+  --scroller-bar-right: @scroller-bar-right;
+  --scroller-bar-background: @scroller-bar-background;
+  --scroller-bar-hover-background: @scroller-bar-hover-background;
+}
+
 .scrollbar-fade-enter-active,
 .scrollbar-fade-leave-active {
-  transition: opacity 0.2s @scroller-cubic-bezier;
+  transition: opacity 0.2s var(--scroller-cubic-bezier);
 }
 
 .scrollbar-fade-enter,
@@ -25,8 +33,8 @@
   &__scrollbar {
     position: absolute;
     top: 0;
-    right: @scroller-bar-right;
-    width: @scroller-bar-width;
+    right: var(--scroller-bar-right);
+    width: var(--scroller-bar-width);
     height: 100%;
   }
 
@@ -35,12 +43,12 @@
     width: 100%;
     top: 0;
     right: 0;
-    background: @scroller-bar-background;
-    border-radius: @scroller-bar-border-radius;
+    background: var(--scroller-bar-background);
+    border-radius: var(--scroller-bar-border-radius);
 
     &:hover {
       cursor: pointer;
-      background: @scroller-bar-hover-background;
+      background: var(--scroller-bar-hover-background);
     }
   }
 

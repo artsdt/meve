@@ -1,9 +1,9 @@
 @import '../styles/var';
 
-@switch-active-color: @color-primary;
+@switch-active-color: var(--color-primary);
 @switch-inactive-color: #cad1d7;
 @switch-loading-color: #fff;
-@switch-error-color: @color-warning;
+@switch-error-color: var(--color-warning);
 @switch-normal-width: 50px;
 @switch-normal-height: 24px;
 @switch-normal-button-size: 18px;
@@ -17,6 +17,26 @@
 @switch-mini-button-size: 12px;
 @switch-mini-loading-size: 10px;
 @switch-button-offset: 2px;
+
+:root {
+  --switch-active-color: @switch-active-color;
+  --switch-inactive-color: @switch-inactive-color;
+  --switch-loading-color: @switch-loading-color;
+  --switch-error-color: @switch-error-color;
+  --switch-normal-width: @switch-normal-width;
+  --switch-normal-height: @switch-normal-height;
+  --switch-normal-button-size: @switch-normal-button-size;
+  --switch-normal-loading-size: @switch-normal-loading-size;
+  --switch-small-width: @switch-small-width;
+  --switch-small-height: @switch-small-height;
+  --switch-small-button-size: @switch-small-button-size;
+  --switch-small-loading-size: @switch-small-loading-size;
+  --switch-mini-width: @switch-mini-width;
+  --switch-mini-height: @switch-mini-height;
+  --switch-mini-button-size: @switch-mini-button-size;
+  --switch-mini-loading-size: @switch-mini-loading-size;
+  --switch-button-offset: @switch-button-offset;
+}
 
 .m-switch {
   position: relative;
@@ -37,87 +57,87 @@
 
   &__loading[switch-cover] {
     .m-loading__circle svg {
-      color: @switch-loading-color;
+      color: var(--switch-loading-color);
     }
   }
 
   &--normal-loading[switch-cover] {
     .m-loading__circle svg {
-      width: @switch-normal-loading-size;
-      height: @switch-normal-loading-size;
+      width: var(--switch-normal-loading-size);
+      height: var(--switch-normal-loading-size);
     }
   }
 
   &--small-loading[switch-cover] {
     .m-loading__circle svg {
-      width: @switch-small-loading-size;
-      height: @switch-small-loading-size;
+      width: var(--switch-small-loading-size);
+      height: var(--switch-small-loading-size);
     }
   }
 
   &--mini-loading[switch-cover] {
     .m-loading__circle svg {
-      width: @switch-mini-loading-size;
-      height: @switch-mini-loading-size;
+      width: var(--switch-mini-loading-size);
+      height: var(--switch-mini-loading-size);
     }
   }
 
   &--normal {
-    width: @switch-normal-width;
-    height: @switch-normal-height;
+    width: var(--switch-normal-width);
+    height: var(--switch-normal-height);
   }
 
   &--small {
-    width: @switch-small-width;
-    height: @switch-small-height;
+    width: var(--switch-small-width);
+    height: var(--switch-small-height);
   }
 
   &--mini {
-    width: @switch-mini-width;
-    height: @switch-mini-height;
+    width: var(--switch-mini-width);
+    height: var(--switch-mini-height);
   }
 
   &--normal-button {
-    width: @switch-normal-button-size;
-    height: @switch-normal-button-size;
+    width: var(--switch-normal-button-size);
+    height: var(--switch-normal-button-size);
   }
 
   &--small-button {
-    width: @switch-small-button-size;
-    height: @switch-small-button-size;
+    width: var(--switch-small-button-size);
+    height: var(--switch-small-button-size);
   }
 
   &--mini-button {
-    width: @switch-mini-button-size;
-    height: @switch-mini-button-size;
+    width: var(--switch-mini-button-size);
+    height: var(--switch-mini-button-size);
   }
 
   &--normal-button-active {
-    background: @switch-active-color;
-    left: @switch-normal-width - @switch-normal-button-size - @switch-button-offset * 2;
+    background: var(--switch-active-color);
+    left: calc(var(--switch-normal-width) - var(--switch-normal-button-size) - var(--switch-button-offset) * 2);
   }
 
   &--small-button-active {
-    background: @switch-active-color;
-    left: @switch-small-width - @switch-small-button-size - @switch-button-offset * 2;
+    background: var(--switch-active-color);
+    left: calc(var(--switch-small-width) - var(--switch-small-button-size) - var(--switch-button-offset) * 2);
   }
 
   &--mini-button-active {
-    background: @switch-active-color;
-    left: @switch-mini-width - @switch-mini-button-size - @switch-button-offset * 2;
+    background: var(--switch-active-color);
+    left: calc(var(--switch-mini-width) - var(--switch-mini-button-size) - var(--switch-button-offset) * 2);
   }
 
   &--button-inactive {
-    background: @switch-inactive-color;
-    left: @switch-button-offset;
+    background: var(--switch-inactive-color);
+    left: var(--switch-button-offset);
   }
 
   &--border-active {
-    border: thin solid @switch-active-color;
+    border: thin solid var(--switch-active-color);
   }
 
   &--border-inactive {
-    border: thin solid @switch-inactive-color;
+    border: thin solid var(--switch-inactive-color);
   }
 
   &--disabled {
@@ -126,10 +146,10 @@
   }
 
   &--border-error {
-    border: thin solid @switch-error-color;
+    border: thin solid var(--switch-error-color);
   }
 
   &--button-error {
-    background: @switch-error-color;
+    background: var(--switch-error-color);
   }
 }

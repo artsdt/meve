@@ -5,6 +5,7 @@
 单页面使用CDN的方式使用组件库
 
 ```html
+// default fold
 <div id="app"></div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 <script src="https://cdn.jsdelivr.net/npm/@meve/ui/umd/meve.js"></script>
@@ -23,6 +24,7 @@
 在构建工具中使用组件库，支持`Webpack`和`Vite`
 
 ```shell
+// default fold
 # Install with npm or yarn or pnpm
 
 # npm
@@ -36,6 +38,7 @@ pnpm add @meve/ui @meve/touch-emulator
 ```
 
 ```js
+// default fold
 import Vue from 'vue'
 import App from './App.vue'
 import Meve from '@meve/ui'

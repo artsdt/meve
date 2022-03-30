@@ -1,8 +1,12 @@
 @ripple-cubic-bezier: cubic-bezier(0.68, 0.01, 0.62, 0.6);
 
+:root {
+  --ripple-cubic-bezier: @ripple-cubic-bezier;
+}
+
 .m-ripple {
   position: absolute;
-  transition: transform 0.25s @ripple-cubic-bezier, opacity 0.14s linear;
+  transition: transform 0.25s var(--ripple-cubic-bezier), opacity 0.14s linear;
   top: 0;
   left: 0;
   border-radius: 50%;

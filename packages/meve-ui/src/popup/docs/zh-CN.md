@@ -218,7 +218,7 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@popup-overlay-background-color` | `rgba(0, 0, 0, 0.6)` |
-| `@popup-content-background-color` | `#fff` |
+| `--popup-overlay-background-color` | `rgba(0, 0, 0, 0.6)` |
+| `--popup-content-background-color` | `#fff` |
 
 

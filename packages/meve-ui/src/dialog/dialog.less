@@ -7,9 +7,20 @@
 @dialog-message-text-color: #555;
 @dialog-border-color: #ddd;
 
+:root {
+  --dialog-title-wrapper-padding: @dialog-title-wrapper-padding;
+  --dialog-content-border-radius: @dialog-content-border-radius;
+  --dialog-title-text-color: @dialog-title-text-color;
+  --dialog-message-padding: @dialog-message-padding;
+  --dialog-footer-padding: @dialog-footer-padding;
+  --dialog-message-font-size: @dialog-message-font-size;
+  --dialog-message-text-color: @dialog-message-text-color;
+  --dialog-border-color: @dialog-border-color;
+}
+
 .m-dialog {
   .m-popup__content[dialog-cover] {
-    border-radius: @dialog-content-border-radius;
+    border-radius: var(--dialog-content-border-radius);
   }
 
   &__container {
@@ -22,25 +33,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: @dialog-title-wrapper-padding;
-    border-bottom: thin dashed @dialog-border-color;
+    padding: var(--dialog-title-wrapper-padding);
+    border-bottom: thin dashed var(--dialog-border-color);
   }
 
   &__title {
-    color: @dialog-title-text-color;
+    color: var(--dialog-title-text-color);
     font-weight: 500;
   }
 
   &__message {
-    padding: @dialog-message-padding;
-    color: @dialog-message-text-color;
-    font-size: @dialog-message-font-size;
+    padding: var(--dialog-message-padding);
+    color: var(--dialog-message-text-color);
+    font-size: var(--dialog-message-font-size);
   }
 
   &__footer {
     display: flex;
     justify-content: space-between;
-    padding: @dialog-footer-padding;
-    border-top: thin dashed @dialog-border-color;
+    padding: var(--dialog-footer-padding);
+    border-top: thin dashed var(--dialog-border-color);
   }
 }

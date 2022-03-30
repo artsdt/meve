@@ -261,24 +261,24 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@slider-active-color` | `@color-primary` |
-| `@slider-error-color` | `@color-warning` |
-| `@slider-track-background` | `#eceeef` |
-| `@slider-track-vertical-height` | `200px` |
-| `@slider-button-border-radius` | `50%` |
-| `@slider-tooltip-border-radius` | `4px` |
-| `@slider-tooltip-background` | `#fff` |
-| `@slider-tooltip-box-shadow` | `0 8px 26px -4px hsla(0deg, 0%, 8%, 0.15), 0 8px 9px -5px hsla(0deg, 0%, 8%, 0.06)` |
-| `@slider-normal-track-size` | `5px` |
-| `@slider-normal-button-size` | `15px` |
-| `@slider-normal-tooltip-padding` | `8px 10px` |
-| `@slider-normal-tooltip-font-size` | `14px` |
-| `@slider-small-track-size` | `3.5px` |
-| `@slider-small-button-size` | `13px` |
-| `@slider-small-tooltip-padding` | `6px 8px` |
-| `@slider-small-tooltip-font-size` | `13px` |
-| `@slider-mini-track-size` | `3px` |
-| `@slider-mini-button-size` | `10px` |
-| `@slider-mini-tooltip-padding` | `4px 6px` |
-| `@slider-mini-tooltip-font-size` | `12px` |
-| `@slider-border-radius` | `5px` |
+| `--slider-active-color` | `var(--color-primary)` |
+| `--slider-error-color` | `var(--color-warning)` |
+| `--slider-track-background` | `#eceeef` |
+| `--slider-track-vertical-height` | `200px` |
+| `--slider-button-border-radius` | `50%` |
+| `--slider-tooltip-border-radius` | `4px` |
+| `--slider-tooltip-background` | `#fff` |
+| `--slider-tooltip-box-shadow` | `0 8px 26px -4px hsla(0deg, 0%, 8%, 0.15), 0 8px 9px -5px hsla(0deg, 0%, 8%, 0.06)` |
+| `--slider-normal-track-size` | `5px` |
+| `--slider-normal-button-size` | `15px` |
+| `--slider-normal-tooltip-padding` | `8px 10px` |
+| `--slider-normal-tooltip-font-size` | `14px` |
+| `--slider-small-track-size` | `3.5px` |
+| `--slider-small-button-size` | `13px` |
+| `--slider-small-tooltip-padding` | `6px 8px` |
+| `--slider-small-tooltip-font-size` | `13px` |
+| `--slider-mini-track-size` | `3px` |
+| `--slider-mini-button-size` | `10px` |
+| `--slider-mini-tooltip-padding` | `4px 6px` |
+| `--slider-mini-tooltip-font-size` | `12px` |
+| `--slider-border-radius` | `5px` |

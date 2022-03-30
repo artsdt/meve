@@ -362,11 +362,11 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@dialog-title-wrapper-padding` | `16px 20px` |
-| `@dialog-content-border-radius` | `6px` |
-| `@dialog-title-text-color` | `#333` |
-| `@dialog-message-padding` | `16px 20px` |
-| `@dialog-footer-padding` | `16px` |
-| `@dialog-message-font-size` | `15px` |
-| `@dialog-message-text-color` | `#555` |
-| `dialog-border-color` | `#ddd` |
+| `--dialog-title-wrapper-padding` | `16px 20px` |
+| `--dialog-content-border-radius` | `6px` |
+| `--dialog-title-text-color` | `#333` |
+| `--dialog-message-padding` | `16px 20px` |
+| `--dialog-footer-padding` | `16px` |
+| `--dialog-message-font-size` | `15px` |
+| `--dialog-message-text-color` | `#555` |
+| `--dialog-border-color` | `#ddd` |

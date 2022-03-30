@@ -19,7 +19,7 @@
         :id="`clip-trigger-${cid}`"
         :data-clipboard-target="`#clip-target-${cid}`"
         round
-        v-if="height > 0"
+        v-if="height > 0 || height === -1"
       >
         <m-icon name="content-copy" size="18" />
       </m-button>
@@ -37,10 +37,20 @@ const offset = 10
 
 export default {
   name: 'AppCode',
-  data: () => ({
-    height: 0,
-    cid: clipId++
-  }),
+
+  props: {
+    defaultFold: {
+      type: Boolean,
+      default: false
+    }
+  },
+
+  data() {
+    return {
+      height: this.defaultFold ? -1 : 0,
+      cid: clipId++
+    }
+  },
 
   mounted() {
     const trigger = new Clipboard(`#clip-trigger-${this.cid}`)

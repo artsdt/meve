@@ -1,8 +1,8 @@
 @import '../styles/var';
 
 @rate-inactive-color: #dbdbdf;
-@rate-disabled-color: @color-disabled;
-@rate-error-color: @color-warning;
+@rate-disabled-color: var(--color-disabled);
+@rate-error-color: var(--color-warning);
 @rate-active-color: #f7ce55;
 @rate-normal-rate-size: 26px;
 @rate-normal-half-rate-size: 13px;
@@ -10,6 +10,19 @@
 @rate-small-half-rate-size: 11px;
 @rate-mini-rate-size: 18px;
 @rate-mini-half-rate-size: 9px;
+
+:root {
+  --rate-inactive-color: @rate-inactive-color;
+  --rate-disabled-color: @rate-disabled-color;
+  --rate-error-color: @rate-error-color;
+  --rate-active-color: @rate-active-color;
+  --rate-normal-rate-size: @rate-normal-rate-size;
+  --rate-normal-half-rate-size: @rate-normal-half-rate-size;
+  --rate-small-rate-size: @rate-small-rate-size;
+  --rate-small-half-rate-size: @rate-small-half-rate-size;
+  --rate-mini-rate-size: @rate-mini-rate-size;
+  --rate-mini-half-rate-size: @rate-mini-half-rate-size;
+}
 
 .m-rate {
   &__rates {
@@ -23,7 +36,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: @rate-active-color;
+    color: var(--rate-active-color);
   }
 
   &__rate-item {
@@ -34,50 +47,50 @@
   }
 
   &__rate[rate-cover] {
-    color: @rate-inactive-color;
+    color: var(--rate-inactive-color);
     cursor: pointer;
     transition: color 0.25s, opacity 0.25s;
     font-size: inherit;
   }
 
   &--normal-rate {
-    width: @rate-normal-rate-size;
-    height: @rate-normal-rate-size;
-    font-size: @rate-normal-rate-size;
+    width: var(--rate-normal-rate-size);
+    height: var(--rate-normal-rate-size);
+    font-size: var(--rate-normal-rate-size);
   }
 
   &--normal-half-rate {
-    width: @rate-normal-half-rate-size;
-    height: @rate-normal-rate-size;
-    font-size: @rate-normal-rate-size;
+    width: var(--rate-normal-half-rate-size);
+    height: var(--rate-normal-rate-size);
+    font-size: var(--rate-normal-rate-size);
   }
 
   &--small-rate {
-    width: @rate-small-rate-size;
-    height: @rate-small-rate-size;
-    font-size: @rate-small-rate-size;
+    width: var(--rate-small-rate-size);
+    height: var(--rate-small-rate-size);
+    font-size: var(--rate-small-rate-size);
   }
 
   &--small-half-rate {
-    width: @rate-small-half-rate-size;
-    height: @rate-small-rate-size;
-    font-size: @rate-small-rate-size;
+    width: var(--rate-small-half-rate-size);
+    height: var(--rate-small-rate-size);
+    font-size: var(--rate-small-rate-size);
   }
 
   &--mini-rate {
-    width: @rate-mini-rate-size;
-    height: @rate-mini-rate-size;
-    font-size: @rate-mini-rate-size;
+    width: var(--rate-mini-rate-size);
+    height: var(--rate-mini-rate-size);
+    font-size: var(--rate-mini-rate-size);
   }
 
   &--mini-half-rate {
-    width: @rate-mini-half-rate-size;
-    height: @rate-mini-rate-size;
-    font-size: @rate-mini-rate-size;
+    width: var(--rate-mini-half-rate-size);
+    height: var(--rate-mini-rate-size);
+    font-size: var(--rate-mini-rate-size);
   }
 
   &--active[rate-cover] {
-    color: @rate-active-color;
+    color: var(--rate-active-color);
   }
 
   &--half {
@@ -100,6 +113,6 @@
   }
 
   &--error[rate-cover] {
-    color: @rate-error-color;
+    color: var(--rate-error-color);
   }
 }

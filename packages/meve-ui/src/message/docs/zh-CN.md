@@ -207,19 +207,19 @@ Message.config({ closeable: false })
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@message-text-color` | `#fff` |
-| `@message-loading-background-color` | `#3f4d67` |
-| `@message-info-background-color` | `@color-info` |
-| `@message-warning-background-color` | `@color-warning` |
-| `@message-success-background-color` | `@color-success` |
-| `@message-error-background-color` | `@color-error` |
-| `@message-loading-color` | `#fff` |
-| `@message-cubic-bezier` | `@cubic-bezier` |
-| `@message-offset-top` | `30px` |
-| `@message-offset-bottom` | `30px` |
-| `@message-content-margin` | `0 16px` |
-| `@message-icon-size` | `20px` |
-| `@message-close-icon-size` | `18px` |
-| `@message-close-button-margin` | `0 -10px 0 0` |
+| `--message-text-color` | `#fff` |
+| `--message-loading-background-color` | `#3f4d67` |
+| `--message-info-background-color` | `var(--color-info)` |
+| `--message-warning-background-color` | `var(--color-warning)` |
+| `--message-success-background-color` | `var(--color-success)` |
+| `--message-error-background-color` | `var(--color-error)` |
+| `--message-loading-color` | `#fff` |
+| `--message-cubic-bezier` | `var(--cubic-bezier)` |
+| `--message-offset-top` | `30px` |
+| `--message-offset-bottom` | `30px` |
+| `--message-content-margin` | `0 16px` |
+| `--message-icon-size` | `20px` |
+| `--message-close-icon-size` | `18px` |
+| `--message-close-button-margin` | `0 -10px 0 0` |
 
 

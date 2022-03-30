@@ -3,20 +3,33 @@
 @tab-margin: 6px;
 @tab-padding: 12px;
 @tab-active-color: #fff;
-@tab-active-background: @color-primary;
-@tab-inactive-color: @color-primary;
+@tab-active-background: var(--color-primary);
+@tab-inactive-color: var(--color-primary);
 @tab-inactive-background: #fff;
 @tab-border-radius: 4px;
-@tab-disabled-color: @color-text-disabled;
-@tab-disabled-background: @color-disabled;
+@tab-disabled-color: var(--color-text-disabled);
+@tab-disabled-background: var(--color-disabled);
 @tab-font-size: 14px;
+
+:root {
+  --tab-margin: @tab-margin;
+  --tab-padding: @tab-padding;
+  --tab-active-color: @tab-active-color;
+  --tab-active-background: @tab-active-background;
+  --tab-inactive-color: @tab-inactive-color;
+  --tab-inactive-background: @tab-inactive-background;
+  --tab-border-radius: @tab-border-radius;
+  --tab-disabled-color: @tab-disabled-color;
+  --tab-disabled-background: @tab-disabled-background;
+  --tab-font-size: @tab-font-size;
+}
 
 .m-tab {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1 0 auto;
-  font-size: @tab-font-size;
+  font-size: var(--tab-font-size);
   cursor: pointer;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -27,17 +40,17 @@
     align-items: center;
     width: 98%;
     height: 98%;
-    padding: 0 @tab-padding;
-    border-radius: @tab-border-radius;
+    padding: 0 var(--tab-padding);
+    border-radius: var(--tab-border-radius);
     transition: all 0.25s;
   }
 
   &--vertical-margin {
-    margin: @tab-margin 0;
+    margin: var(--tab-margin) 0;
   }
 
   &--horizontal-margin {
-    margin: 0 @tab-margin;
+    margin: 0 var(--tab-margin);
   }
 
   &--clear-margin-left {
@@ -57,20 +70,20 @@
   }
 
   &--active {
-    color: @tab-active-color;
-    background: @tab-active-background;
+    color: var(--tab-active-color);
+    background: var(--tab-active-background);
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   }
 
   &--inactive {
-    color: @tab-inactive-color;
-    background: @tab-inactive-background;
+    color: var(--tab-inactive-color);
+    background: var(--tab-inactive-background);
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   }
 
   &--disabled {
-    color: @tab-disabled-color;
-    background: @tab-disabled-background;
+    color: var(--tab-disabled-color);
+    background: var(--tab-disabled-background);
     cursor: not-allowed;
   }
 

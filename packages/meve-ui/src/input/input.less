@@ -11,7 +11,7 @@
 @input-small-textarea-padding: 7px 0;
 @input-mini-textarea-padding: 5px 0;
 @input-background: #fff;
-@input-outline-active-color: @color-primary;
+@input-outline-active-color: var(--color-primary);
 @input-outline-inactive-color: #ccc;
 @input-border-radius: 4px;
 @input-text-color: #666;
@@ -24,16 +24,44 @@
 @input-clear-margin: 0 0 0 6px;
 @input-clear-size: 16px;
 @input-clear-color: #888;
-@input-validation-error-color: @color-warning;
+@input-validation-error-color: var(--color-warning);
+
+:root {
+  --input-normal-height: @input-normal-height;
+  --input-normal-font-size: @input-normal-font-size;
+  --input-small-height: @input-small-height;
+  --input-small-font-size: @input-small-font-size;
+  --input-mini-height: @input-mini-height;
+  --input-mini-font-size: @input-mini-font-size;
+  --input-padding: @input-padding;
+  --input-normal-textarea-padding: @input-normal-textarea-padding;
+  --input-small-textarea-padding: @input-small-textarea-padding;
+  --input-mini-textarea-padding: @input-mini-textarea-padding;
+  --input-background: @input-background;
+  --input-outline-active-color: @input-outline-active-color;
+  --input-outline-inactive-color: @input-outline-inactive-color;
+  --input-border-radius: @input-border-radius;
+  --input-text-color: @input-text-color;
+  --input-placeholder-text-color: @input-placeholder-text-color;
+  --input-disabled-background: @input-disabled-background;
+  --input-disabled-text-color: @input-disabled-text-color;
+  --input-maxlength-font-size: @input-maxlength-font-size;
+  --input-maxlength-text-color: @input-maxlength-text-color;
+  --input-maxlength-margin: @input-maxlength-margin;
+  --input-clear-margin: @input-clear-margin;
+  --input-clear-size: @input-clear-size;
+  --input-clear-color: @input-clear-color;
+  --input-validation-error-color: @input-validation-error-color;
+}
 
 .m-input {
   display: flex;
   align-items: center;
-  background: @input-background;
-  padding: @input-padding;
-  border: thin solid @input-outline-inactive-color;
-  border-radius: @input-border-radius;
-  color: @input-text-color;
+  background: var(--input-background);
+  padding: var(--input-padding);
+  border: thin solid var(--input-outline-inactive-color);
+  border-radius: var(--input-border-radius);
+  color: var(--input-text-color);
   transition: background-color 0.25s, border 0.25s;
 
   &__input {
@@ -47,7 +75,7 @@
     background: transparent;
 
     &::placeholder {
-      color: @input-placeholder-text-color;
+      color: var(--input-placeholder-text-color);
     }
   }
 
@@ -63,21 +91,21 @@
     background: transparent;
 
     &::placeholder {
-      color: @input-placeholder-text-color;
+      color: var(--input-placeholder-text-color);
     }
   }
 
   &__clear-icon {
-    margin: @input-clear-margin;
-    font-size: @input-clear-size;
+    margin: var(--input-clear-margin);
+    font-size: var(--input-clear-size);
     opacity: 0;
     transition: opacity 0.1s linear;
-    color: @input-clear-color;
+    color: var(--input-clear-color);
   }
 
   &--disabled {
-    background: @input-disabled-background;
-    color: @input-disabled-text-color;
+    background: var(--input-disabled-background);
+    color: var(--input-disabled-text-color);
 
     * {
       cursor: not-allowed;
@@ -86,44 +114,44 @@
 
   &__maxlength {
     flex-shrink: 0;
-    margin: @input-maxlength-margin;
-    font-size: @input-maxlength-font-size;
-    color: @input-maxlength-text-color;
+    margin: var(--input-maxlength-margin);
+    font-size: var(--input-maxlength-font-size);
+    color: var(--input-maxlength-text-color);
     white-space: nowrap;
   }
 
   &--normal-textarea {
-    padding: @input-normal-textarea-padding;
+    padding: var(--input-normal-textarea-padding);
   }
 
   &--small-textarea {
-    padding: @input-small-textarea-padding;
+    padding: var(--input-small-textarea-padding);
   }
 
   &--mini-textarea {
-    padding: @input-mini-textarea-padding;
+    padding: var(--input-mini-textarea-padding);
   }
 
   &--normal {
-    min-height: @input-normal-height;
-    height: @input-normal-height;
-    font-size: @input-normal-font-size;
+    min-height: var(--input-normal-height);
+    height: var(--input-normal-height);
+    font-size: var(--input-normal-font-size);
   }
 
   &--small {
-    min-height: @input-small-height;
-    height: @input-small-height;
-    font-size: @input-small-font-size;
+    min-height: var(--input-small-height);
+    height: var(--input-small-height);
+    font-size: var(--input-small-font-size);
   }
 
   &--mini {
-    min-height: @input-mini-height;
-    height: @input-mini-height;
-    font-size: @input-mini-font-size;
+    min-height: var(--input-mini-height);
+    height: var(--input-mini-height);
+    font-size: var(--input-mini-font-size);
   }
 
   &--outline {
-    border: thin solid @input-outline-active-color;
+    border: thin solid var(--input-outline-active-color);
   }
 
   &--clear-icon-visible {
@@ -137,6 +165,6 @@
   }
 
   &--validation-error-border {
-    border: thin solid @input-validation-error-color;
+    border: thin solid var(--input-validation-error-color);
   }
 }

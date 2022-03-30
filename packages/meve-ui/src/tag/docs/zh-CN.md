@@ -140,23 +140,23 @@ import Outline from '../example/Outline.vue'
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@tag-default-color` | `#172b4d` |
-| `@tag-primary-color` | `@color-primary` |
-| `@tag-error-color` | `@color-error` |
-| `@tag-success-color` | `@color-success` |
-| `@tag-warning-color` | `@color-warning` |
-| `@tag-info-color` | `@color-info` |
-| `@tag-disabled-color` | `@color-disabled` |
-| `@tag-disabled-text-color` | `@color-text-disabled` |
-| `@tag-border-radius` | `4px` |
-| `@tag-mini-padding` | `0 6px` |
-| `@tag-small-padding` | `0 8px` |
-| `@tag-normal-padding` | `0 10px` |
-| `@tag-large-padding` | `0 18px` |
-| `@tag-mini-height` | `20px` |
-| `@tag-small-height` | `28px` |
-| `@tag-normal-height` | `36px` |
-| `@tag-large-height` | `44px` |
-| `@tag-close-icon-size` | `16px` |
-| `@tag-close-button-padding` | `3px` |
+| `--tag-default-color` | `#172b4d` |
+| `--tag-primary-color` | `var(--color-primary)` |
+| `--tag-error-color` | `var(--color-error)` |
+| `--tag-success-color` | `var(--color-success)` |
+| `--tag-warning-color` | `var(--color-warning)` |
+| `--tag-info-color` | `var(--color-info)` |
+| `--tag-disabled-color` | `var(--color-disabled)` |
+| `--tag-disabled-text-color` | `var(--color-text-disabled)` |
+| `--tag-border-radius` | `4px` |
+| `--tag-mini-padding` | `0 6px` |
+| `--tag-small-padding` | `0 8px` |
+| `--tag-normal-padding` | `0 10px` |
+| `--tag-large-padding` | `0 18px` |
+| `--tag-mini-height` | `20px` |
+| `--tag-small-height` | `28px` |
+| `--tag-normal-height` | `36px` |
+| `--tag-large-height` | `44px` |
+| `--tag-close-icon-size` | `16px` |
+| `--tag-close-button-padding` | `3px` |
 

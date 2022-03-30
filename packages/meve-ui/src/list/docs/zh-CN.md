@@ -176,15 +176,15 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@list-loading-height` | `50px` |
-| `@list-finished-height` | `50px` |
-| `@list-error-height` | `50px` |
-| `@list-loading-color` | `#888` |
-| `@list-finished-color` | `#888` |
-| `@list-error-color` | `#888` |
-| `@list-loading-font-size` | `14px` |
-| `@list-finished-font-size` | `14px` |
-| `@list-error-font-size` | `14px` |
+| `--list-loading-height` | `50px` |
+| `--list-finished-height` | `50px` |
+| `--list-error-height` | `50px` |
+| `--list-loading-color` | `#888` |
+| `--list-finished-color` | `#888` |
+| `--list-error-color` | `#888` |
+| `--list-loading-font-size` | `14px` |
+| `--list-finished-font-size` | `14px` |
+| `--list-error-font-size` | `14px` |
 
 ### 演示
 

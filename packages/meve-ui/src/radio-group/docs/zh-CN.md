@@ -285,23 +285,25 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@radio-error-color` | `@color-warning` |
-| `@radio-disabled-color` | `@color-disabled` |
-| `@radio-disabled-text-color` | `@color-text-disabled` |
-| `@radio-radio-container-margin` | `0 2px 0 0` |
-| `@radio-normal-radio-container-padding` | `6px` |
-| `@radio-normal-radio-container-padding` | `6px` |
-| `@radio-normal-radio-size` | `20px` |
-| `@radio-normal-radio-font-size` | `15px` |
-| `@radio-normal-svg-size` | `10px` |
-| `@radio-small-radio-container-padding` | `4px` |
-| `@radio-small-radio-container-padding` | `4px` |
-| `@radio-small-radio-size` | `16px` |
-| `@radio-small-radio-font-size` | `14px` |
-| `@radio-small-svg-size` | `8px` |
-| `@radio-mini-radio-container-padding` | `3px` |
-| `@radio-mini-radio-container-padding` | `3px` |
-| `@radio-mini-radio-size` | `14px` |
-| `@radio-mini-radio-font-size` | `12px` |
-| `@radio-mini-svg-size` | `6px` |
-| `@radio-text-color` | `#525f7f` |
+| `--radio-error-color` | `var(--color-warning)` |
+| `--radio-disabled-color` | `var(--color-disabled)` |
+| `--radio-disabled-text-color` | `var(--color-text-disabled)` |
+| `--radio-radio-container-margin` | `0 2px 0 0` |
+| `--radio-normal-radio-container-padding` | `6px` |
+| `--radio-normal-radio-container-padding` | `6px` |
+| `--radio-normal-radio-size` | `20px` |
+| `--radio-normal-radio-font-size` | `15px` |
+| `--radio-normal-svg-size` | `10px` |
+| `--radio-small-radio-container-padding` | `4px` |
+| `--radio-small-radio-container-padding` | `4px` |
+| `--radio-small-radio-size` | `16px` |
+| `--radio-small-radio-font-size` | `14px` |
+| `--radio-small-svg-size` | `8px` |
+| `--radio-mini-radio-container-padding` | `3px` |
+| `--radio-mini-radio-container-padding` | `3px` |
+| `--radio-mini-radio-size` | `14px` |
+| `--radio-mini-radio-font-size` | `12px` |
+| `--radio-mini-svg-size` | `6px` |
+| `--radio-text-color` | `#525f7f` |
+| `--radio-background` | `#fff` |
+| `--radio-border-color` | `#cad1d7` |

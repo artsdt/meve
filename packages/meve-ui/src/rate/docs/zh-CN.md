@@ -239,14 +239,14 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@rate-inactive-color` | `#dbdbdf` |
-| `@rate-disabled-color` | `@color-disabled` |
-| `@rate-error-color` | `@color-warning` |
-| `@rate-active-color` | `#f7ce55` |
-| `@rate-normal-rate-size` | `26px` |
-| `@rate-normal-half-rate-size` | `13px` |
-| `@rate-small-rate-size` | `22px` |
-| `@rate-small-half-rate-size` | `11px` |
-| `@rate-mini-rate-size` | `18px` |
-| `@rate-mini-half-rate-size` | `9px` |
+| `--rate-inactive-color` | `#dbdbdf` |
+| `--rate-disabled-color` | `var(--color-disabled)` |
+| `--rate-error-color` | `var(--color-warning)` |
+| `--rate-active-color` | `#f7ce55` |
+| `--rate-normal-rate-size` | `26px` |
+| `--rate-normal-half-rate-size` | `13px` |
+| `--rate-small-rate-size` | `22px` |
+| `--rate-small-half-rate-size` | `11px` |
+| `--rate-mini-rate-size` | `18px` |
+| `--rate-mini-half-rate-size` | `9px` |
 

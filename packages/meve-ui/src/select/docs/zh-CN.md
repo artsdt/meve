@@ -352,46 +352,46 @@ Select Variables
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@select-normal-height` | `42px` |
-| `@select-normal-font-size` | `15px` |
-| `@select-small-height` | `36px` |
-| `@select-small-font-size` | `14px` |
-| `@select-mini-height` | `30px` |
-| `@select-mini-font-size` | `13px` |
-| `@select-padding` | `0 10px` |
-| `@select-background` | `#fff` |
-| `@select-outline-active-color` | `@color-primary` |
-| `@select-outline-inactive-color` | `#ccc` |
-| `@select-border-radius` | `4px` |
-| `@select-text-color` | `#666` |
-| `@select-placeholder-text-color` | `#bbb` |
-| `@select-disabled-background` | `#e6e9ec` |
-| `@select-disabled-text-color` | `#888` |
-| `@select-clear-margin` | `0 0 0 6px` |
-| `@select-clear-size` | `16px` |
-| `@select-clear-color` | `#888` |
-| `@select-validation-error-color` | `@color-warning` |
-| `@select-normal-options-padding` | `9px 0` |
-| `@select-small-options-padding` | `7px 0` |
-| `@select-mini-options-padding` | `5px 0` |
-| `@select-options-background` | `#fff` |
-| `@select-options-box-shadow` | `0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1)` |
-| `@select-options-border-radius` | `6px` |
-| `@select-arrow-size` | `20px` |
-| `@select-tag-vertical-space` | `3px` |
+| `--select-normal-height` | `42px` |
+| `--select-normal-font-size` | `15px` |
+| `--select-small-height` | `36px` |
+| `--select-small-font-size` | `14px` |
+| `--select-mini-height` | `30px` |
+| `--select-mini-font-size` | `13px` |
+| `--select-padding` | `0 10px` |
+| `--select-background` | `#fff` |
+| `--select-outline-active-color` | `var(--color-primary)` |
+| `--select-outline-inactive-color` | `#ccc` |
+| `--select-border-radius` | `4px` |
+| `--select-text-color` | `#666` |
+| `--select-placeholder-text-color` | `#bbb` |
+| `--select-disabled-background` | `#e6e9ec` |
+| `--select-disabled-text-color` | `#888` |
+| `--select-clear-margin` | `0 0 0 6px` |
+| `--select-clear-size` | `16px` |
+| `--select-clear-color` | `#888` |
+| `--select-validation-error-color` | `var(--color-warning)` |
+| `--select-normal-options-padding` | `9px 0` |
+| `--select-small-options-padding` | `7px 0` |
+| `--select-mini-options-padding` | `5px 0` |
+| `--select-options-background` | `#fff` |
+| `--select-options-box-shadow` | `0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1)` |
+| `--select-options-border-radius` | `6px` |
+| `--select-arrow-size` | `20px` |
+| `--select-tag-vertical-space` | `3px` |
 
 Option Variables
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@option-text-color` | `#333` |
-| `@option-selected-text-color` | `#fff` |
-| `@option-selected-background` | `@color-primary` |
-| `@option-key-active-background` | `rgba(0, 0, 0, 0.06)` |
-| `@option-normal-padding` | `9px 14px` |
-| `@option-normal-font-size` | `15px` |
-| `@option-small-padding` | `7px 14px` |
-| `@option-small-font-size` | `14px` |
-| `@option-mini-padding` | `5px 14px` |
-| `@option-mini-font-size` | `13px` |
-| `@option-disabled-text-color` | `@color-text-disabled` |
+| `--option-text-color` | `#333` |
+| `--option-selected-text-color` | `#fff` |
+| `--option-selected-background` | `var(--color-primary)` |
+| `--option-key-active-background` | `rgba(0, 0, 0, 0.06)` |
+| `--option-normal-padding` | `9px 14px` |
+| `--option-normal-font-size` | `15px` |
+| `--option-small-padding` | `7px 14px` |
+| `--option-small-font-size` | `14px` |
+| `--option-mini-padding` | `5px 14px` |
+| `--option-mini-font-size` | `13px` |
+| `--option-disabled-text-color` | `var(--color-text-disabled)` |

@@ -2,11 +2,17 @@
 @form-item-label-font-size: 13px;
 @form-item-label-margin: 0 0 12px;
 
+:root {
+  --form-item-label-text-color: @form-item-label-text-color;
+  --form-item-label-font-size: @form-item-label-font-size;
+  --form-item-label-margin: @form-item-label-margin;
+}
+
 .m-form-item {
   &__label {
     font-weight: 500;
-    color: @form-item-label-text-color;
-    font-size: @form-item-label-font-size;
-    margin: @form-item-label-margin;
+    color: var(--form-item-label-text-color);
+    font-size: var(--form-item-label-font-size);
+    margin: var(--form-item-label-margin);
   }
 }

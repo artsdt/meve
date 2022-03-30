@@ -2,12 +2,12 @@
 
 @message-text-color: #fff;
 @message-loading-background-color: #3f4d67;
-@message-info-background-color: @color-info;
-@message-warning-background-color: @color-warning;
-@message-success-background-color: @color-success;
-@message-error-background-color: @color-error;
+@message-info-background-color: var(--color-info);
+@message-warning-background-color: var(--color-warning);
+@message-success-background-color: var(--color-success);
+@message-error-background-color: var(--color-error);
 @message-loading-color: #fff;
-@message-cubic-bezier: @cubic-bezier;
+@message-cubic-bezier: var(--cubic-bezier);
 @message-offset-top: 30px;
 @message-offset-bottom: 30px;
 @message-content-margin: 0 16px;
@@ -15,13 +15,30 @@
 @message-close-icon-size: 18px;
 @message-close-button-margin: 0 -10px 0 0;
 
+:root {
+  --message-text-color: @message-text-color;
+  --message-loading-background-color: @message-loading-background-color;
+  --message-info-background-color: @message-info-background-color;
+  --message-warning-background-color: @message-warning-background-color;
+  --message-success-background-color: @message-success-background-color;
+  --message-error-background-color: @message-error-background-color;
+  --message-loading-color: @message-loading-color;
+  --message-cubic-bezier: @message-cubic-bezier;
+  --message-offset-top: @message-offset-top;
+  --message-offset-bottom: @message-offset-bottom;
+  --message-content-margin: @message-content-margin;
+  --message-icon-size: @message-icon-size;
+  --message-close-icon-size: @message-close-icon-size;
+  --message-close-button-margin: @message-close-button-margin;
+}
+
 .m-message {
   position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
   min-height: 100vh;
-  color: @message-text-color;
+  color: var(--message-text-color);
   pointer-events: none;
 
   &-fade-enter,
@@ -32,11 +49,11 @@
 
   &-fade-enter-active,
   &-fade-leave-active {
-    transition: all 0.3s @message-cubic-bezier;
+    transition: all 0.3s var(--message-cubic-bezier);
   }
 
   &-fade-move {
-    transition: all 0.3s @message-cubic-bezier;
+    transition: all 0.3s var(--message-cubic-bezier);
   }
 
   &__list {
@@ -69,7 +86,7 @@
     flex-shrink: 0;
     background: transparent;
     opacity: 0.8;
-    margin: @message-close-button-margin;
+    margin: var(--message-close-button-margin);
 
     &:hover {
       opacity: 1;
@@ -79,7 +96,7 @@
   }
 
   &__close-icon[message-cover] {
-    font-size: @message-close-icon-size;
+    font-size: var(--message-close-icon-size);
   }
 
   &__main {
@@ -88,46 +105,46 @@
   }
 
   &__icon[message-cover] {
-    width: @message-icon-size;
-    height: @message-icon-size;
+    width: var(--message-icon-size);
+    height: var(--message-icon-size);
   }
 
   &__content {
-    margin: @message-content-margin;
+    margin: var(--message-content-margin);
   }
 
   &__loading[message-cover] svg {
-    color: @message-loading-color;
+    color: var(--message-loading-color);
     width: 20px;
     height: 20px;
   }
 
   &--loading {
-    background-color: @message-loading-background-color;
+    background-color: var(--message-loading-background-color);
   }
 
   &--info {
-    background-color: @message-info-background-color;
+    background-color: var(--message-info-background-color);
   }
 
   &--warning {
-    background-color: @message-warning-background-color;
+    background-color: var(--message-warning-background-color);
   }
 
   &--success {
-    background-color: @message-success-background-color;
+    background-color: var(--message-success-background-color);
   }
 
   &--error {
-    background-color: @message-error-background-color;
+    background-color: var(--message-error-background-color);
   }
 
   &--top {
-    top: @message-offset-top;
+    top: var(--message-offset-top);
   }
 
   &--bottom {
-    bottom: @message-offset-bottom;
+    bottom: var(--message-offset-bottom);
   }
 
   &--forbid-click {

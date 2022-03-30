@@ -331,28 +331,28 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@input-normal-height` | `42px` |
-| `@input-normal-font-size` | `15px` |
-| `@input-small-height` | `36px` |
-| `@input-small-font-size` | `14px` |
-| `@input-mini-height` | `30px` |
-| `@input-mini-font-size` | `13px` |
-| `@input-padding` | `0 10px` |
-| `@input-normal-textarea-padding` | `10px 0` |
-| `@input-small-textarea-padding` | `7px 0` |
-| `@input-mini-textarea-padding` | `5px 0` |
-| `@input-background` | `#fff` |
-| `@input-outline-active-color` | `@color-primary` |
-| `@input-outline-inactive-color` | `#ccc` |
-| `@input-border-radius` | `4px` |
-| `@input-text-color` | `#666` |
-| `@input-placeholder-text-color` | `#bbb` |
-| `@input-disabled-background` | `#e6e9ec` |
-| `@input-disabled-text-color` | `#888` |
-| `@input-maxlength-font-size` | `14px` |
-| `@input-maxlength-text-color` | `#888` |
-| `@input-maxlength-margin` | `0 0 0 6px` |
-| `@input-clear-margin` | `0 0 0 6px` |
-| `@input-clear-size` | `16px` |
-| `@input-clear-color` | `#888` |
-| `@input-validation-error-color` | `@color-warning` |
+| `--input-normal-height` | `42px` |
+| `--input-normal-font-size` | `15px` |
+| `--input-small-height` | `36px` |
+| `--input-small-font-size` | `14px` |
+| `--input-mini-height` | `30px` |
+| `--input-mini-font-size` | `13px` |
+| `--input-padding` | `0 10px` |
+| `--input-normal-textarea-padding` | `10px 0` |
+| `--input-small-textarea-padding` | `7px 0` |
+| `--input-mini-textarea-padding` | `5px 0` |
+| `--input-background` | `#fff` |
+| `--input-outline-active-color` | `var(--color-primary)` |
+| `--input-outline-inactive-color` | `#ccc` |
+| `--input-border-radius` | `4px` |
+| `--input-text-color` | `#666` |
+| `--input-placeholder-text-color` | `#bbb` |
+| `--input-disabled-background` | `#e6e9ec` |
+| `--input-disabled-text-color` | `#888` |
+| `--input-maxlength-font-size` | `14px` |
+| `--input-maxlength-text-color` | `#888` |
+| `--input-maxlength-margin` | `0 0 0 6px` |
+| `--input-clear-margin` | `0 0 0 6px` |
+| `--input-clear-size` | `16px` |
+| `--input-clear-color` | `#888` |
+| `--input-validation-error-color` | `var(--color-warning)` |

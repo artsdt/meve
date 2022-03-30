@@ -1,18 +1,24 @@
 @import '../styles/var';
 
-@loading-bar-primary-color: @color-primary;
-@loading-bar-error-color: @color-error;
+@loading-bar-primary-color: var(--color-primary);
+@loading-bar-error-color: var(--color-error);
 @loading-bar-height: 3px;
+
+:root {
+  --loading-bar-primary-color: @loading-bar-primary-color;
+  --loading-bar-error-color: @loading-bar-error-color;
+  --loading-bar-height: @loading-bar-height;
+}
 
 .m-loading-bar {
   width: 0;
   position: fixed;
   top: 0;
   left: 0;
-  height: @loading-bar-height;
-  background: @loading-bar-primary-color;
+  height: var(--loading-bar-height);
+  background: var(--loading-bar-primary-color);
 
   &--error {
-    background-color: @loading-bar-error-color;
+    background-color: var(--loading-bar-error-color);
   }
 }

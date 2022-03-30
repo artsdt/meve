@@ -1,12 +1,22 @@
 @import '../styles/var';
 
-@loading-color: @color-primary;
+@loading-color: var(--color-primary);
 @loading-description-margin: 10px 0 0 0;
 @loading-description-font-size: 14px;
 @loading-mask-background: #fff;
 @loading-mask-opacity: 0.5;
 @loading-size: 36px;
-@loading-cubic-bezier: @cubic-bezier;
+@loading-cubic-bezier: var(--cubic-bezier);
+
+:root {
+  --loading-color: @loading-color;
+  --loading-description-margin: @loading-description-margin;
+  --loading-description-font-size: @loading-description-font-size;
+  --loading-mask-background: @loading-mask-background;
+  --loading-mask-opacity: @loading-mask-opacity;
+  --loading-size: @loading-size;
+  --loading-cubic-bezier: @loading-cubic-bezier;
+}
 
 @keyframes loading-rotate {
   from {
@@ -45,9 +55,9 @@
 
     svg {
       display: block;
-      width: @loading-size;
-      height: @loading-size;
-      color: @loading-color;
+      width: var(--loading-size);
+      height: var(--loading-size);
+      color: var(--loading-color);
 
       circle {
         animation: circular 1.5s ease-in-out infinite;
@@ -72,15 +82,15 @@
     right: 0;
     bottom: 0;
     z-index: 10;
-    transition: opacity 0.25s @loading-cubic-bezier;
-    background: @loading-mask-background;
+    transition: opacity 0.25s var(--loading-cubic-bezier);
+    background: var(--loading-mask-background);
   }
 
   &__description-container {
     position: relative;
     z-index: 11;
-    color: @loading-color;
-    font-size: @loading-description-font-size;
+    color: var(--loading-color);
+    font-size: var(--loading-description-font-size);
   }
 
   &__description {
@@ -92,7 +102,7 @@
   }
 
   &--opacity-visible {
-    opacity: @loading-mask-opacity;
+    opacity: var(--loading-mask-opacity);
   }
 
   &--allow-touch {

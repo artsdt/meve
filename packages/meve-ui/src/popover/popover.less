@@ -1,11 +1,19 @@
 @import '../styles/var';
 
-@popover-cubic-bezier: @cubic-bezier;
+@popover-cubic-bezier: var(--cubic-bezier);
 @popover-box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15),
   0 5px 15px rgba(0, 0, 0, 0.1);
 @popover-padding: 10px 14px;
 @popover-border-radius: 6px;
 @popover-background: #fff;
+
+:root {
+  --popover-cubic-bezier: @popover-cubic-bezier;
+  --popover-box-shadow: @popover-box-shadow;
+  --popover-padding: @popover-padding;
+  --popover-border-radius: @popover-border-radius;
+  --popover-background: @popover-background;
+}
 
 .m-popover {
   display: inline-flex;
@@ -14,13 +22,13 @@
     position: absolute;
     display: inline-flex;
     flex-direction: column;
-    transition: transform 0.25s @cubic-bezier, opacity 0.25s @cubic-bezier;
+    transition: transform 0.25s var(--popover-cubic-bezier), opacity 0.25s var(--popover-cubic-bezier);
   }
 
   &--default-style {
-    background: @popover-background;
-    box-shadow: @popover-box-shadow;
-    padding: @popover-padding;
-    border-radius: @popover-border-radius;
+    background: var(--popover-background);
+    box-shadow: var(--popover-box-shadow);
+    padding: var(--popover-padding);
+    border-radius: var(--popover-border-radius);
   }
 }

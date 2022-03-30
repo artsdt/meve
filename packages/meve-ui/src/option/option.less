@@ -2,7 +2,7 @@
 
 @option-text-color: #333;
 @option-selected-text-color: #fff;
-@option-selected-background: @color-primary;
+@option-selected-background: var(--color-primary);
 @option-key-active-background: rgba(0, 0, 0, 0.06);
 @option-normal-padding: 9px 14px;
 @option-normal-font-size: 15px;
@@ -10,11 +10,25 @@
 @option-small-font-size: 14px;
 @option-mini-padding: 5px 14px;
 @option-mini-font-size: 13px;
-@option-disabled-text-color: @color-text-disabled;
+@option-disabled-text-color: var(--color-text-disabled);
+
+:root {
+  --option-text-color: @option-text-color;
+  --option-selected-text-color: @option-selected-text-color;
+  --option-selected-background: @option-selected-background;
+  --option-key-active-background: @option-key-active-background;
+  --option-normal-padding: @option-normal-padding;
+  --option-normal-font-size: @option-normal-font-size;
+  --option-small-padding: @option-small-padding;
+  --option-small-font-size: @option-small-font-size;
+  --option-mini-padding: @option-mini-padding;
+  --option-mini-font-size: @option-mini-font-size;
+  --option-disabled-text-color: @option-disabled-text-color;
+}
 
 .m-option {
   cursor: pointer;
-  color: @option-text-color;
+  color: var(--option-text-color);
   -webkit-tap-highlight-color: transparent;
   transition: background-color 0.15s, color 0.15s;
   overflow: hidden;
@@ -23,30 +37,30 @@
   word-break: break-all;
 
   &--normal {
-    font-size: @option-normal-font-size;
-    padding: @option-normal-padding;
+    font-size: var(--option-normal-font-size);
+    padding: var(--option-normal-padding);
   }
 
   &--small {
-    font-size: @option-small-font-size;
-    padding: @option-small-padding;
+    font-size: var(--option-small-font-size);
+    padding: var(--option-small-padding);
   }
 
   &--mini {
-    font-size: @option-mini-font-size;
-    padding: @option-mini-padding;
+    font-size: var(--option-mini-font-size);
+    padding: var(--option-mini-padding);
   }
 
   &--key-active {
-    background: @option-key-active-background;
+    background: var(--option-key-active-background);
   }
 
   &--selected {
-    background: @option-selected-background;
-    color: @option-selected-text-color;
+    background: var(--option-selected-background);
+    color: var(--option-selected-text-color);
   }
 
   &--disabled {
-    color: @option-disabled-text-color;
+    color: var(--option-disabled-text-color);
   }
 }

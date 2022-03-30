@@ -288,21 +288,21 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@time-picker-active-color` | `@color-primary` |
-| `@time-picker-popover-box-shadow` | `0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1)` |
-| `@time-picker-popover-border-radius` | `4px` |
-| `@time-picker-popover-font-size` | `14px` |
-| `@time-picker-popover-padding` | `4px` |
-| `@time-picker-popover-width` | `180px` |
-| `@time-picker-popover-background` | `#fff` |
-| `@time-picker-time-margin` | `4px` |
-| `@time-picker-time-height` | `30px` |
-| `@time-picker-time-border-radius` | `4px` |
-| `@time-picker-time-text-color` | `#555` |
-| `@time-picker-time-hover-background` | `rgba(0, 0, 0, 0.06)` |
-| `@time-picker-actions-border` | `thin solid #eee` |
-| `@time-picker-actions-padding` | `10px` |
-| `@time-picker-space-height` | `172px` |
-| `@time-picker-clock-icon-size` | `16px` |
-| `@time-picker-clock-icon-margin` | `0 0 0 6px` |
-| `@time-picker-clear-icon-size` | `16px` |
+| `--time-picker-active-color` | `var(--color-primary)` |
+| `--time-picker-popover-box-shadow` | `0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1)` |
+| `--time-picker-popover-border-radius` | `4px` |
+| `--time-picker-popover-font-size` | `14px` |
+| `--time-picker-popover-padding` | `4px` |
+| `--time-picker-popover-width` | `180px` |
+| `--time-picker-popover-background` | `#fff` |
+| `--time-picker-time-margin` | `4px` |
+| `--time-picker-time-height` | `30px` |
+| `--time-picker-time-border-radius` | `4px` |
+| `--time-picker-time-text-color` | `#555` |
+| `--time-picker-time-hover-background` | `rgba(0, 0, 0, 0.06)` |
+| `--time-picker-actions-border` | `thin solid #eee` |
+| `--time-picker-actions-padding` | `10px` |
+| `--time-picker-space-height` | `172px` |
+| `--time-picker-clock-icon-size` | `16px` |
+| `--time-picker-clock-icon-margin` | `0 0 0 6px` |
+| `--time-picker-clear-icon-size` | `16px` |

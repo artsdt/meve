@@ -156,10 +156,10 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@breadcrumb-item-active-color` | `@color-primary` |
-| `@breadcrumb-item-active-hover-color` | `#233dd2` |
-| `@breadcrumb-item-text-color` | `#888` |
-| `@breadcrumb-item-separator-margin` | `0 6px` |
-| `@breadcrumb-item-separator-font-size` | `14px` |
+| `--breadcrumb-item-active-color` | `var(--color-primary)` |
+| `--breadcrumb-item-active-hover-color` | `#233dd2` |
+| `--breadcrumb-item-text-color` | `#888` |
+| `--breadcrumb-item-separator-margin` | `0 6px` |
+| `--breadcrumb-item-separator-font-size` | `14px` |
 
 

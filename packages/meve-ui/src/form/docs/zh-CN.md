@@ -171,9 +171,9 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@form-item-label-text-color` | `#525f7f` |
-| `@form-item-label-font-size` | `13px` |
-| `@form-item-label-margin` | `0 0 12px` |
-| `@form-details-error-color` | `@color-warning` |
-| `@form-details-margin-top` | `6px` |
-| `@form-details-font-size` | `12px` |
+| `--form-item-label-text-color` | `#525f7f` |
+| `--form-item-label-font-size` | `13px` |
+| `--form-item-label-margin` | `0 0 12px` |
+| `--form-details-error-color` | `var(--color-warning)` |
+| `--form-details-margin-top` | `6px` |
+| `--form-details-font-size` | `12px` |

@@ -311,9 +311,9 @@ import Indicator from '../example/Indicator.vue'
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@swipe-indicator-color` | `#fff` |
-| `@swipe-indicators-offset` | `14px` |
-| `@swipe-indicator-offset` | `4px` |
-| `@swipe-indicator-width` | `12px` |
-| `@swipe-indicator-height` | `8px` |
-| `@swipe-indicator-border-radius` | `2px` |
+| `--swipe-indicator-color` | `#fff` |
+| `--swipe-indicators-offset` | `14px` |
+| `--swipe-indicator-offset` | `4px` |
+| `--swipe-indicator-width` | `12px` |
+| `--swipe-indicator-height` | `8px` |
+| `--swipe-indicator-border-radius` | `2px` |

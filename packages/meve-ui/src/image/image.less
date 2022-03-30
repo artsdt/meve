@@ -3,6 +3,13 @@
 @image-preview-toolbar-border-radius: 30px;
 @image-preview-toolbar-bottom: 4vh;
 
+:root {
+  --image-preview-toolbar-padding: @image-preview-toolbar-padding;
+  --image-preview-toolbar-background: @image-preview-toolbar-background;
+  --image-preview-toolbar-border-radius: @image-preview-toolbar-border-radius;
+  --image-preview-toolbar-bottom: @image-preview-toolbar-bottom;
+}
+
 .m-image {
   overflow: hidden;
 
@@ -39,10 +46,10 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: @image-preview-toolbar-bottom;
-    padding: @image-preview-toolbar-padding;
-    background: @image-preview-toolbar-background;
-    border-radius: @image-preview-toolbar-border-radius;
+    bottom: var(--image-preview-toolbar-bottom);
+    padding: var(--image-preview-toolbar-padding);
+    background: var(--image-preview-toolbar-background);
+    border-radius: var(--image-preview-toolbar-border-radius);
   }
 
   &--preview-disabled {

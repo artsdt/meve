@@ -140,5 +140,5 @@ import Icons from '../example/Icons.vue'
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@icon-size` | `20px` |
+| `--icon-size` | `20px` |
 

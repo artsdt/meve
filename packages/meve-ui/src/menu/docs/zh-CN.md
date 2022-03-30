@@ -545,34 +545,34 @@ export default {
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@menu-background` | `#fff` |
+| `--menu-background` | `#fff` |
 
 #### MenuItemGroup Variables
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@menu-item-group-padding` | `12px 20px` |
-| `@menu-item-group-margin` | `6px 0 0 0` |
-| `@menu-item-group-border-radius` | `4px` |
-| `@menu-item-group-text-disabled-color` | `#bbb` |
-| `@menu-item-group-text-color` | `#777` |
-| `@menu-item-group-text-expanded-color` | `#000` |
-| `@menu-item-group-font-size` | `14px` |
-| `@menu-item-group-arrow-size` | `20px` |
-| `@menu-item-group-icon-margin` | `0 10px 0 0` |
-| `@menu-item-group-cubic-bezier` | `@cubic-bezier` |
+| `--menu-item-group-padding` | `12px 20px` |
+| `--menu-item-group-margin` | `6px 0 0 0` |
+| `--menu-item-group-border-radius` | `4px` |
+| `--menu-item-group-text-disabled-color` | `#bbb` |
+| `--menu-item-group-text-color` | `#777` |
+| `--menu-item-group-text-expanded-color` | `#000` |
+| `--menu-item-group-font-size` | `14px` |
+| `--menu-item-group-arrow-size` | `20px` |
+| `--menu-item-group-icon-margin` | `0 10px 0 0` |
+| `--menu-item-group-cubic-bezier` | `var(--cubic-bezier)` |
 
 #### MenuItem Variables
 
 | 变量名 | 默认值 |
 | --- | --- |
-| `@menu-item-padding` | `12px 20px` |
-| `@menu-item-margin` | `6px 0 0 0` |
-| `@menu-item-border-radius` | `4px` |
-| `@menu-item-text-disabled-color` | `#bbb` |
-| `@menu-item-text-color` | `#777` |
-| `@menu-item-text-selected-color` | `#fff` |
-| `@menu-item-font-size` | `14px` |
-| `@menu-item-icon-margin` | `0 10px 0 0` |
-| `@menu-item-cubic-bezier` | `@cubic-bezier` |
-| `@menu-item-selected-background` | `@color-primary` |
+| `--menu-item-padding` | `12px 20px` |
+| `--menu-item-margin` | `6px 0 0 0` |
+| `--menu-item-border-radius` | `4px` |
+| `--menu-item-text-disabled-color` | `#bbb` |
+| `--menu-item-text-color` | `#777` |
+| `--menu-item-text-selected-color` | `#fff` |
+| `--menu-item-font-size` | `14px` |
+| `--menu-item-icon-margin` | `0 10px 0 0` |
+| `--menu-item-cubic-bezier` | `var(--cubic-bezier)` |
+| `--menu-item-selected-background` | `var(--color-primary)` |
