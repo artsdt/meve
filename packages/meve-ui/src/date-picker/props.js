@@ -1,10 +1,8 @@
-const typeValidator = (type) => ['text', 'password', 'number'].includes(type)
-
 const sizeValidator = (type) => ['normal', 'small', 'mini'].includes(type)
 
 export const props = {
   value: {
-    type: [String, Number],
+    type: [String, Array],
   },
   label: {
     type: [String, Number],
@@ -16,22 +14,6 @@ export const props = {
   },
   placeholder: {
     type: String,
-  },
-  type: {
-    type: String,
-    default: 'text',
-    validator: typeValidator,
-  },
-  textarea: {
-    type: Boolean,
-    default: false,
-  },
-  rows: {
-    type: [String, Number],
-    default: 5,
-  },
-  maxlength: {
-    type: [String, Number],
   },
   disabled: {
     type: Boolean,
@@ -45,19 +27,23 @@ export const props = {
     type: Boolean,
     default: false,
   },
-  resize: {
+  valueFormat: {
+    type: String,
+    default: 'YYYY-MM-DD',
+  },
+  range: {
     type: Boolean,
-    default: true,
+    default: false,
+  },
+  customDisabled: {
+    type: Function,
+    default: () => false,
   },
   validateTrigger: {
     type: Array,
-    default: () => ['onInput', 'onClear'],
+    default: () => ['onChange', 'onClear'],
   },
   rules: {
     type: Array,
-  },
-  // internal
-  validateValue: {
-    type: [String, Number, Array],
   },
 }

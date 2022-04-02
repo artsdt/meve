@@ -18,6 +18,11 @@ module.exports = {
           labelCN: '快速开始',
           labelUS: 'Quickstart',
         },
+        {
+          name: 'style-provider',
+          labelCN: '主题定制',
+          labelUS: 'Custom Themes',
+        },
       ],
     },
     {
@@ -217,6 +222,11 @@ module.exports = {
           name: 'time-picker',
           labelCN: 'TimePicker 时间选择器',
           labelUS: 'TimePicker',
+        },
+        {
+          name: 'date-picker',
+          labelCN: 'DatePicker 日期选择器',
+          labelUS: 'DatePicker',
         },
       ],
     },

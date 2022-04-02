@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test date picker disabled 1`] = `
+"<div class=\\"m-date-picker m-date-picker--disabled\\">
+  <div class=\\"m-popover m-date-picker__popover\\" date-picker-cover=\\"true\\">
+    <div class=\\"m-form-item\\" date-picker-cover=\\"true\\">
+      <div class=\\"m-input m--box m-input--normal m-input--disabled\\"><input id=\\"m-input-3\\" autocomplete=\\"off\\" type=\\"text\\" disabled=\\"disabled\\" readonly=\\"true\\" class=\\"m-input__input\\">
+        <div class=\\"m-date-picker__append-icon\\"><i date-picker-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-calendar m-date-picker__calendar-icon\\"></i></div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test date picker disabled 2`] = `
+"<div class=\\"m-date-picker\\">
+  <div class=\\"m-popover m-date-picker__popover\\" date-picker-cover=\\"true\\">
+    <div class=\\"m-form-item\\" date-picker-cover=\\"true\\">
+      <div class=\\"m-input m--box m-input--normal m-input--outline\\"><input id=\\"m-input-3\\" autocomplete=\\"off\\" type=\\"text\\" readonly=\\"true\\" class=\\"m-input__input\\">
+        <div class=\\"m-date-picker__append-icon\\"><i date-picker-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-calendar m-date-picker__calendar-icon\\"></i></div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test date picker readonly 1`] = `
+"<div class=\\"m-date-picker\\">
+  <div class=\\"m-popover m-date-picker__popover\\" date-picker-cover=\\"true\\">
+    <div class=\\"m-form-item\\" date-picker-cover=\\"true\\">
+      <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-4\\" autocomplete=\\"off\\" type=\\"text\\" readonly=\\"true\\" class=\\"m-input__input\\">
+        <div class=\\"m-date-picker__append-icon\\"><i date-picker-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-calendar m-date-picker__calendar-icon\\"></i></div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test date picker readonly 2`] = `
+"<div class=\\"m-date-picker\\">
+  <div class=\\"m-popover m-date-picker__popover\\" date-picker-cover=\\"true\\">
+    <div class=\\"m-form-item\\" date-picker-cover=\\"true\\">
+      <div class=\\"m-input m--box m-input--normal m-input--outline\\"><input id=\\"m-input-4\\" autocomplete=\\"off\\" type=\\"text\\" readonly=\\"true\\" class=\\"m-input__input\\">
+        <div class=\\"m-date-picker__append-icon\\"><i date-picker-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-calendar m-date-picker__calendar-icon\\"></i></div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test date picker validation 1`] = `
+"<div class=\\"m-date-picker\\">
+  <div class=\\"m-popover m-date-picker__popover\\" date-picker-cover=\\"true\\">
+    <div class=\\"m-form-item\\" date-picker-cover=\\"true\\">
+      <div class=\\"m-input m--box m-input--normal m-input--validation-error-border\\"><input id=\\"m-input-8\\" autocomplete=\\"off\\" type=\\"text\\" readonly=\\"true\\" class=\\"m-input__input\\">
+        <div class=\\"m-date-picker__append-icon\\"><i date-picker-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-calendar m-date-picker__calendar-icon\\"></i></div>
+      </div>
+      <div class=\\"m-form-details\\">不能为空</div>
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test date picker validation 2`] = `
+"<div class=\\"m-date-picker\\">
+  <div class=\\"m-popover m-date-picker__popover\\" date-picker-cover=\\"true\\">
+    <div class=\\"m-form-item\\" date-picker-cover=\\"true\\">
+      <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-8\\" autocomplete=\\"off\\" type=\\"text\\" readonly=\\"true\\" class=\\"m-input__input\\">
+        <div class=\\"m-date-picker__append-icon\\"><i date-picker-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-calendar m-date-picker__calendar-icon\\"></i></div>
+      </div>
+      <!---->
+    </div>
+    <div class=\\"m-teleport\\"></div>
+  </div>
+</div>"
+`;

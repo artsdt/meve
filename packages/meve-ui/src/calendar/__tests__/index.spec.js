@@ -77,10 +77,16 @@ test('test calendar exposed methods', async () => {
   wrapper.vm.now = dayjs('2022-03-17')
   await delay(16)
 
-  wrapper.vm.prev()
+  wrapper.vm.prevMonth()
   expect(wrapper.vm.current.format('YYYY-MM-DD')).toBe('2022-02-17')
 
-  wrapper.vm.next()
+  wrapper.vm.nextMonth()
+  expect(wrapper.vm.current.format('YYYY-MM-DD')).toBe('2022-03-17')
+
+  wrapper.vm.prevYear()
+  expect(wrapper.vm.current.format('YYYY-MM-DD')).toBe('2021-03-17')
+
+  wrapper.vm.nextYear()
   expect(wrapper.vm.current.format('YYYY-MM-DD')).toBe('2022-03-17')
 
   wrapper.vm.toNow()

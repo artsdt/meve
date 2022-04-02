@@ -1,0 +1,147 @@
+@import '../styles/var';
+
+@date-picker-popover-box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15),
+  0 5px 15px rgba(0, 0, 0, 0.1);
+@date-picker-popover-border-radius: 4px;
+@date-picker-popover-font-size: 14px;
+@date-picker-popover-padding: 6px 14px;
+@date-picker-popover-width: 294px;
+@date-picker-popover-background: #fff;
+@date-picker-actions-border: thin solid #eee;
+@date-picker-actions-padding: 10px 2px;
+@date-picker-calendar-icon-size: 16px;
+@date-picker-calendar-icon-margin: 0 0 0 6px;
+@date-picker-clear-icon-size: 16px;
+@date-picker-calendar-date-cell-height: 38px;
+@date-picker-calendar-date-cell-padding: 2px;
+@date-picker-calendar-date-text-size: 28px;
+@date-picker-calendar-date-text-font-size: 14px;
+@date-picker-calendar-day-border: thin solid #eee;
+@date-picker-calendar-header-padding: 8px 0 0;
+@date-picker-calendar-button-padding: 2px;
+@date-picker-calendar-arrow-icon-size: 16px;
+@date-picker-calendar-arrow-icon-color: #888;
+
+:root {
+  --date-picker-popover-box-shadow: @date-picker-popover-box-shadow;
+  --date-picker-popover-border-radius: @date-picker-popover-box-shadow;
+  --date-picker-popover-font-size: @date-picker-popover-font-size;
+  --date-picker-popover-padding: @date-picker-popover-padding;
+  --date-picker-popover-width: @date-picker-popover-width;
+  --date-picker-popover-background: @date-picker-popover-background;
+  --date-picker-actions-border: @date-picker-actions-border;
+  --date-picker-actions-padding: @date-picker-actions-padding;
+  --date-picker-calendar-icon-size: @date-picker-calendar-icon-size;
+  --date-picker-calendar-icon-margin: @date-picker-calendar-icon-margin;
+  --date-picker-clear-icon-size: @date-picker-clear-icon-size;
+  --date-picker-calendar-date-cell-height: @date-picker-calendar-date-cell-height;
+  --date-picker-calendar-date-cell-padding: @date-picker-calendar-date-cell-padding;
+  --date-picker-calendar-date-text-size: @date-picker-calendar-date-text-size;
+  --date-picker-calendar-date-text-font-size: @date-picker-calendar-date-text-font-size;
+  --date-picker-calendar-day-border: @date-picker-calendar-day-border;
+  --date-picker-calendar-header-padding: @date-picker-calendar-header-padding;
+  --date-picker-calendar-button-padding: @date-picker-calendar-button-padding;
+  --date-picker-calendar-arrow-icon-size: @date-picker-calendar-arrow-icon-size;
+  --date-picker-calendar-arrow-icon-color: @date-picker-calendar-arrow-icon-color;
+}
+
+.m-date-picker {
+  -webkit-tap-highlight-color: transparent;
+
+  * {
+    cursor: pointer !important;
+  }
+
+  &__popover[date-picker-cover] {
+    display: block;
+  }
+
+  &__popover-inner {
+    width: var(--date-picker-popover-width);
+    background: var(--date-picker-popover-background);
+    box-shadow: var(--date-picker-popover-box-shadow);
+    border-radius: var(--date-picker-popover-border-radius);
+    font-size: var(--date-picker-popover-font-size);
+    padding: var(--date-picker-popover-padding);
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--date-picker-actions-padding);
+    border-top: var(--date-picker-actions-border);
+  }
+
+  &__calendar[date-picker-cover] {
+    .m-calendar__date-container {
+      border: none;
+    }
+
+    .m-calendar__date-cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: var(--date-picker-calendar-date-cell-height);
+      padding: var(--date-picker-calendar-date-cell-padding);
+      border: none;
+    }
+
+    .m-calendar__date-text {
+      width: var(--date-picker-calendar-date-text-size);
+      height: var(--date-picker-calendar-date-text-size);
+      font-size: var(--date-picker-calendar-date-text-font-size);
+    }
+
+    .m-calendar__day-container {
+      border: none;
+    }
+
+    .m-calendar__day {
+      border: none;
+      border-bottom: var(--date-picker-calendar-day-border);
+    }
+  }
+
+  &__calendar-header {
+    display: flex;
+    align-items: center;
+    padding: var(--date-picker-calendar-header-padding);
+  }
+
+  &__calendar-month-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__calendar-button[date-picker-cover] {
+    padding: var(--date-picker-calendar-button-padding);
+  }
+
+  &__calendar-arrow-icon[date-picker-cover] {
+    font-size: var(--date-picker-calendar-arrow-icon-size);
+    color: var(--date-picker-calendar-arrow-icon-color);
+  }
+
+  &__append-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__calendar-icon {
+    font-size: var(--date-picker-calendar-icon-size);
+    margin: var(--date-picker-calendar-icon-margin);
+  }
+
+  &__clear-icon[date-picker-cover] {
+    font-size: var(--date-picker-clear-icon-size);
+    transition: 0.1s opacity linear;
+  }
+
+  &--hide-clear-icon {
+    opacity: 0;
+  }
+}

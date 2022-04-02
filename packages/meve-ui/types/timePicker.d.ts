@@ -5,7 +5,7 @@ export type TimePickerSize = 'normal' | 'small' | 'mini'
 export type TimePickerValidateTrigger = 'onChange' | 'onClick' | 'onClear'
 
 export interface TimePickerProps {
-  value?: string | number
+  value?: string
   label?: string | number
   placeholder?: string
   size?: TimePickerSize

@@ -41,6 +41,12 @@
         <m-option label="Sleep" />
         <m-option label="Coding" />
       </m-select>
+      <m-date-picker
+        label="DATE"
+        placeholder="Please pick date"
+        :rules="[(v) => (v && v.endsWith('01')) || 'You must pick 01 date']"
+        v-model="form.date"
+      />
       <m-time-picker
         label="TIME"
         placeholder="Please pick time"
@@ -88,6 +94,7 @@ import Checkbox from '../../checkbox'
 import CheckboxGroup from '../../checkbox-group'
 import Switch from '../../switch'
 import Slider from '../../slider'
+import DatePicker from '../../date-picker'
 import TimePicker from '../../time-picker'
 
 export default {
@@ -107,6 +114,7 @@ export default {
     [Switch.name]: Switch,
     [Slider.name]: Slider,
     [TimePicker.name]: TimePicker,
+    [DatePicker.name]: DatePicker,
   },
   data: () => ({
     disabled: false,
@@ -122,6 +130,7 @@ export default {
       agreement: undefined,
       rate: 0,
       progress: 5,
+      date: undefined,
       time: undefined,
     },
   }),

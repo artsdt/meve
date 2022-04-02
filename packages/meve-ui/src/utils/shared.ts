@@ -149,3 +149,5 @@ export const createCache = <T>(max: number): CacheInstance<T> => {
 }
 
 export const uniq = (arr: Array<any>) => [...new Set(arr)]
+
+export const NOOP = () => {}

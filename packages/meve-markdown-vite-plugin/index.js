@@ -46,10 +46,17 @@ function extractComponents(source) {
 function injectCodeExample(source) {
   const codeRE = /(<pre class="hljs">(.|\r|\n)*?<\/pre>)/g
   return source.replace(codeRE, (str) => {
-    const jsFlag = '<span class="hljs-comment">// default fold</span>\n'
-    const commentFlag = '// default fold\n'
-    const attr = str.includes(commentFlag) || str.includes(jsFlag) ? 'default-fold' : ''
-    return `<app-code ${attr}>${str.replace(jsFlag, '').replace(commentFlag, '')}</app-code>`
+    const flags = [
+      '// default fold\n',
+      '<span class="hljs-comment">// default fold</span>\n',
+      '<span class="hljs-comment">/* default fold */</span>\n',
+    ]
+
+    const attr = flags.some((flag) => str.includes(flag)) ? 'default-fold' : ''
+
+    str = flags.reduce((str, flag) => str.replace(flag, ''), str)
+
+    return `<app-code ${attr}>${str}</app-code>`
   })
 }
 

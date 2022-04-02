@@ -19,9 +19,13 @@ export interface CalendarProps {
 export class Calendar extends MComponent {
   $props: CalendarProps
 
-  prev(): void
+  prevMonth(): void
 
-  next(): void
+  nextMonth(): void
+
+  prevYear(): void
+
+  nextYear(): void
 
   toNow(): void
 }

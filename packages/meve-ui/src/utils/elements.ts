@@ -1,4 +1,5 @@
-import { isNumber, isString, toNumber } from './shared'
+import { isNumber, isString, kebabCase, toNumber } from './shared'
+import { StyleVars } from '../style-provider'
 
 export function getLeft(element: HTMLElement): number {
   const { left } = element.getBoundingClientRect()
@@ -185,4 +186,13 @@ export function scrollTo(
 
 export function isMobile() {
   return /Android|webOS|iPhone|iPod|BlackBerry|Pad/i.test(navigator.userAgent)
+}
+
+export function formatStyleVars(styleVars: StyleVars | null) {
+  return Object.entries(styleVars ?? {}).reduce((styles, [key, value]) => {
+    const cssVar = key.startsWith('--') ? key : `--${kebabCase(key)}`
+    styles[cssVar] = value
+
+    return styles
+  }, {} as StyleVars)
 }

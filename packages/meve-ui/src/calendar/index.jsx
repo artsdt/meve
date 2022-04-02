@@ -4,6 +4,7 @@ import Button from '../button'
 import Icon from '../icon'
 import { createNamespace } from '../utils/create'
 import { props } from './props'
+import { isArray } from '../utils/shared'
 
 import '../styles/common.less'
 import '../ripple/ripple.less'
@@ -33,24 +34,38 @@ const CalendarPlugin = createComponent({
 
   computed: {
     valueDate() {
-      return this.range ? (this.value ?? []).map(this.formatValue) : this.formatValue(this.value)
+      return this.range ? (isArray(this.value) ? this.value : []).map(this.formatValue) : this.formatValue(this.value)
     },
   },
 
   methods: {
     // expose
-    next() {
+    nextMonth() {
       this.current = this.current.month(this.current.month() + 1)
     },
 
     // expose
-    prev() {
+    prevMonth() {
       this.current = this.current.month(this.current.month() - 1)
+    },
+
+    // expose
+    nextYear() {
+      this.current = this.current.year(this.current.year() + 1)
+    },
+
+    // expose
+    prevYear() {
+      this.current = this.current.year(this.current.year() - 1)
     },
 
     // expose
     toNow() {
       this.current = dayjs()
+
+      if (this.customDisabled(this.current)) {
+        return
+      }
 
       this.change(this.range ? [dayjs()] : dayjs())
     },
@@ -205,7 +220,7 @@ const CalendarPlugin = createComponent({
         <div class={namespace('__header')}>
           <div class={namespace('__current')}>{this.current.format('YYYY-MM')}</div>
           <div class={namespace('__pager')}>
-            <Button type="primary" round disabled={this.disabled} readonly={this.readonly} onClick={this.prev}>
+            <Button type="primary" round disabled={this.disabled} readonly={this.readonly} onClick={this.prevMonth}>
               <Icon name="arrow-left" />
             </Button>
             <Button
@@ -218,7 +233,7 @@ const CalendarPlugin = createComponent({
             >
               今天
             </Button>
-            <Button type="primary" round disabled={this.disabled} readonly={this.readonly} onClick={this.next}>
+            <Button type="primary" round disabled={this.disabled} readonly={this.readonly} onClick={this.nextMonth}>
               <Icon name="arrow-right" />
             </Button>
           </div>

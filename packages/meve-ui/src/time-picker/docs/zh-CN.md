@@ -34,6 +34,23 @@ export default {
 import Size from '../example/Size.vue'
 ```
 
+```html
+<template>
+  <m-space direction="column" size="large">
+    <m-time-picker label="NORMAL" placeholder="Please pick time" v-model="value" />
+    <m-time-picker label="SMALL" placeholder="Please pick time" size="small" v-model="value" />
+    <m-time-picker label="MINI" placeholder="Please pick time" size="mini" v-model="value" />
+  </m-space>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    value: undefined,
+  }),
+}
+</script>
+```
 
 ### 标签
 
@@ -89,7 +106,7 @@ import Slots from '../example/Slots.vue'
 
 ```html
 <template>
-  <m-time-picker placeholder="Please pick time?" v-model="value">
+  <m-time-picker placeholder="Please pick time" v-model="value">
     <template #prepend-icon>
       <m-icon class="prepend-icon" name="magnify-plus-outline" />
     </template>
@@ -245,7 +262,7 @@ export default {
 | `readonly` | 是否只读 | _boolean_ | **false** |
 | `disabled` | 是否禁用 | _boolean_ | **false** |
 | `clearable` | 是否可清除 | _boolean_ | **false** |
-| `custom-disabled` | 自定义禁用选项方法 | _(column: number, time: number) => _ | **() => false** |
+| `custom-disabled` | 自定义禁用选项方法 | _(column: number, time: number) => boolean_ | **() => false** |
 | `ripple` | 是否开启水波纹 | _boolean_ | **true** |
 | `validate-trigger` | 触发验证的时机，可选值为 `onChange` `onClick` `onClear` | _TimePickerValidateTrigger[]_ | **['onChange', 'onClear']** |
 | `rules` | 验证规则，返回 `true` 表示验证通过，其余的值则转换为文本作为用户提示 | _Array<(v: string) => any>_ | **-** |

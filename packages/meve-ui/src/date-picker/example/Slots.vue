@@ -1,5 +1,5 @@
 <template>
-  <m-time-picker placeholder="Please pick time" v-model="value">
+  <m-date-picker placeholder="Please pick date?" v-model="value">
     <template #prepend-icon>
       <m-icon class="prepend-icon" name="magnify-plus-outline" />
     </template>
@@ -7,16 +7,16 @@
     <template #append-icon>
       <m-icon class="append-icon" name="magnify-plus-outline" />
     </template>
-  </m-time-picker>
+  </m-date-picker>
 </template>
 
 <script>
-import TimePicker from '..'
+import DatePicker from '..'
 import Icon from '../../icon'
 
 export default {
   components: {
-    [TimePicker.name]: TimePicker,
+    [DatePicker.name]: DatePicker,
     [Icon.name]: Icon,
   },
   data: () => ({

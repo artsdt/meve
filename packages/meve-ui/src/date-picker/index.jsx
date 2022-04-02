@@ -1,16 +1,16 @@
-import Input from '../input'
 import Icon from '../icon'
 import Popover from '../popover'
 import Ripple from '../ripple'
 import Button from '../button'
-import Scroller from '../scroller'
+import Input from '../input'
+import Calendar from '../calendar'
 import dayjs from 'dayjs/esm'
 import customParseFormat from 'dayjs/esm/plugin/customParseFormat'
 import { KeyboardActiveMixin } from '../utils/mixins/keyboardActive'
 import { props } from './props'
 import { createNamespace } from '../utils/create'
 import { createChildrenMixin } from '../utils/mixins/relation'
-import { isEmpty, toNumber } from '../utils/shared'
+import { isArray, isEmpty, NOOP } from '../utils/shared'
 
 import '../styles/common.less'
 import '../icon/icon.less'
@@ -18,29 +18,20 @@ import '../popover/popover.less'
 import '../input/input.less'
 import '../ripple/ripple.less'
 import '../scroller/scroller.less'
+import '../calendar/calendar.less'
 import '../form-details/formDetails.less'
 import '../form-item/formItem.less'
 import '../button/button.less'
-import './timePicker.less'
+import './datePicker.less'
 
 dayjs.extend(customParseFormat)
 
-const { createComponent, namespace } = createNamespace('time-picker')
+const { createComponent, namespace } = createNamespace('date-picker')
 
-const TIMES = Array.from({ length: 60 }, (_, index) => {
-  if (index < 10) {
-    return '0' + index
-  }
-
-  return '' + index
-})
-
-const DISPLAY_FORMAT = 'HH:mm:ss'
-const DATE_PREFIX = '1970-01-01'
 const DATE_FORMAT = 'YYYY-MM-DD'
-const HOUR_MAX = 23
+const SEPARATOR = ' - '
 
-const TimePickerPlugin = createComponent({
+const DatePickerPlugin = createComponent({
   mixins: [KeyboardActiveMixin, createChildrenMixin('form', { parentKey: 'form', childrenKey: 'formComponents' })],
 
   props,
@@ -51,25 +42,29 @@ const TimePickerPlugin = createComponent({
     enterPopover: false,
     keyboardDisabled: false,
     id: undefined,
-    panelValues: [],
+    localValue: undefined,
   }),
 
   watch: {
     value: {
-      handler() {
-        this.syncValueEffect()
+      handler(value) {
+        this.localValue = value
       },
       immediate: true,
     },
   },
 
   computed: {
-    invalidDisplayValue() {
-      return this.panelValues.some((time, column) => this.customDisabled(column, time))
-    },
-
     displayValue() {
-      return this.panelValues.join(':')
+      if (this.range && isArray(this.localValue)) {
+        return this.localValue.map(this.formatValueToDisplay).join(SEPARATOR)
+      }
+
+      if (this.range && !isArray(this.localValue)) {
+        return ''
+      }
+
+      return isEmpty(this.localValue) ? undefined : this.formatValueToDisplay(this.localValue)
     },
   },
 
@@ -80,7 +75,7 @@ const TimePickerPlugin = createComponent({
   methods: {
     // expose
     reset() {
-      this.$emit('input', undefined)
+      this.$emit('input', this.range ? [] : undefined)
       this.resetValidation()
     },
 
@@ -105,6 +100,11 @@ const TimePickerPlugin = createComponent({
     },
 
     // expose
+    toNow() {
+      this.$refs.calendar.toNow()
+    },
+
+    // expose
     focus() {
       this.$refs.input.focus()
     },
@@ -122,9 +122,6 @@ const TimePickerPlugin = createComponent({
 
       this.$refs.popover.open()
       this.keyboardDisabled = false
-      this.scrollAllToTop()
-
-      this.focus()
     },
 
     // expose
@@ -135,42 +132,23 @@ const TimePickerPlugin = createComponent({
 
       this.$refs.popover?.close()
       this.keyboardDisabled = true
-      this.syncValueEffect()
+    },
 
-      this.blur()
+    invalidRangeValue() {
+      return this.range && (!isArray(this.localValue) || this.localValue.length !== 2)
+    },
+
+    formatValueToDisplay(value) {
+      return dayjs(value, this.valueFormat).format(DATE_FORMAT)
     },
 
     // implement for KeyboardActiveMixin
     handleKeydownEscape() {
-      if (!this.invalidDisplayValue) {
-        this.confirm()
-        return
-      }
-
-      this.close()
-    },
-
-    syncValueEffect() {
-      this.panelValues = isEmpty(this.value)
-        ? []
-        : dayjs(`${DATE_PREFIX} ${this.value}`, `${DATE_FORMAT} ${this.valueFormat}`).format(DISPLAY_FORMAT).split(':')
-    },
-
-    toNow() {
-      this.panelValues = dayjs().format(DISPLAY_FORMAT).split(':')
-      this.scrollAllToTop()
-    },
-
-    scrollAllToTop() {
-      this.panelValues.forEach((time, column) => {
-        this.scrollToTop(column, time)
-      })
+      this.confirm()
     },
 
     confirm() {
-      const value = isEmpty(this.displayValue)
-        ? undefined
-        : dayjs(`${DATE_PREFIX} ${this.displayValue}`).format(this.valueFormat)
+      const value = this.invalidRangeValue() ? [] : this.localValue
 
       if (this.value !== value) {
         this.$emit('input', value)
@@ -179,29 +157,7 @@ const TimePickerPlugin = createComponent({
       }
 
       this.close()
-
       requestAnimationFrame(this.blur)
-    },
-
-    scrollToTop(column, time) {
-      this.$refs[`scroller-${column}`].disableTransitionDuration()
-
-      requestAnimationFrame(() => {
-        if (this.$refs[`scroller-${column}`]) {
-          this.$refs[`scroller-${column}`].resize()
-          this.$refs[`scroller-${column}`].scrollTo(this.$refs[`${column}-${time}`].offsetTop)
-        }
-      })
-    },
-
-    updatePanelValues(column, time) {
-      this.panelValues = this.panelValues.map((rawTime, rawColumn) => {
-        if (rawColumn === column) {
-          return time
-        }
-
-        return rawTime
-      })
     },
 
     handleClick(event) {
@@ -217,6 +173,16 @@ const TimePickerPlugin = createComponent({
       }
 
       this.focus()
+    },
+
+    handleClear() {
+      const value = this.range ? [] : undefined
+      this.$emit('clear', value)
+      this.$emit('input', value)
+      this.$emit('change', value)
+
+      this.nextTickValidateWithTrigger('onClear')
+      this.nextTickValidateWithTrigger('onChange')
     },
 
     handleFocus(event) {
@@ -240,21 +206,7 @@ const TimePickerPlugin = createComponent({
         return
       }
 
-      if (!this.invalidDisplayValue) {
-        this.confirm()
-        return
-      }
-
-      this.close()
-    },
-
-    handleClear() {
-      this.$emit('clear', undefined)
-      this.$emit('input', undefined)
-      this.$emit('change', undefined)
-
-      this.nextTickValidateWithTrigger('onClear')
-      this.nextTickValidateWithTrigger('onChange')
+      this.confirm()
     },
 
     handleMouseenter() {
@@ -265,68 +217,12 @@ const TimePickerPlugin = createComponent({
       this.enterPopover = false
     },
 
-    handleTimeClick(column, time, timeDisabled) {
-      if (timeDisabled) {
-        return
-      }
-
-      if (isEmpty(this.panelValues)) {
-        this.toNow()
-      }
-
-      this.scrollToTop(column, time)
-      this.updatePanelValues(column, time)
-    },
-
-    renderTimes(column) {
-      const times = TIMES.map((time) => {
-        if (column === 0 && toNumber(time) > HOUR_MAX) {
-          return
-        }
-
-        const timeDisabled = this.customDisabled(column, toNumber(time))
-
-        return (
-          <div
-            class={[
-              namespace('__time'),
-              timeDisabled ? namespace('--time-disabled') : null,
-              this.panelValues[column] === time ? namespace('--active') : null,
-            ]}
-            ref={`${column}-${time}`}
-            v-ripple={{ disabled: this.ripple || timeDisabled }}
-            onClick={() => this.handleTimeClick(column, time, timeDisabled)}
-          >
-            {time}
-          </div>
-        )
-      })
-
-      times.push(<div class={namespace('--space')} />)
-
-      return times
-    },
-
-    renderTimePanel() {
-      return (
-        <div class={namespace('__time-panel-container')}>
-          {Array.from({ length: 3 }, (_, column) => {
-            return (
-              <Scroller class={namespace('__time-panel')} ref={`scroller-${column}`} right={0} height={210}>
-                {this.renderTimes(column)}
-              </Scroller>
-            )
-          })}
-        </div>
-      )
-    },
-
     renderAppendIcon() {
-      const clockIcon = <Icon time-picker-cover class={namespace('__clock-icon')} name="clock-outline" />
+      const calendarIcon = <Icon date-picker-cover class={namespace('__calendar-icon')} name="calendar" />
 
       const clearIcon = this.clearable && (
         <Icon
-          time-picker-cover
+          date-picker-cover
           name="close-circle"
           class={[namespace('__clear-icon'), isEmpty(this.value) ? namespace('--hide-clear-icon') : null]}
           onClick={this.handleClear}
@@ -336,7 +232,7 @@ const TimePickerPlugin = createComponent({
       return (
         <div class={namespace('__append-icon')} onClick={(event) => event.stopPropagation()}>
           {clearIcon}
-          {this.hasSlots('append-icon') ? this.slots('append-icon') : clockIcon}
+          {this.hasSlots('append-icon') ? this.slots('append-icon') : calendarIcon}
         </div>
       )
     },
@@ -344,14 +240,13 @@ const TimePickerPlugin = createComponent({
     renderInput() {
       return (
         <Input
-          time-picker-cover
-          class={this.invalidDisplayValue ? namespace('--invalid-display-value') : null}
+          date-picker-cover
           ref="input"
+          label={this.label}
           value={this.displayValue}
           validateValue={this.value}
-          label={this.label}
-          validateTrigger={this.validateTrigger}
           rules={this.rules}
+          validateTrigger={this.validateTrigger}
           placeholder={this.placeholder}
           size={this.size}
           readonly={true}
@@ -367,6 +262,77 @@ const TimePickerPlugin = createComponent({
         />
       )
     },
+
+    renderCalendarHeader({ current }) {
+      return (
+        <div class={namespace('__calendar-header')} onClick={this.focus}>
+          <Button
+            class={namespace('__calendar-button')}
+            date-picker-cover
+            round
+            text
+            onClick={this.$refs.calendar?.prevYear ?? NOOP}
+          >
+            <Icon class={namespace('__calendar-arrow-icon')} date-picker-cover name="arrow-left" />
+          </Button>
+
+          <Button
+            class={namespace('__calendar-button')}
+            date-picker-cover
+            round
+            text
+            onClick={this.$refs.calendar?.prevMonth ?? NOOP}
+          >
+            <Icon class={namespace('__calendar-arrow-icon')} date-picker-cover name="chevron-left" />
+          </Button>
+
+          <div class={namespace('__calendar-month-panel')}>{current.format(DATE_FORMAT)}</div>
+
+          <Button
+            class={namespace('__calendar-button')}
+            date-picker-cover
+            round
+            text
+            onClick={this.$refs.calendar?.nextMonth ?? NOOP}
+          >
+            <Icon class={namespace('__calendar-arrow-icon')} date-picker-cover name="chevron-right" />
+          </Button>
+
+          <Button
+            class={namespace('__calendar-button')}
+            date-picker-cover
+            round
+            text
+            onClick={this.$refs.calendar?.nextYear ?? NOOP}
+          >
+            <Icon class={namespace('__calendar-arrow-icon')} date-picker-cover name="arrow-right" />
+          </Button>
+        </div>
+      )
+    },
+
+    renderCalendar() {
+      return (
+        <Calendar
+          class={namespace('__calendar')}
+          date-picker-cover
+          ref="calendar"
+          disabled={this.form?.disabled || this.disabled}
+          readonly={this.form?.readonly || this.readonly}
+          value={this.localValue}
+          valueFormat={this.valueFormat}
+          range={this.range}
+          customDisabled={this.customDisabled}
+          ripple={false}
+          onInput={(value) => {
+            this.localValue = value
+          }}
+          scopedSlots={{
+            header: this.renderCalendarHeader,
+          }}
+        />
+      )
+    },
   },
 
   render() {
@@ -376,7 +342,7 @@ const TimePickerPlugin = createComponent({
       <div class={[namespace(), disabled ? namespace('--disabled') : null]}>
         <Popover
           class={namespace('__popover')}
-          time-picker-cover
+          date-picker-cover
           ref="popover"
           trigger="manual"
           placement="bottom-start"
@@ -396,13 +362,19 @@ const TimePickerPlugin = createComponent({
             onMouseenter={handleMouseenter}
             onMouseleave={handleMouseleave}
           >
-            {this.renderTimePanel()}
+            {this.renderCalendar()}
 
             <div class={namespace('__actions')} onClick={this.focus}>
-              <Button type="primary" size="small" onClick={this.toNow}>
+              <Button class={namespace('__now-button')} type="primary" size="small" onClick={this.toNow}>
                 Now
               </Button>
-              <Button type="primary" size="small" disabled={this.invalidDisplayValue} onClick={this.confirm}>
+              <Button
+                class={namespace('__confirm-button')}
+                type="primary"
+                size="small"
+                disabled={this.invalidRangeValue()}
+                onClick={() => this.confirm(this.localValue)}
+              >
                 OK
               </Button>
             </div>
@@ -413,6 +385,6 @@ const TimePickerPlugin = createComponent({
   },
 })
 
-export const _TimePickerComponent = TimePickerPlugin
+export const _DatePickerComponent = DatePickerPlugin
 
-export default TimePickerPlugin
+export default DatePickerPlugin
