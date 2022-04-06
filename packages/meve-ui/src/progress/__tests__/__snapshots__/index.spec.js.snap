@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test progress custom style 1`] = `
+"<div class=\\"m-progress\\">
+  <div class=\\"m-progress__track\\" style=\\"background: red; height: 2px;\\">
+    <div class=\\"m-progress__bar\\" style=\\"background: green; width: 50%;\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test progress default slot 1`] = `
+"<div class=\\"m-progress\\">
+  <div class=\\"m-progress__label\\">
+    <div>default slot</div>
+  </div>
+  <div class=\\"m-progress__track\\">
+    <div class=\\"m-progress__bar\\" style=\\"width: 50%;\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test progress show label 1`] = `
+"<div class=\\"m-progress\\">
+  <div class=\\"m-progress__label\\">50%</div>
+  <div class=\\"m-progress__track\\">
+    <div class=\\"m-progress__bar\\" style=\\"width: 50%;\\"></div>
+  </div>
+</div>"
+`;
+
+exports[`test progress with value 1`] = `
+"<div class=\\"m-progress\\">
+  <div class=\\"m-progress__track\\">
+    <div class=\\"m-progress__bar\\" style=\\"width: 50%;\\"></div>
+  </div>
+</div>"
+`;

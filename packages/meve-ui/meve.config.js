@@ -88,6 +88,11 @@ module.exports = {
           labelUS: 'Menu',
         },
         {
+          name: 'progress',
+          labelCN: 'Progress 进度条',
+          labelUS: 'Progress',
+        },
+        {
           name: 'swipe',
           labelCN: 'Swipe 轮播',
           labelUS: 'Swipe',

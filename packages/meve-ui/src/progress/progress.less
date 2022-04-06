@@ -1,0 +1,46 @@
+@import '../styles/var';
+
+@progress-bar-color: var(--color-primary);
+@progress-label-text-color: #888;
+@progress-label-font-size: 14px;
+@progress-label-margin: 0 0 2px;
+@progress-track-height: 8px;
+@progress-track-background: #e9ecef;
+@progress-track-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+@progress-track-border-radius: 4px;
+
+:root {
+  --progress-bar-color: @progress-bar-color;
+  --progress-label-text-color: @progress-label-text-color;
+  --progress-label-font-size: @progress-label-font-size;
+  --progress-label-margin: @progress-label-margin;
+  --progress-track-height: @progress-track-height;
+  --progress-track-background: @progress-track-background;
+  --progress-track-box-shadow: @progress-track-box-shadow;
+  --progress-track-border-radius: @progress-track-border-radius;
+}
+
+.m-progress {
+  &__label {
+    color: var(--progress-label-text-color);
+    font-size: var(--progress-label-font-size);
+    text-align: right;
+    margin: var(--progress-label-margin);
+  }
+
+  &__track {
+    width: 100%;
+    height: var(--progress-track-height);
+    background: var(--progress-track-background);
+    box-shadow: var(--progress-track-box-shadow);
+    border-radius: var(--progress-track-border-radius);
+    overflow: hidden;
+  }
+
+  &__bar {
+    width: 100%;
+    height: 100%;
+    transition: 0.15s width linear;
+    background: var(--progress-bar-color);
+  }
+}
