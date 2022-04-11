@@ -286,7 +286,6 @@ export default {
 | 变量名 | 默认值 |
 | --- | --- |
 | `--radio-error-color` | `var(--color-warning)` |
-| `--radio-disabled-color` | `var(--color-disabled)` |
 | `--radio-disabled-text-color` | `var(--color-text-disabled)` |
 | `--radio-radio-container-margin` | `0 2px 0 0` |
 | `--radio-normal-radio-container-padding` | `6px` |

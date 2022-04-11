@@ -1,6 +1,6 @@
 import Image from '..'
 import { mount } from '@vue/test-utils'
-import { delay, triggerDrag } from '../../utils/jest'
+import { delay, trigger, triggerDrag } from '../../utils/jest'
 
 const SRC = 'https://varlet.gitee.io/varlet-ui/cat.png'
 
@@ -124,6 +124,22 @@ test('test image preview', async () => {
   await wrapper.find('.m-image__close-preview').trigger('click')
   expect(wrapper.find('.m-popup').isVisible()).toBeFalsy()
   expect(wrapper.html()).toMatchSnapshot()
+
+  wrapper.destroy()
+})
+
+test('test image close preview by keyboard', async () => {
+  const wrapper = mount(Image, {
+    propsData: {
+      src: SRC,
+    },
+  })
+
+  await wrapper.find('.m-image__image').trigger('click')
+  await delay(100)
+
+  await trigger(window, 'keydown', 0, 0, 0, 0, 0, 0, { code: 'Escape' })
+  expect(wrapper.find('.m-popup').isVisible()).toBeFalsy()
 
   wrapper.destroy()
 })

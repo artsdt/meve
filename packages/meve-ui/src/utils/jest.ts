@@ -233,3 +233,28 @@ export function mockScrollTo(Element: any) {
     }
   }
 }
+
+export function mockFileReader(url: string) {
+  const originMethod = window.FileReader
+
+  class FileReader {
+    result = ''
+
+    onload() {}
+
+    readAsDataURL() {
+      this.result = url
+      this.onload()
+    }
+  }
+
+  Object.assign(window, {
+    FileReader,
+  })
+
+  return {
+    mockRestore() {
+      window.FileReader = originMethod
+    },
+  }
+}

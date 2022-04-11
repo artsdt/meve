@@ -307,7 +307,6 @@ export default {
 | --- | --- |
 | `--checkbox-checked-color` | `var(--color-primary)` |
 | `--checkbox-error-color` | `var(--color-warning)` |
-| `--checkbox-disabled-color` | `var(--color-disabled)` |
 | `--checkbox-disabled-text-color` | `var(--color-text-disabled)` |
 | `--checkbox-checkbox-container-margin` | `0 2px 0 0` |
 | `--checkbox-normal-checkbox-container-padding` | `6px` |

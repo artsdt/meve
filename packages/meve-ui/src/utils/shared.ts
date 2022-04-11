@@ -151,3 +151,11 @@ export const createCache = <T>(max: number): CacheInstance<T> => {
 export const uniq = (arr: Array<any>) => [...new Set(arr)]
 
 export const NOOP = () => {}
+
+export const isHttpProtocol = (val?: string) => {
+  if (!val) {
+    return false
+  }
+
+  return val.startsWith('https://') || val.startsWith('http://')
+}

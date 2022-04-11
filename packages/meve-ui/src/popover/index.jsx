@@ -283,8 +283,8 @@ const PopoverPlugin = createComponent({
       }
 
       this.triggerWidth = this.$refs.trigger.offsetWidth
-      const bodyWidth = document.body.scrollWidth
-      const bodyHeight = document.body.scrollHeight
+      const maxWidth = Math.max(document.body.scrollWidth, window.innerWidth)
+      const maxHeight = Math.max(document.body.scrollHeight, window.innerHeight)
       const cWidth = container.offsetWidth
       const cHeight = container.offsetHeight
 
@@ -295,12 +295,12 @@ const PopoverPlugin = createComponent({
       const { left: possibleLeft, top: possibleTop } = this.computeInset(trigger, container, this.localPlacement, x, y)
       const fullWidth = possibleLeft + cWidth
       const fullHeight = possibleTop + cHeight
-      const inYClient = fullHeight <= bodyHeight && possibleTop >= 0
-      const inXClient = possibleLeft >= 0 && fullWidth <= bodyWidth
+      const inYClient = fullHeight <= maxHeight && possibleTop >= 0
+      const inXClient = possibleLeft >= 0 && fullWidth <= maxWidth
       const exceedLeft = possibleLeft < 0
-      const exceedRight = fullWidth > bodyWidth
+      const exceedRight = fullWidth > maxWidth
       const exceedTop = possibleTop < 0
-      const exceedBottom = fullHeight > bodyHeight
+      const exceedBottom = fullHeight > maxHeight
       const { localPlacement: placement } = this
       const dashRE = /(-\w+)|$/
 

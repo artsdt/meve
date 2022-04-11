@@ -7,6 +7,7 @@ import { debounce, isEmpty, range } from '../utils/shared'
 import { props } from './props'
 import { createNamespace } from '../utils/create'
 import { createChildrenMixin } from '../utils/mixins/relation'
+import { createLockMixin } from '../context/lock'
 
 import '../styles/common.less'
 import '../icon/icon.less'
@@ -17,7 +18,6 @@ import '../scroller/scroller.less'
 import '../form-details/formDetails.less'
 import '../form-item/formItem.less'
 import './autoComplete.less'
-import { createLockMixin } from '../context/lock'
 
 const { createComponent, namespace } = createNamespace('auto-complete')
 

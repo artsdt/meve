@@ -233,6 +233,11 @@ module.exports = {
           labelCN: 'DatePicker 日期选择器',
           labelUS: 'DatePicker',
         },
+        {
+          name: 'uploader',
+          labelCN: 'Uploader 文件上传',
+          labelUS: 'Uploader',
+        },
       ],
     },
     {

@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test uploader disabled 1`] = `
+"<div class=\\"m-form-item\\">
+  <div class=\\"m-uploader m--box\\"><input type=\\"file\\" accept=\\"*\\" disabled=\\"disabled\\" class=\\"m-uploader__action-input\\">
+    <div class=\\"m-uploader__action\\"></div>
+    <div class=\\"m-uploader__file-list\\">
+      <div class=\\"m-uploader__file m-uploader--disabled\\"><i uploader-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-file m-uploader__cover\\"></i>
+        <div class=\\"m-uploader__file-profile\\">
+          <div class=\\"m-uploader__file-name\\">a</div>
+          <div class=\\"m-progress m-uploader__file-progress\\" uploader-cover=\\"true\\" style=\\"display: none;\\">
+            <div class=\\"m-progress__track\\">
+              <div class=\\"m-progress__bar\\" style=\\"width: 0%;\\"></div>
+            </div>
+          </div>
+        </div><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--text-default m-button--text m-button--round m-uploader__remove-button\\" uploader-cover=\\"true\\">
+          <div class=\\"m-button__content\\"><i uploader-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-close m-uploader__remove-button-icon\\"></i></div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <transition-stub name=\\"m-form-details\\"></transition-stub>
+</div>"
+`;
+
+exports[`test uploader file cover 1`] = `
+"<div class=\\"m-form-item\\">
+  <div class=\\"m-uploader m--box\\"><input type=\\"file\\" accept=\\"*\\" class=\\"m-uploader__action-input\\">
+    <div class=\\"m-uploader__action\\"></div>
+    <div class=\\"m-uploader__file-list\\">
+      <div class=\\"m-uploader__file\\">
+        <div class=\\"m-image m--box m-uploader__cover\\" style=\\"border-radius: 0px;\\" uploader-cover=\\"true\\">
+          <div class=\\"m-image__image-container m--box\\" style=\\"border-radius: 0px;\\"><img src=\\"https://a.b.c/cat.jpg\\" class=\\"m-image__image\\" style=\\"object-fit: fill;\\"></div>
+        </div>
+        <div class=\\"m-uploader__file-profile\\">
+          <div class=\\"m-uploader__file-name\\">image</div>
+          <div class=\\"m-progress m-uploader__file-progress\\" uploader-cover=\\"true\\" style=\\"display: none;\\">
+            <div class=\\"m-progress__track\\">
+              <div class=\\"m-progress__bar\\" style=\\"width: 0%;\\"></div>
+            </div>
+          </div>
+        </div><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--text-default m-button--text m-button--round m-uploader__remove-button\\" uploader-cover=\\"true\\">
+          <div class=\\"m-button__content\\"><i uploader-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-close m-uploader__remove-button-icon\\"></i></div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <transition-stub name=\\"m-form-details\\"></transition-stub>
+</div>"
+`;
+
+exports[`test uploader hide list 1`] = `
+"<div class=\\"m-form-item\\">
+  <div class=\\"m-uploader m--box\\"><input type=\\"file\\" accept=\\"*\\" class=\\"m-uploader__action-input\\">
+    <div class=\\"m-uploader__action\\"></div>
+    <div class=\\"m-uploader__file-list\\"></div>
+  </div>
+  <transition-stub name=\\"m-form-details\\"></transition-stub>
+</div>"
+`;
+
+exports[`test uploader readonly 1`] = `
+"<div class=\\"m-form-item\\">
+  <div class=\\"m-uploader m--box\\"><input type=\\"file\\" accept=\\"*\\" readonly=\\"true\\" class=\\"m-uploader__action-input\\">
+    <div class=\\"m-uploader__action\\"></div>
+    <div class=\\"m-uploader__file-list\\">
+      <div class=\\"m-uploader__file\\"><i uploader-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-file m-uploader__cover\\"></i>
+        <div class=\\"m-uploader__file-profile\\">
+          <div class=\\"m-uploader__file-name\\">a</div>
+          <div class=\\"m-progress m-uploader__file-progress\\" uploader-cover=\\"true\\" style=\\"display: none;\\">
+            <div class=\\"m-progress__track\\">
+              <div class=\\"m-progress__bar\\" style=\\"width: 0%;\\"></div>
+            </div>
+          </div>
+        </div><button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--text-default m-button--text m-button--round m-uploader__remove-button\\" uploader-cover=\\"true\\">
+          <div class=\\"m-button__content\\"><i uploader-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-close m-uploader__remove-button-icon\\"></i></div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <transition-stub name=\\"m-form-details\\"></transition-stub>
+</div>"
+`;
+
+exports[`test uploader validation 1`] = `
+"<div class=\\"m-form-item\\">
+  <div class=\\"m-uploader m--box\\"><input type=\\"file\\" accept=\\"*\\" class=\\"m-uploader__action-input\\">
+    <div class=\\"m-uploader__action\\"></div>
+    <div class=\\"m-uploader__file-list\\"></div>
+  </div>
+  <div class=\\"m-form-details\\">您至少上传一个</div>
+</div>"
+`;
+
+exports[`test uploader validation 2`] = `
+"<div class=\\"m-form-item\\">
+  <div class=\\"m-uploader m--box\\"><input type=\\"file\\" accept=\\"*\\" class=\\"m-uploader__action-input\\">
+    <div class=\\"m-uploader__action\\"></div>
+    <div class=\\"m-uploader__file-list\\"></div>
+  </div>
+  <!---->
+</div>"
+`;

@@ -1,0 +1,140 @@
+@import '../styles/var';
+
+@uploader-normal-hover-color: #eee;
+@uploader-primary-color: var(--color-primary);
+@uploader-primary-hover-color: var(--color-light-primary);
+@uploader-error-hover-color: var(--color-light-warning);
+@uploader-error-color: var(--color-warning);
+@uploader-file-padding: 8px;
+@uploader-file-text-color: #666;
+@uploader-file-font-size: 14px;
+@uploader-file-border-radius: 4px;
+@uploader-file-list-margin: 14px 0 0;
+@uploader-file-name-padding: 0 2px;
+@uploader-file-profile-margin: 0 10px;
+@uploader-file-progress-margin: 4px 0 0;
+@uploader-file-progress-track-height: 2px;
+@uploader-remove-icon-size: 16px;
+@uploader-cover-size: 32px;
+
+:root {
+  --uploader-normal-hover-color: @uploader-normal-hover-color;
+  --uploader-primary-hover-color: @uploader-primary-hover-color;
+  --uploader-primary-color: @uploader-primary-color;
+  --uploader-error-hover-color: @uploader-error-hover-color;
+  --uploader-error-color: @uploader-error-color;
+  --uploader-file-padding: @uploader-file-padding;
+  --uploader-file-text-color: @uploader-file-text-color;
+  --uploader-file-font-size: @uploader-file-font-size;
+  --uploader-file-border-radius: @uploader-file-border-radius;
+  --uploader-file-list-margin: @uploader-file-list-margin;
+  --uploader-file-name-padding: @uploader-file-name-padding;
+  --uploader-file-profile-margin: @uploader-file-profile-margin;
+  --uploader-file-progress-margin: @uploader-file-progress-margin;
+  --uploader-file-progress-track-height: @uploader-file-progress-track-height;
+  --uploader-remove-icon-size: @uploader-remove-icon-size;
+  --uploader-cover-size: @uploader-cover-size;
+}
+
+.m-uploader {
+  &__action-input {
+    display: block;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  &__action {
+    display: inline-block;
+  }
+
+  &__file-list {
+    margin: var(--uploader-file-list-margin);
+  }
+
+  &__file {
+    padding: var(--uploader-file-padding);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s, color 0.2s, opacity 0.2s;
+    color: var(--uploader-file-text-color);
+    font-size: var(--uploader-file-font-size);
+    border-radius: var(--uploader-file-border-radius);
+
+    &:hover {
+      cursor: pointer;
+      background: var(--uploader-normal-hover-color);
+    }
+  }
+
+  &__file-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: var(--uploader-file-name-padding);
+  }
+
+  &__file-profile {
+    flex: 1;
+    margin: var(--uploader-file-profile-margin);
+  }
+
+  &__file-progress[uploader-cover] {
+    margin: var(--uploader-file-progress-margin);
+
+    .m-progress__track {
+      height: var(--uploader-file-progress-track-height);
+    }
+  }
+
+  &__remove-button[uploader-cover] {
+    flex-shrink: 0;
+    color: #888;
+  }
+
+  &__remove-button-icon[uploader-cover] {
+    font-size: var(--uploader-remove-icon-size);
+  }
+
+  &__cover[uploader-cover] {
+    flex-shrink: 0;
+    width: var(--uploader-cover-size);
+    height: var(--uploader-cover-size);
+    font-size: var(--uploader-cover-size);
+
+    .m-image__image-container {
+      width: var(--uploader-cover-size);
+      height: var(--uploader-cover-size);
+    }
+  }
+
+  &--link {
+    text-decoration: underline;
+  }
+
+  &--success {
+    color: var(--uploader-primary-color);
+
+    &:hover {
+      background: var(--uploader-primary-hover-color);
+    }
+  }
+
+  &--error {
+    color: var(--uploader-error-color);
+
+    &:hover {
+      background: var(--uploader-error-hover-color);
+    }
+  }
+
+  &--disabled {
+    opacity: 0.6;
+    cursor: not-allowed !important;
+
+    * {
+      cursor: not-allowed !important;
+    }
+  }
+}

@@ -7,6 +7,7 @@ import Icon from '../icon'
 import { props } from './props'
 import { createNamespace } from '../utils/create'
 import { toSizeUnit } from '../utils/elements'
+import { nextTick } from '../utils/components'
 
 import '../styles/common.less'
 import '../ripple/ripple.less'
@@ -15,7 +16,7 @@ import '../popup/popup.less'
 import '../icon/icon.less'
 import '../space/space.less'
 import './image.less'
-import { nextTick } from '../utils/components'
+import { KeyboardActiveMixin } from '../utils/mixins/keyboardActive'
 
 const { createComponent, namespace } = createNamespace('image')
 
@@ -29,6 +30,8 @@ const ImagePlugin = createComponent({
     Ripple,
     Lazy,
   },
+
+  mixins: [KeyboardActiveMixin],
 
   props,
 
@@ -82,6 +85,12 @@ const ImagePlugin = createComponent({
       }
 
       this.showPreview = true
+      this.keyboardDisabled = false
+    },
+
+    // implement for KeyboardActiveMixin
+    handleKeydownEscape() {
+      this.closePreview()
     },
 
     resetTranslate() {
@@ -160,6 +169,7 @@ const ImagePlugin = createComponent({
 
     closePreview() {
       this.showPreview = false
+      this.keyboardDisabled = true
     },
 
     handleTouchstart(event) {
