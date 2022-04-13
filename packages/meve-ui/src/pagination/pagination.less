@@ -1,0 +1,134 @@
+@import '../styles/var';
+
+@pagination-active-color: var(--color-primary);
+@pagination-active-text-color: #fff;
+@pagination-pager-size: 36px;
+@pagination-pager-border-radius: 50%;
+@pagination-pager-border: thin solid #dee2e6;
+@pagination-pager-text-color: #8898aa;
+@pagination-pager-font-size: 14px;
+@pagination-pager-gap: 6px;
+@pagination-pager-hover-color: #dee2e6;
+@pagination-extra-component-gap: 14px;
+@pagination-total-font-size: 15px;
+@pagination-total-text-color: #8898aa;
+@pagination-size-changer-width: 94px;
+@pagination-size-changer-height: 32px;
+@pagination-size-changer-text-color: #8898aa;
+@pagination-quick-jumper-width: 94px;
+@pagination-quick-jumper-height: 32px;
+@pagination-quick-jumper-text-color: #8898aa;
+@pagination-quick-jumper-placeholder-font-size: 13px;
+@pagination-arrow-icon-size: 16px;
+
+:root {
+  --pagination-active-color: @pagination-active-color;
+  --pagination-active-text-color: @pagination-active-text-color;
+  --pagination-pager-size: @pagination-pager-size;
+  --pagination-pager-border-radius: @pagination-pager-border-radius;
+  --pagination-pager-border: @pagination-pager-border;
+  --pagination-pager-text-color: @pagination-pager-text-color;
+  --pagination-pager-font-size: @pagination-pager-font-size;
+  --pagination-pager-gap: @pagination-pager-gap;
+  --pagination-pager-hover-color: @pagination-pager-hover-color;
+  --pagination-extra-component-gap: @pagination-extra-component-gap;
+  --pagination-total-font-size: @pagination-total-font-size;
+  --pagination-total-text-color: @pagination-total-text-color;
+  --pagination-size-changer-width: @pagination-size-changer-width;
+  --pagination-size-changer-height: @pagination-size-changer-height;
+  --pagination-size-changer-text-color: @pagination-size-changer-text-color;
+  --pagination-quick-jumper-width: @pagination-quick-jumper-width;
+  --pagination-quick-jumper-height: @pagination-quick-jumper-height;
+  --pagination-quick-jumper-text-color: @pagination-quick-jumper-text-color;
+  --pagination-quick-jumper-placeholder-font-size: @pagination-quick-jumper-placeholder-font-size;
+  --pagination-arrow-icon-size: @pagination-arrow-icon-size;
+}
+
+.m-pagination {
+  display: flex;
+  align-items: center;
+
+  &__pager-container {
+    display: flex;
+  }
+
+  &__pager {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: var(--pagination-pager-size);
+    height: var(--pagination-pager-size);
+    border-radius: var(--pagination-pager-border-radius);
+    border: var(--pagination-pager-border);
+    color: var(--pagination-pager-text-color);
+    font-size: var(--pagination-pager-font-size);
+    margin-right: var(--pagination-pager-gap);
+    transition: background-color 0.15s, color 0.15s, opacity 0.15s;
+    user-select: none;
+
+    &:hover {
+      cursor: pointer;
+      background: var(--pagination-pager-hover-color);
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__total {
+    margin-left: var(--pagination-extra-component-gap);
+    font-size: var(--pagination-total-font-size);
+    color: var(--pagination-total-text-color);
+  }
+
+  &__size-changer[pagination-cover] {
+    margin-left: var(--pagination-extra-component-gap);
+
+    .m-select__select {
+      width: var(--pagination-size-changer-width);
+      min-height: var(--pagination-size-changer-height);
+      color: var(--pagination-size-changer-text-color);
+    }
+  }
+
+  &__quick-jumper[pagination-cover] {
+    margin-left: var(--pagination-extra-component-gap);
+
+    .m-input {
+      width: var(--pagination-quick-jumper-width);
+      min-height: var(--pagination-quick-jumper-height);
+      height: var(--pagination-quick-jumper-height);
+      color: var(--pagination-quick-jumper-text-color);
+    }
+
+    .m-input__input {
+      &::placeholder {
+        font-size: var(--pagination-quick-jumper-placeholder-font-size);
+      }
+    }
+  }
+
+  &__arrow-icon[pagination-cover] {
+    font-size: var(--pagination-arrow-icon-size);
+  }
+
+  &--active {
+    background: var(--pagination-active-color);
+    color: var(--pagination-active-text-color);
+
+    &:hover {
+      background: var(--pagination-active-color);
+      opacity: 0.8;
+    }
+  }
+
+  &--disabled {
+    opacity: 0.8;
+
+    * {
+      cursor: not-allowed !important;
+    }
+  }
+}

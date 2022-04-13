@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test pagination current change 1`] = `
+"<div class=\\"m-pagination m--box\\">
+  <div class=\\"m-pagination__pager-container\\">
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-left m-pagination__arrow-icon\\"></i></div>
+    <div class=\\"m-pagination__pager m-pagination--active\\">1</div>
+    <div class=\\"m-pagination__pager\\">2</div>
+    <div class=\\"m-pagination__pager\\">3</div>
+    <div class=\\"m-pagination__pager\\">4</div>
+    <div class=\\"m-pagination__pager\\">...</div>
+    <div class=\\"m-pagination__pager\\">10</div>
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-right m-pagination__arrow-icon\\"></i></div>
+  </div>
+</div>"
+`;
+
+exports[`test pagination current change 2`] = `
+"<div class=\\"m-pagination m--box\\">
+  <div class=\\"m-pagination__pager-container\\">
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-left m-pagination__arrow-icon\\"></i></div>
+    <div class=\\"m-pagination__pager\\">1</div>
+    <div class=\\"m-pagination__pager\\">...</div>
+    <div class=\\"m-pagination__pager\\">7</div>
+    <div class=\\"m-pagination__pager\\">8</div>
+    <div class=\\"m-pagination__pager\\">9</div>
+    <div class=\\"m-pagination__pager m-pagination--active\\">10</div>
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-right m-pagination__arrow-icon\\"></i></div>
+  </div>
+</div>"
+`;
+
+exports[`test pagination disabled 1`] = `
+"<div class=\\"m-pagination m--box m-pagination--disabled\\">
+  <div class=\\"m-pagination__pager-container\\">
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-left m-pagination__arrow-icon\\"></i></div>
+    <div class=\\"m-pagination__pager m-pagination--active\\">1</div>
+    <div class=\\"m-pagination__pager\\">2</div>
+    <div class=\\"m-pagination__pager\\">3</div>
+    <div class=\\"m-pagination__pager\\">4</div>
+    <div class=\\"m-pagination__pager\\">...</div>
+    <div class=\\"m-pagination__pager\\">10</div>
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-right m-pagination__arrow-icon\\"></i></div>
+  </div>
+</div>"
+`;
+
+exports[`test pagination quick jumper 1`] = `
+"<div class=\\"m-pagination m--box\\">
+  <div class=\\"m-pagination__pager-container\\">
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-left m-pagination__arrow-icon\\"></i></div>
+    <div class=\\"m-pagination__pager m-pagination--active\\">1</div>
+    <div class=\\"m-pagination__pager\\">2</div>
+    <div class=\\"m-pagination__pager\\">3</div>
+    <div class=\\"m-pagination__pager\\">4</div>
+    <div class=\\"m-pagination__pager\\">...</div>
+    <div class=\\"m-pagination__pager\\">10</div>
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-right m-pagination__arrow-icon\\"></i></div>
+  </div>
+  <div class=\\"m-form-item m-pagination__quick-jumper\\" pagination-cover=\\"true\\">
+    <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-0\\" autocomplete=\\"off\\" type=\\"number\\" placeholder=\\"快速跳转\\" class=\\"m-input__input\\"></div>
+    <transition-stub name=\\"m-form-details\\"></transition-stub>
+  </div>
+</div>"
+`;
+
+exports[`test pagination show double ellipsis 1`] = `
+"<div class=\\"m-pagination m--box\\">
+  <div class=\\"m-pagination__pager-container\\">
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-left m-pagination__arrow-icon\\"></i></div>
+    <div class=\\"m-pagination__pager\\">1</div>
+    <div class=\\"m-pagination__pager\\">...</div>
+    <div class=\\"m-pagination__pager\\">3</div>
+    <div class=\\"m-pagination__pager m-pagination--active\\">4</div>
+    <div class=\\"m-pagination__pager\\">5</div>
+    <div class=\\"m-pagination__pager\\">...</div>
+    <div class=\\"m-pagination__pager\\">10</div>
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-right m-pagination__arrow-icon\\"></i></div>
+  </div>
+</div>"
+`;
+
+exports[`test pagination show total 1`] = `
+"<div class=\\"m-pagination m--box\\">
+  <div class=\\"m-pagination__pager-container\\">
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-left m-pagination__arrow-icon\\"></i></div>
+    <div class=\\"m-pagination__pager m-pagination--active\\">1</div>
+    <div class=\\"m-pagination__pager\\">2</div>
+    <div class=\\"m-pagination__pager\\">3</div>
+    <div class=\\"m-pagination__pager\\">4</div>
+    <div class=\\"m-pagination__pager\\">...</div>
+    <div class=\\"m-pagination__pager\\">10</div>
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-right m-pagination__arrow-icon\\"></i></div>
+  </div>
+  <div class=\\"m-pagination__total\\">共100条</div>
+</div>"
+`;
+
+exports[`test pagination size change 1`] = `
+"<div class=\\"m-pagination m--box\\">
+  <div class=\\"m-pagination__pager-container\\">
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-left m-pagination__arrow-icon\\"></i></div>
+    <div class=\\"m-pagination__pager m-pagination--active\\">1</div>
+    <div class=\\"m-pagination__pager\\">2</div>
+    <div class=\\"m-pagination__pager\\">3</div>
+    <div class=\\"m-pagination__pager\\">4</div>
+    <div class=\\"m-pagination__pager\\">...</div>
+    <div class=\\"m-pagination__pager\\">10</div>
+    <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-right m-pagination__arrow-icon\\"></i></div>
+  </div>
+  <div class=\\"m-select m--box m-pagination__size-changer\\" pagination-cover=\\"true\\">
+    <div class=\\"m-form-item\\">
+      <div class=\\"m-popover m-select__popover\\" select-cover=\\"true\\">
+        <div class=\\"m-select__select m-select--normal m-select--outline-hover\\"><input id=\\"m-select-0\\" autocomplete=\\"off\\" readonly=\\"true\\" class=\\"m-select__input\\"><i select-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-select__arrow\\"></i></div>
+        <div class=\\"m-teleport\\"></div>
+      </div>
+      <transition-stub name=\\"m-form-details\\"></transition-stub>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test pagination slots 1`] = `
+"<div class=\\"m-pagination m--box\\">
+  <div class=\\"m-pagination__pager-container\\">
+    <div>prev button</div>
+    <div class=\\"m-pagination__pager m-pagination--active\\">1</div>
+    <div class=\\"m-pagination__pager\\">2</div>
+    <div class=\\"m-pagination__pager\\">3</div>
+    <div class=\\"m-pagination__pager\\">4</div>
+    <div class=\\"m-pagination__pager\\">...</div>
+    <div class=\\"m-pagination__pager\\">10</div>
+    <div>next button</div>
+  </div>
+</div>"
+`;

@@ -93,6 +93,11 @@ module.exports = {
           labelUS: 'Progress',
         },
         {
+          name: 'pagination',
+          labelCN: 'Pagination 分页',
+          labelUS: 'Pagination',
+        },
+        {
           name: 'swipe',
           labelCN: 'Swipe 轮播',
           labelUS: 'Swipe',

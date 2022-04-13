@@ -64,6 +64,36 @@ export default {
 import Size from '../example/Size.vue'
 ```
 
+```html
+<template>
+  <m-space direction="column" size="large">
+    <m-select label="NORMAL" placeholder="What is your favorite" v-model="value">
+      <m-option label="Eat" />
+      <m-option label="Sleep" />
+      <m-option label="Coding" />
+    </m-select>
+    <m-select label="SMALL" size="small" placeholder="What is your favorite" v-model="value">
+      <m-option label="Eat" />
+      <m-option label="Sleep" />
+      <m-option label="Coding" />
+    </m-select>
+    <m-select label="MINI" size="mini" placeholder="What is your favorite" v-model="value">
+      <m-option label="Eat" />
+      <m-option label="Sleep" />
+      <m-option label="Coding" />
+    </m-select>
+  </m-space>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    value: '',
+  }),
+}
+</script>
+```
+
 ### 标签
 
 通过`label`设置组件的标签，通常用于表单中
