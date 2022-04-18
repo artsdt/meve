@@ -45,8 +45,25 @@ import Loading from '../example/Loading.vue'
 ```
 
 ```html
-<m-button type="primary" loading>加载中...</m-button>
-<m-button type="primary" loading :loading-size="14">加载中...</m-button>
+<template>
+  <m-space>
+    <m-button type="primary" loading>加载中...</m-button>
+    <m-button type="primary" loading :loading-size="14">加载中...</m-button>
+    <m-button type="primary" auto-loading @click="handleAutoLoadingClick">自动加载</m-button>
+  </m-space>
+</template>
+
+<script>
+export default {
+  methods:{
+    handleAutoLoadingClick() {
+      return new Promise((resolve) => {
+        setTimeout(resolve, 4000)
+      })
+    }
+  }
+}
+</script>
 ```
 
 ### 禁用状态
@@ -148,22 +165,25 @@ import Outline from '../example/Outline.vue'
 </m-button>
 ```
 
+
+
 ## API
 
 ### 属性
 
-| 参数 | 说明 | 类型 | 默认值 | 
-| --- | --- | --- | --- | 
-| `type` | 类型，可选值为 `default` `primary` `info` `success` `warning` `error` | _string_ | **default** |
-| `size` | 尺寸，可选值为 `normal` `mini` `small` `large` | _string_ | **normal** |
-| `loading` | 加载状态 | _boolean_ | **false** |
-| `loading-size` | 加载图标的尺寸 | _number \| string_ | **-** |
-| `round` | 是否是圆形按钮 | _boolean_ | **false** | 
-| `block` | 是否是块级元素 | _boolean_ | **false** | 
-| `text` | 是否是文字按钮 | _boolean_ | **false** |
-| `outline` | 是否使用外边框 | _boolean_ | **false** |
-| `disabled` | 禁用状态 | _boolean_ | **false** |
-| `ripple` | 是否使用水波纹 | _boolean_ | **true** |
+| 参数             | 说明                                                            | 类型       | 默认值         | 
+|----------------|---------------------------------------------------------------|----------|-------------| 
+| `type`         | 类型，可选值为 `default` `primary` `info` `success` `warning` `error` | _string_ | **default** |
+| `size`         | 尺寸，可选值为 `normal` `mini` `small` `large`                       | _string_ | **normal**  |
+| `loading`      | 加载状态                                                          | _boolean_ | **false**   |
+| `loading-size` | 加载图标的尺寸                                                       | _number \| string_     | **-** |
+| `auto-loading` | 自动 loading 模式，方便处理异步任务                                     | _boolean_ | **false**    | **-** |
+| `round`        | 是否是圆形按钮                                                       | _boolean_ | **false**   | 
+| `block`        | 是否是块级元素                                                       | _boolean_ | **false**   | 
+| `text`         | 是否是文字按钮                                                       | _boolean_ | **false**   |
+| `outline`      | 是否使用外边框                                                       | _boolean_ | **false**   |
+| `disabled`     | 禁用状态                                                          | _boolean_ | **false**   |
+| `ripple`       | 是否使用水波纹                                                       | _boolean_ | **true**    |
 
 ### 事件
 

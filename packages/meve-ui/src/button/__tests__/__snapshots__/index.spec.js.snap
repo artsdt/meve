@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`test button auto-loading 1`] = `
+"<button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--inline-flex m-button--default m-button--shadow\\">
+  <div class=\\"m-button__content\\"></div>
+</button>"
+`;
+
 exports[`test button block 1`] = `
 "<button tabindex=\\"-1\\" class=\\"m-button m--box m-button--normal m--flex m-button--block m-button--default m-button--shadow\\">
   <div class=\\"m-button__content\\"></div>

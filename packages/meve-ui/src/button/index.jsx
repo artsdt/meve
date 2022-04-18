@@ -13,27 +13,47 @@ const { createComponent, namespace } = createNamespace('button')
 const ButtonPlugin = createComponent({
   props,
   directives: { Ripple },
-
+  data: () => ({
+    pending: false,
+  }),
   methods: {
     handleClick(event) {
-      if (this.disabled || this.loading) {
+      if (this.disabled || this.loading || this.pending) {
         return
       }
 
-      this.$emit('click', event)
+      if (!this.$listeners.click) {
+        return
+      }
+
+      this.attemptAutoLoading(this.$listeners.click(event))
     },
 
     handleTouchstart(event) {
-      if (this.disabled || this.loading) {
+      if (this.disabled || this.loading || this.pending) {
         return
       }
 
-      this.$emit('touchstart', event)
+      if (!this.$listeners.touchstart) {
+        return
+      }
+
+      this.attemptAutoLoading(this.$listeners.touchstart(event))
+    },
+
+    attemptAutoLoading(result) {
+      if (this.autoLoading) {
+        this.pending = true
+
+        Promise.resolve(result).finally(() => {
+          this.pending = false
+        })
+      }
     },
   },
 
   render() {
-    const { size, disabled, block, text, round, outline, ripple, type, loading, loadingSize } = this
+    const { size, disabled, block, text, round, outline, ripple, type, loading, loadingSize, pending } = this
 
     return (
       <button
@@ -56,12 +76,12 @@ const ButtonPlugin = createComponent({
         onTouchstart={this.handleTouchstart}
       >
         <div class={namespace('__content')}>{this.slots()}</div>
-        {loading && (
+        {(loading || pending) && (
           <Loading
             button-cover
             class={namespace('__loading')}
             svgClass={namespace(`--${size}-loading`)}
-            loading={loading}
+            loading={loading || pending}
             size={loadingSize}
           />
         )}
