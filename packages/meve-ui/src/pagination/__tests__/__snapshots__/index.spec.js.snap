@@ -58,7 +58,7 @@ exports[`test pagination quick jumper 1`] = `
     <div class=\\"m-pagination__pager\\"><i pagination-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-right m-pagination__arrow-icon\\"></i></div>
   </div>
   <div class=\\"m-form-item m-pagination__quick-jumper\\" pagination-cover=\\"true\\">
-    <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-0\\" autocomplete=\\"off\\" type=\\"number\\" placeholder=\\"快速跳转\\" class=\\"m-input__input\\"></div>
+    <div class=\\"m-input m--box m-input--normal\\"><input id=\\"m-input-0\\" autocomplete=\\"off\\" type=\\"text\\" placeholder=\\"快速跳转\\" class=\\"m-input__input\\"></div>
     <transition-stub name=\\"m-form-details\\"></transition-stub>
   </div>
 </div>"
