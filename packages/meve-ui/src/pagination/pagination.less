@@ -20,6 +20,7 @@
 @pagination-quick-jumper-text-color: #8898aa;
 @pagination-quick-jumper-placeholder-font-size: 13px;
 @pagination-arrow-icon-size: 16px;
+@pagination-offset-y: 10px;
 
 :root {
   --pagination-active-color: @pagination-active-color;
@@ -42,13 +43,19 @@
   --pagination-quick-jumper-text-color: @pagination-quick-jumper-text-color;
   --pagination-quick-jumper-placeholder-font-size: @pagination-quick-jumper-placeholder-font-size;
   --pagination-arrow-icon-size: @pagination-arrow-icon-size;
+  --pagination-offset-y: @pagination-offset-y;
 }
 
 .m-pagination {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--pagination-offset-y));
+  margin-left: calc(-1 * var(--pagination-extra-component-gap));
 
   &__pager-container {
+    margin-top: var(--pagination-offset-y);
+    margin-left: var(--pagination-extra-component-gap);
     display: flex;
   }
 
@@ -64,7 +71,7 @@
     color: var(--pagination-pager-text-color);
     font-size: var(--pagination-pager-font-size);
     margin-right: var(--pagination-pager-gap);
-    transition: background-color 0.15s, color 0.15s, opacity 0.15s;
+    transition: background-color 0.15s, color 0.15s, opacity 0.15s, border 0.15s;
     user-select: none;
 
     &:hover {
@@ -78,12 +85,14 @@
   }
 
   &__total {
+    margin-top: var(--pagination-offset-y);
     margin-left: var(--pagination-extra-component-gap);
     font-size: var(--pagination-total-font-size);
     color: var(--pagination-total-text-color);
   }
 
   &__size-changer[pagination-cover] {
+    margin-top: var(--pagination-offset-y);
     margin-left: var(--pagination-extra-component-gap);
 
     .m-select__select {
@@ -94,6 +103,7 @@
   }
 
   &__quick-jumper[pagination-cover] {
+    margin-top: 10px;
     margin-left: var(--pagination-extra-component-gap);
 
     .m-input {
@@ -117,6 +127,8 @@
   &--active {
     background: var(--pagination-active-color);
     color: var(--pagination-active-text-color);
+    border: thin solid var(--pagination-active-color);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 
     &:hover {
       background: var(--pagination-active-color);

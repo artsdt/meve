@@ -97,6 +97,11 @@ export default {
 .app-site-menu {
   height: calc(100vh - 80px);
   overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
 }
 
 .app-site-sidebar-fixed {

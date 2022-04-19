@@ -122,6 +122,18 @@ const CheckboxPlugin = createComponent({
     handleErrorMessageChange(errorMessage) {
       this.errorMessage = errorMessage
     },
+
+    getStateClasses() {
+      if (this.indeterminate) {
+        return [namespace(`--${this.size}-svg-indeterminate`), namespace('--active')]
+      }
+
+      if (this.checked) {
+        return [namespace(`--${this.size}-svg`), namespace('--active')]
+      }
+
+      return [namespace(`--border-visible`)]
+    },
   },
 
   render() {
@@ -137,6 +149,7 @@ const CheckboxPlugin = createComponent({
       readonly,
       form,
       errorMessage,
+      indeterminate,
       checkboxGroup,
       handleErrorMessageChange,
     } = this
@@ -179,17 +192,15 @@ const CheckboxPlugin = createComponent({
               class={[
                 namespace('__checkbox'),
                 namespace(`--${size}-checkbox`),
-                checked ? namespace(`--${size}-svg`) : null,
-                checked ? null : namespace(`--border-visible`),
-                checked ? namespace('--checked') : null,
+                ...this.getStateClasses(),
                 checkboxGroup?.errorMessage || errorMessage
-                  ? checked
+                  ? checked || indeterminate
                     ? namespace('--background-error')
                     : namespace('--border-error')
                   : null,
                 form?.disabled || disabled ? namespace('--disabled') : null,
               ]}
-            ></div>
+            />
           </div>
 
           <div class={namespace('__label')}>{this.slots()}</div>

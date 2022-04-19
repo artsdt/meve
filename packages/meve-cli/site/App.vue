@@ -68,11 +68,6 @@ body {
 
 * {
   box-sizing: border-box;
-
-  &::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
 }
 
 p {
@@ -103,6 +98,7 @@ table {
   width: 100%;
   border-spacing: 0;
   margin-top: 20px;
+  table-layout: fixed;
 }
 
 th {
@@ -154,7 +150,6 @@ tbody {
   border-radius: 6px;
   box-shadow: 0 8px 26px -4px hsla(0, 0%, 8%, .15), 0 8px 9px -5px hsla(0, 0%, 8%, .06);
   padding: 34px 24px;
-  overflow: auto;
   margin-top: 20px;
 }
 
@@ -163,7 +158,6 @@ tbody {
   border-radius: 6px;
   box-shadow: 0 8px 26px -4px hsla(0, 0%, 8%, .15), 0 8px 9px -5px hsla(0, 0%, 8%, .06);
   padding: 1px 24px 24px;
-  overflow: auto;
   margin-top: 20px;
 }
 

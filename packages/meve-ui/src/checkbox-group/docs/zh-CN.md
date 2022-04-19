@@ -239,6 +239,7 @@ export default {
 | `v-model` | 绑定的值 | _any_ | **false** |
 | `checked-value` | 选中状态的值 | _any_ | **true** |
 | `unchecked-value` | 未选中状态的值 | _any_ | **false** |
+| `indeterminate` | 组件为中划线不确定状态 | _boolean_ | **false** |
 | `label` | 标签名	 | _string \| number_ | **-** |
 | `size` | 复选框尺寸, 可选值为 `normal` `small` `mini` | _string_ | **normal** |
 | `disabled` | 是否禁用 | _boolean_ | **false** |

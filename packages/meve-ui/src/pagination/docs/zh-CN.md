@@ -220,3 +220,4 @@ export default {
 | `--pagination-quick-jumper-text-color` | `#8898aa` |
 | `--pagination-quick-jumper-placeholder-font-size` | `13px` |
 | `--pagination-arrow-icon-size` | `16px` |
+| `--pagination-offset-y: 10px;` | `10px` |

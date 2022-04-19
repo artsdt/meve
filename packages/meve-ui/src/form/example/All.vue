@@ -65,6 +65,14 @@
       <m-rate label="RATE" v-model="form.rate" :rules="[(v) => v > 0 || 'You must pick one']" />
       <m-switch label="ENABLE?" v-model="form.enable" :rules="[(v) => !!v || 'You must enable it']" />
       <m-slider label="PROGRESS" v-model="form.progress" :rules="[(v) => v >= 10 || 'You must slide progress >= 10']" />
+      <m-uploader
+        label="FILES"
+        :rules="[(v) => !!v.length || 'You must read one file']"
+        v-model="form.files"
+        @after-read="handleAfterRead"
+      >
+        <m-button>Upload</m-button>
+      </m-uploader>
 
       <div style="margin-top: 10px">
         <m-space>
@@ -96,6 +104,7 @@ import Switch from '../../switch'
 import Slider from '../../slider'
 import DatePicker from '../../date-picker'
 import TimePicker from '../../time-picker'
+import Uploader from '../../uploader'
 
 export default {
   components: {
@@ -115,8 +124,10 @@ export default {
     [Slider.name]: Slider,
     [TimePicker.name]: TimePicker,
     [DatePicker.name]: DatePicker,
+    [Uploader.name]: Uploader,
   },
   data: () => ({
+    timer: null,
     disabled: false,
     readonly: false,
     form: {
@@ -132,6 +143,7 @@ export default {
       progress: 5,
       date: undefined,
       time: undefined,
+      files: [],
     },
   }),
   computed: {
@@ -143,6 +155,21 @@ export default {
           value: prefix + suffix,
         }
       })
+    },
+  },
+  methods: {
+    handleAfterRead(file) {
+      file.state = 'loading'
+
+      this.timer = setInterval(() => {
+        if (file.progress === 100) {
+          file.state = 'success'
+          clearInterval(this.timer)
+          return
+        }
+
+        file.progress += 20
+      }, 200)
     },
   },
 }

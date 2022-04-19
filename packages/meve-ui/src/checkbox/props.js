@@ -13,6 +13,10 @@ export const props = {
   uncheckedValue: {
     default: false,
   },
+  indeterminate: {
+    type: Boolean,
+    default: false,
+  },
   size: {
     type: String,
     default: 'normal',

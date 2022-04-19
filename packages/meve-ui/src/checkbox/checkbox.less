@@ -75,7 +75,7 @@
     border: thin solid var(--checkbox-border-color);
   }
 
-  &--checked {
+  &--active {
     background: var(--checkbox-checked-color);
   }
 
@@ -103,6 +103,16 @@
       height: var(--checkbox-normal-svg-size);
       content: '';
       background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3E%3C/svg%3E");
+    }
+  }
+
+  &--normal-svg-indeterminate {
+    &::after {
+      display: block;
+      width: var(--checkbox-normal-svg-size);
+      height: var(--checkbox-normal-svg-size);
+      content: '';
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 6'%3E%3Cpath fill='%23fff' d='M 0 2 L 6 2 L 6 4 L 0 4 z'/%3E%3C/svg%3E");
     }
   }
 
@@ -139,6 +149,16 @@
     }
   }
 
+  &--small-svg-indeterminate {
+    &::after {
+      display: block;
+      width: var(--checkbox-small-svg-size);
+      height: var(--checkbox-small-svg-size);
+      content: '';
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 6'%3E%3Cpath fill='%23fff' d='M 0 2 L 6 2 L 6 4 L 0 4 z'/%3E%3C/svg%3E");
+    }
+  }
+
   &--small-checkbox {
     width: var(--checkbox-small-checkbox-size);
     height: var(--checkbox-small-checkbox-size);
@@ -169,6 +189,16 @@
       height: var(--checkbox-mini-svg-size);
       content: '';
       background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3E%3C/svg%3E");
+    }
+  }
+
+  &--mini-svg-indeterminate {
+    &::after {
+      display: block;
+      width: var(--checkbox-mini-svg-size);
+      height: var(--checkbox-mini-svg-size);
+      content: '';
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6 6'%3E%3Cpath fill='%23fff' d='M 0 2 L 6 2 L 6 4 L 0 4 z'/%3E%3C/svg%3E");
     }
   }
 

@@ -13,7 +13,7 @@ const { namespace, createComponent } = createNamespace('scroller')
 
 const ScrollerPlugin = createComponent({
   props,
-  mixins: [createLockMixin('mouseEnter')],
+  mixins: [createLockMixin('mouseEnter', 'lockBody')],
 
   data: () => ({
     isMobile: false,
@@ -25,6 +25,7 @@ const ScrollerPlugin = createComponent({
     mouseEnter: false,
     touching: false,
     touchY: 0,
+    lockBody: true,
   }),
 
   watch: {
@@ -54,6 +55,7 @@ const ScrollerPlugin = createComponent({
     resize() {
       const { scroller } = this.$refs
       this.scrollbarRatio = scroller.clientHeight / scroller.scrollHeight || 0
+      this.lockBody = this.scrollbarRatio < 1
       this.maxScrollY = scroller.clientHeight - this.scrollbarRatio * scroller.clientHeight
     },
 

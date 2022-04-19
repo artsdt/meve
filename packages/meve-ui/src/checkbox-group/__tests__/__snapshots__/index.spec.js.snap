@@ -46,7 +46,7 @@ exports[`test checkbox group validation 1`] = `
     <div style=\\"margin: 4px 12px 4px 0px;\\">
       <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal m-checkbox--text-error\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
           <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
-            <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--normal-svg m-checkbox--checked m-checkbox--background-error\\"></div>
+            <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--normal-svg m-checkbox--active m-checkbox--background-error\\"></div>
           </div>
           <div class=\\"m-checkbox__label\\"></div>
         </label>
@@ -75,7 +75,7 @@ exports[`test checkbox group validation 2`] = `
     <div style=\\"margin: 4px 12px 4px 0px;\\">
       <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
           <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
-            <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--normal-svg m-checkbox--checked\\"></div>
+            <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--normal-svg m-checkbox--active\\"></div>
           </div>
           <div class=\\"m-checkbox__label\\"></div>
         </label>

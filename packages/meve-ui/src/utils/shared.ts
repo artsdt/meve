@@ -159,3 +159,60 @@ export const isHttpProtocol = (val?: string) => {
 
   return val.startsWith('https://') || val.startsWith('http://')
 }
+
+function buildChildrenRelation(
+  children: any[],
+  parent: any,
+  key: string,
+  childrenKey: string,
+  keyMap: Map<any, any>,
+  deep: number
+) {
+  if (isArray(children) && children.length > 0) {
+    children.forEach((child) => {
+      const keyDescriptor: TreeKeyDescriptor = {
+        parent,
+        deep,
+        node: child,
+      }
+
+      keyMap.set(child[key], keyDescriptor)
+      buildChildrenRelation(child[childrenKey], child, key, childrenKey, keyMap, deep + 1)
+    })
+  }
+}
+
+export interface TreeKeyDescriptor {
+  parent: null | any;
+  deep: number;
+  node: any;
+}
+
+export const buildTreeRelation = (tree: any[], key = 'id', childrenKey = 'children') => {
+  const keyMap = new Map()
+
+  tree.forEach((node) => {
+    const keyDescriptor: TreeKeyDescriptor = {
+      parent: null,
+      deep: 0,
+      node,
+    }
+
+    keyMap.set(node[key], keyDescriptor)
+    buildChildrenRelation(node[childrenKey], node, key, childrenKey, keyMap, 1)
+  })
+
+  return keyMap
+}
+
+export const getNodeParent = (keyMap: Map<any, any>, key: any) => {
+  return keyMap.get(key).parent
+}
+
+export const getNodeDeep = (keyMap: Map<any, any>, key: any) => {
+  return keyMap.get(key).deep
+}
+
+export const getNode = (keyMap: Map<any, any>, key: any) => {
+  return keyMap.get(key).node
+}

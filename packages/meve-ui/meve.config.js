@@ -108,6 +108,11 @@ module.exports = {
           labelUS: 'Skeleton',
         },
         {
+          name: 'table',
+          labelCN: 'Table 表格',
+          labelUS: 'Table',
+        },
+        {
           name: 'tabs',
           labelCN: 'Tabs 标签页',
           labelUS: 'Tabs',

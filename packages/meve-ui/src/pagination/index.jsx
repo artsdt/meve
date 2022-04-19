@@ -34,11 +34,12 @@ const PaginationPlugin = createComponent({
   watch: {
     size: {
       handler(size) {
+        this.localSize = size
+
         if (this.total === 0) {
           return
         }
 
-        this.localSize = size
         const current = range(this.current, 1, this.maxPage)
         this.$emit('update:current', current)
         this.$emit('change', current, this.size)
@@ -194,7 +195,6 @@ const PaginationPlugin = createComponent({
           placeholder="快速跳转"
           pagination-cover
           disabled={this.disabled}
-          type="number"
           v-model={this.quickJumperValue}
           onChange={this.to}
         />

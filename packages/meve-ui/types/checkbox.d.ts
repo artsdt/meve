@@ -9,6 +9,7 @@ export interface CheckboxProps {
   label?: string | number
   checkedValue?: any
   uncheckedValue?: any
+  indeterminate?: boolean
   disabled?: boolean
   readonly?: boolean
   size?: CheckboxSize
