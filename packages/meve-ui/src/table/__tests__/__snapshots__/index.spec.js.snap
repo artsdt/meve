@@ -1,0 +1,563 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test table colspan 1`] = `
+"<div class=\\"m-table m--box\\">
+  <div table-cover=\\"true\\" class=\\"m-loading m--box m-table__loading\\">
+    <div class=\\"m-table__table-container\\">
+      <table class=\\"m-table__table\\" style=\\"table-layout: auto;\\">
+        <thead class=\\"m-table__thead\\">
+          <tr class=\\"m-table__tr\\">
+            <th colspan=\\"2\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>ID</span></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"2\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>1</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"2\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>2</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 2</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>3</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=\\"m-loading__mask-container m-loading--allow-touch m-loading--overlay\\">
+      <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+      <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+          <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+        </svg></div>
+      <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test table data load 1`] = `
+"<div class=\\"m-table m--box\\">
+  <div table-cover=\\"true\\" class=\\"m-loading m--box m-table__loading\\">
+    <div class=\\"m-table__table-container\\">
+      <table class=\\"m-table__table\\" style=\\"table-layout: auto;\\">
+        <thead class=\\"m-table__thead\\">
+          <tr class=\\"m-table__tr\\">
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>ID</span></div>
+            </th>
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>Title</span></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>1</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 1</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>2</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 2</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>3</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 3</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=\\"m-loading__mask-container m-loading--allow-touch m-loading--overlay\\">
+      <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+      <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+          <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+        </svg></div>
+      <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test table fixed table 1`] = `
+"<div class=\\"m-table m--box\\">
+  <div table-cover=\\"true\\" class=\\"m-loading m--box m-table__loading\\">
+    <div class=\\"m-table__table-container m-table--scroller\\" style=\\"max-height: 260px;\\">
+      <table class=\\"m-table__table\\" style=\\"table-layout: fixed; min-width: 100%; width: 800px;\\">
+        <thead class=\\"m-table__thead m-table--thead-sticky\\">
+          <tr class=\\"m-table__tr\\">
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>ID</span></div>
+            </th>
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell m-table--sticky\\" style=\\"right: 0px;\\">
+              <div class=\\"m-table__th-cell\\"><span>Title</span></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>1</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell m-table--sticky\\" style=\\"right: 0px;\\"><span>title: 1</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>2</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell m-table--sticky\\" style=\\"right: 0px;\\"><span>title: 2</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>3</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell m-table--sticky\\" style=\\"right: 0px;\\"><span>title: 3</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=\\"m-loading__mask-container m-loading--allow-touch m-loading--overlay\\">
+      <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+      <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+          <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+        </svg></div>
+      <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test table load data empty 1`] = `
+"<div class=\\"m-table m--box\\">
+  <div table-cover=\\"true\\" class=\\"m-loading m--box m-table__loading\\">
+    <div class=\\"m-table__table-container\\">
+      <table class=\\"m-table__table\\" style=\\"table-layout: auto;\\">
+        <thead class=\\"m-table__thead\\">
+          <tr class=\\"m-table__tr\\">
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>ID</span></div>
+            </th>
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>Title</span></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class=\\"m-table__empty\\">暂无数据</div>
+    <div class=\\"m-loading__mask-container m-loading--allow-touch m-loading--overlay\\">
+      <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+      <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+          <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+        </svg></div>
+      <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test table selection 1`] = `
+"<div class=\\"m-table m--box\\">
+  <div table-cover=\\"true\\" class=\\"m-loading m--box m-table__loading\\">
+    <div class=\\"m-table__table-container\\">
+      <table class=\\"m-table__table\\" style=\\"table-layout: auto;\\">
+        <thead class=\\"m-table__thead\\">
+          <tr class=\\"m-table__tr\\">
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--border-visible\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </th>
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>ID</span></div>
+            </th>
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>Title</span></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--border-visible\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>1</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 1</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--border-visible\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>2</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 2</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--border-visible\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>3</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 3</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=\\"m-loading__mask-container m-loading--allow-touch m-loading--overlay\\">
+      <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+      <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+          <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+        </svg></div>
+      <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test table selection tree 1`] = `
+"<div class=\\"m-table m--box\\">
+  <div table-cover=\\"true\\" class=\\"m-loading m--box m-table__loading\\">
+    <div class=\\"m-table__table-container\\">
+      <table class=\\"m-table__table\\" style=\\"table-layout: auto;\\">
+        <thead class=\\"m-table__thead\\">
+          <tr class=\\"m-table__tr\\">
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--border-visible\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </th>
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>ID</span></div>
+            </th>
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>Title</span></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--border-visible\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><i table-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-right m-table__expanded-icon m-table--expanded\\"></i><span>1</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 1</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--border-visible\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 20px;\\"></span><span>3</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 3</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--border-visible\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 20px;\\"></span><span>4</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 4</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--border-visible\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>2</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 2</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=\\"m-loading__mask-container m-loading--allow-touch m-loading--overlay\\">
+      <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+      <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+          <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+        </svg></div>
+      <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test table selection tree 2`] = `
+"<div class=\\"m-table m--box\\">
+  <div table-cover=\\"true\\" class=\\"m-loading m--box m-table__loading\\">
+    <div class=\\"m-table__table-container\\">
+      <table class=\\"m-table__table\\" style=\\"table-layout: auto;\\">
+        <thead class=\\"m-table__thead\\">
+          <tr class=\\"m-table__tr\\">
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--normal-svg-indeterminate m-checkbox--active\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </th>
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>ID</span></div>
+            </th>
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>Title</span></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--normal-svg-indeterminate m-checkbox--active\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><i table-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-chevron-right m-table__expanded-icon m-table--expanded\\"></i><span>1</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 1</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--normal-svg m-checkbox--active\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 20px;\\"></span><span>3</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 3</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--border-visible\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 20px;\\"></span><span>4</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 4</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div class=\\"m-form-item\\" checkbox-cover=\\"true\\"><label class=\\"m-checkbox m--box m-checkbox--normal\\"><input type=\\"checkbox\\" class=\\"m-checkbox__input\\">
+                  <div class=\\"m-checkbox__checkbox-container m-checkbox--normal-checkbox-container\\">
+                    <div class=\\"m-checkbox__checkbox m-checkbox--normal-checkbox m-checkbox--normal-svg m-checkbox--active\\"></div>
+                  </div>
+                  <div class=\\"m-checkbox__label\\"></div>
+                </label>
+                <transition-stub name=\\"m-form-details\\"></transition-stub>
+              </div>
+            </td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>2</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 2</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=\\"m-loading__mask-container m-loading--allow-touch m-loading--overlay\\">
+      <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+      <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+          <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+        </svg></div>
+      <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test table size 1`] = `
+"<div class=\\"m-table m--box\\">
+  <div table-cover=\\"true\\" class=\\"m-loading m--box m-table__loading\\">
+    <div class=\\"m-table__table-container\\">
+      <table class=\\"m-table__table\\" style=\\"table-layout: auto;\\">
+        <thead class=\\"m-table__thead\\">
+          <tr class=\\"m-table__tr\\">
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--small-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>ID</span></div>
+            </th>
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--small-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>Title</span></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--small-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>1</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--small-cell\\"><span>title: 1</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--small-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>2</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--small-cell\\"><span>title: 2</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--small-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>3</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--small-cell\\"><span>title: 3</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=\\"m-loading__mask-container m-loading--allow-touch m-loading--overlay\\">
+      <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+      <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+          <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+        </svg></div>
+      <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test table slots 1`] = `
+"<div class=\\"m-table m--box\\">
+  <div table-cover=\\"true\\" class=\\"m-loading m--box m-table__loading\\">
+    <div class=\\"m-table__table-container\\">
+      <table class=\\"m-table__table\\" style=\\"table-layout: auto;\\">
+        <thead class=\\"m-table__thead\\">
+          <tr class=\\"m-table__tr\\">
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>ID</span></div>
+            </th>
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>Title</span></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>1</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div>title slot</div>
+            </td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>2</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div>title slot</div>
+            </td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>3</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\">
+              <div>title slot</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=\\"m-table__footer\\">
+      <div>footer slot</div>
+    </div>
+    <div class=\\"m-loading__mask-container m-loading--allow-touch m-loading--overlay\\">
+      <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+      <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+          <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+        </svg></div>
+      <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`test table sorter 1`] = `
+"<div class=\\"m-table m--box\\">
+  <div table-cover=\\"true\\" class=\\"m-loading m--box m-table__loading\\">
+    <div class=\\"m-table__table-container\\">
+      <table class=\\"m-table__table\\" style=\\"table-layout: auto;\\">
+        <thead class=\\"m-table__thead\\">
+          <tr class=\\"m-table__tr\\">
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>ID</span>
+                <div class=\\"m-table__sorter\\"><i table-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-up m-table__sorter-up\\"></i><i table-cover=\\"true\\" class=\\"m-icon m--box meve-icon--set meve-icon-menu-down m-table__sorter-down\\"></i></div>
+              </div>
+            </th>
+            <th colspan=\\"1\\" class=\\"m-table__th m-table--normal-cell\\">
+              <div class=\\"m-table__th-cell\\"><span>Title</span></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>1</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 1</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>2</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 2</span></td>
+          </tr>
+          <tr class=\\"m-table__tr\\">
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span class=\\"m-table__indent\\" style=\\"margin-right: 0px;\\"></span><span>3</span></td>
+            <td rowspan=\\"1\\" colspan=\\"1\\" class=\\"m-table__td m-table--normal-cell\\"><span>title: 3</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class=\\"m-loading__mask-container m-loading--allow-touch m-loading--overlay\\">
+      <div class=\\"m-loading__mask m-loading--opacity-hidden\\"></div>
+      <div class=\\"m-loading__circle m-loading--rotate\\" style=\\"display: none;\\"><svg viewBox=\\"25 25 50 50\\">
+          <circle cx=\\"50\\" cy=\\"50\\" r=\\"20\\" fill=\\"none\\"></circle>
+        </svg></div>
+      <div class=\\"m-loading__description-container\\" style=\\"display: none;\\"></div>
+    </div>
+  </div>
+</div>"
+`;
