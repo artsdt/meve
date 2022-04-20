@@ -8,6 +8,7 @@ export type ButtonProps = {
   type?: ButtonType
   size?: ButtonSize
   loading?: boolean
+  autoLoading?: boolean
   round?: boolean
   block?: boolean
   text?: boolean

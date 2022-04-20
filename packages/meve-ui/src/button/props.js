@@ -41,6 +41,10 @@ export const props = {
     type: Boolean,
     default: true,
   },
+  autoLoading: {
+    type: Boolean,
+    default: false,
+  },
   loadingSize: {
     type: [Number, String],
   },

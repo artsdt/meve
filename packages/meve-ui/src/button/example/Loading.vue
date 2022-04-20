@@ -3,6 +3,7 @@
     <m-space align="center">
       <m-button type="primary" loading>加载中...</m-button>
       <m-button type="primary" loading :loading-size="14">加载中...</m-button>
+      <m-button type="primary" auto-loading @click="handleAutoLoadingClick">自动加载</m-button>
     </m-space>
   </div>
 </template>
@@ -15,6 +16,13 @@ export default {
   components: {
     [Button.name]: Button,
     [Space.name]: Space,
+  },
+  methods: {
+    handleAutoLoadingClick() {
+      return new Promise((resolve) => {
+        setTimeout(resolve, 2000)
+      })
+    },
   },
 }
 </script>
