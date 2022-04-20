@@ -72,13 +72,15 @@ test('test dialog trigger', async () => {
   wrapper.destroy()
 })
 
-test('test dialog before close hook', async () => {
+test('test dialog before close hook do not close', async () => {
   const { mockRestore } = mockStubs()
 
   const wrapper = mount(Dialog.Component, {
     propsData: {
-      beforeClose: () => {},
       value: true,
+    },
+    listeners: {
+      'before-close': () => {},
     },
   })
 
@@ -94,7 +96,22 @@ test('test dialog before close hook', async () => {
   await wrapper.find('.m-popup__overlay').trigger('click')
   expect(wrapper.emitted().input).toBeFalsy()
 
-  await wrapper.setProps({ beforeClose: (action, done) => done() })
+  mockRestore()
+  wrapper.destroy()
+})
+
+test('test dialog before close hook do close', async () => {
+  const { mockRestore } = mockStubs()
+
+  const wrapper = mount(Dialog.Component, {
+    propsData: {
+      value: true,
+    },
+    listeners: {
+      'before-close': (action, done) => done(),
+    },
+  })
+
   await wrapper.find('.m-dialog__cancel-button').trigger('click')
   expect(wrapper.emitted().input).toBeTruthy()
 

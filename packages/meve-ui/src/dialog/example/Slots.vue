@@ -25,6 +25,7 @@ export default {
   },
   data: () => ({
     show: false,
+    loading: true,
   }),
 }
 </script>

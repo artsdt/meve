@@ -6,6 +6,7 @@ export type DialogMessageAlign = 'left' | 'center' | 'right'
 
 export interface DialogProps {
   value?: boolean
+  loading?: boolean
   title?: string
   message?: string
   messageAlign?: DialogMessageAlign
@@ -32,6 +33,7 @@ export interface DialogProps {
 
 export interface DialogOptions {
   value?: boolean
+  loading?: boolean
   title?: string
   message?: string
   messageAlign?: DialogMessageAlign

@@ -7,6 +7,10 @@ export const props = {
     type: Boolean,
     default: false,
   },
+  loading: {
+    type: Boolean,
+    default: false,
+  },
   width: {
     type: [String, Number],
   },
@@ -64,6 +68,7 @@ export const props = {
     type: Boolean,
     default: true,
   },
+  // internal
   beforeClose: {
     type: Function,
   },

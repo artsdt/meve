@@ -257,7 +257,7 @@ import AsyncClose from '../example/AsyncClose.vue'
       v-model="show"
       title="你好"
       message="我是米薇!"
-      :before-close="handleBeforeClose"
+      @before-close="handleBeforeClose"
     />
   </div>
 </template>
@@ -288,6 +288,49 @@ export default {
 </script>
 ```
 
+### 组件声明式加载状态
+
+通过`loading`控制加载状态，加载时无法进行操作
+
+```vue
+import Loading from '../example/Loading.vue'
+```
+
+```html
+<template>
+  <div class="example">
+    <m-button type="primary" @click="show = true">组件声明式插槽</m-button>
+
+    <m-dialog
+      v-model="show"
+      :loading="loading"
+      message="Hello!"
+      @before-close="(action, done) => action !== 'confirm' && done()"
+      @confirm="handleConfirm"
+    />
+  </div>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    show: false,
+    loading: false,
+  }),
+  methods: {
+    handleConfirm() {
+      this.loading = true
+
+      setTimeout(() => {
+        this.loading = false
+        this.show = false
+      }, 1000)
+    },
+  }
+}
+</script>
+```
+
 ## API
 
 ### 属性
@@ -295,6 +338,7 @@ export default {
 | 参数 | 说明 | 类型 | 默认值 | 
 | --- | --- | --- | --- | 
 | `v-model` | 是否显示对话框 | _boolean_ | **false** |
+| `loading` | 加载状态 | _boolean_ | **false** |
 | `title` | 对话框标题 | _string_ | **提示** |
 | `message` | 对话框内容 | _string_ | **-** |
 | `message-align` | 对话框内容文字对齐方式，可选值 `center`, `left`, `right` | _string_ | **left** |
@@ -309,7 +353,6 @@ export default {
 | `overlay-style` | 自定义遮罩层的 style | _string_ | **-** |
 | `lock-scroll` | 是否禁止滚动穿透，禁止时滚动弹出层不会引发 body 的滚动 | _boolean_ | **true** |
 | `close-on-click-overlay` | 是否点击遮罩层关闭弹出层 | _boolean_ | **true** | 
-| `before-close` | 对话框关闭前回调，传入此参数会阻止对话框的自动关闭 | _(action: 用户动作, done: 关闭弹窗) => void_ | *-* | 
 
 ### 事件
 
@@ -317,6 +360,7 @@ export default {
 | --- | --- | --- |
 | `open` | 打开对话框时触发 | **-** |
 | `opened` | 打开对话框动画结束时触发 | **-** |
+| `before-close` | 对话框关闭前回调，监听该事件会阻止对话框的自动关闭 | **action: 用户动作, done: 关闭弹窗** |
 | `close` | 关闭对话框时触发 | **-** |
 | `closed` | 关闭对话框动画结束时触发 | **-** |
 | `confirm` | 确认时触发 | **-** |
@@ -328,6 +372,7 @@ export default {
 | 参数 | 说明 | 类型 | 默认值 | 
 | --- | --- | --- | --- | 
 | `title` | 对话框标题 | _string_ | **提示** |
+| `loading` | 加载状态 | _boolean_ | **false** |
 | `message` | 对话框内容 | _string_ | **-** |
 | `messageAlign` | 对话框内容文字对齐方式，可选值 `center` `left` `right` | _string_ | **left** |
 | `confirmButton` | 是否显示确认按钮 | _boolean_ | **true** |

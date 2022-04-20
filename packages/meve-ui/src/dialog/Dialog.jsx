@@ -1,12 +1,14 @@
 import Popup from '../popup'
 import Button from '../button'
 import Icon from '../icon'
+import Loading from '../loading'
 import { createNamespace } from '../utils/create'
 import { props } from './props'
 
 import '../button/button.less'
 import '../icon/icon.less'
 import '../popup/popup.less'
+import '../loading/loading.less'
 import '../styles/common.less'
 import './dialog.less'
 
@@ -14,6 +16,7 @@ const { createComponent, namespace } = createNamespace('dialog')
 
 const DialogPlugin = createComponent({
   props,
+
   data: () => ({
     show: false,
     localCloseOnClickOverlay: false,
@@ -29,7 +32,7 @@ const DialogPlugin = createComponent({
 
     closeOnClickOverlay: {
       handler(newValue) {
-        if (this.beforeClose) {
+        if (this.normalizeBeforeClose()) {
           this.localCloseOnClickOverlay = false
           return
         }
@@ -61,19 +64,24 @@ const DialogPlugin = createComponent({
       this.$emit('route-change')
     },
 
+    normalizeBeforeClose() {
+      return this.$listeners['before-close'] || this.beforeClose
+    },
+
     done() {
       this.$emit('input', false)
     },
 
     handleClickOverlay() {
       this.$emit('click-overlay')
+      const onBeforeClose = this.normalizeBeforeClose()
 
-      if (!this.closeOnClickOverlay) {
+      if (!this.closeOnClickOverlay || this.loading) {
         return
       }
 
-      if (this.beforeClose) {
-        this.beforeClose('close', this.done.bind(this))
+      if (onBeforeClose) {
+        onBeforeClose('close', this.done.bind(this))
         return
       }
 
@@ -81,8 +89,10 @@ const DialogPlugin = createComponent({
     },
 
     handleClickCloseButton() {
-      if (this.beforeClose) {
-        this.beforeClose('close', this.done.bind(this))
+      const onBeforeClose = this.normalizeBeforeClose()
+
+      if (onBeforeClose) {
+        onBeforeClose('close', this.done.bind(this))
         return
       }
 
@@ -90,10 +100,12 @@ const DialogPlugin = createComponent({
     },
 
     confirm() {
+      const onBeforeClose = this.normalizeBeforeClose()
+
       this.$emit('confirm')
 
-      if (this.beforeClose) {
-        this.beforeClose('confirm', this.done.bind(this))
+      if (onBeforeClose) {
+        onBeforeClose('confirm', this.done.bind(this))
         return
       }
 
@@ -101,10 +113,11 @@ const DialogPlugin = createComponent({
     },
 
     cancel() {
+      const onBeforeClose = this.normalizeBeforeClose()
       this.$emit('cancel')
 
-      if (this.beforeClose) {
-        this.beforeClose('cancel', this.done.bind(this))
+      if (onBeforeClose) {
+        onBeforeClose('cancel', this.done.bind(this))
         return
       }
 
@@ -171,6 +184,7 @@ const DialogPlugin = createComponent({
   render() {
     const {
       show,
+      loading,
       overlay,
       overlayClass,
       lockScroll,
@@ -199,23 +213,25 @@ const DialogPlugin = createComponent({
         onClickOverlay={handleClickOverlay}
         onRouteChange={handleRouteChange}
       >
-        <div class={namespace('__container')}>
-          <div class={namespace('__title-wrapper')}>
-            {this.renderTitle()}
-            <Button
-              class={namespace('__close-button')}
-              dialog-cover
-              text={true}
-              round={true}
-              onClick={this.handleClickCloseButton}
-            >
-              <Icon name="close" />
-            </Button>
-          </div>
+        <Loading loading={loading} class={namespace('__loading')} dialog-cover>
+          <div class={namespace('__container')}>
+            <div class={namespace('__title-wrapper')}>
+              {this.renderTitle()}
+              <Button
+                class={namespace('__close-button')}
+                dialog-cover
+                text={true}
+                round={true}
+                onClick={this.handleClickCloseButton}
+              >
+                <Icon name="close" />
+              </Button>
+            </div>
 
-          {this.renderMessage()}
-          {this.renderFooter()}
-        </div>
+            {this.renderMessage()}
+            {this.renderFooter()}
+          </div>
+        </Loading>
       </Popup>
     )
   },
