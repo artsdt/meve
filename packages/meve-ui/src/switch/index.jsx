@@ -49,7 +49,7 @@ const SwitchPlugin = createComponent({
 
     // expose
     validate() {
-      this.$refs.formItem.validate()
+      return this.$refs.formItem.validate()
     },
 
     // expose

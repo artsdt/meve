@@ -24,7 +24,7 @@ const FormItemPlugin = createComponent({
   methods: {
     // expose
     async validate() {
-      await this.validateRules(this.rules, this.value)
+      return this.validateRules(this.rules, this.value)
     },
 
     renderLabel() {

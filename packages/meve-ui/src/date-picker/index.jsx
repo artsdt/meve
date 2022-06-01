@@ -81,7 +81,7 @@ const DatePickerPlugin = createComponent({
 
     // expose
     validate() {
-      this.$refs.input.validate()
+      return this.$refs.input.validate()
     },
 
     // expose
