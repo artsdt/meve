@@ -387,13 +387,14 @@ export default {
 
 ### 事件
 
-| 事件名 | 说明 | 参数 |
-| --- | --- | --- |
-| `before-read` | 文件读取前触发，返回假值阻止文件读取(支持 promise) | **file: MFile** |
-| `after-read` | 文件读取后触发 | **file: MFile** |
-| `oversize` | 文件超过限制大小时触发 | **file: MFile** |
+| 事件名             | 说明                           | 参数              |
+|-----------------|------------------------------|-----------------|
+| `before-read`   | 文件读取前触发，返回假值阻止文件读取(支持 promise) | **file: MFile** |
+| `after-read`    | 文件读取后触发                      | **file: MFile** |
+| `oversize`      | 文件超过限制大小时触发                  | **file: MFile** |
+| `over-length`   | 文件超过个数限制时触发                  | **-**           |
 | `before-remove` | 文件删除前触发，返回假值阻止文件删除(支持 promise) | **file: MFile** |
-| `remove` | 文件删除时触发 | **file: MFile** |
+| `remove`        | 文件删除时触发                      | **file: MFile** |
 
 ### 插槽
 

@@ -176,6 +176,10 @@ const UploaderPlugin = createComponent({
       }
 
       const getValidLengthMFiles = (mFiles) => {
+        if (mFiles.length + value.length > maxlength) {
+          this.$emit('over-length')
+        }
+
         const limit = Math.min(mFiles.length, toNumber(maxlength) - value.length)
         return mFiles.slice(0, limit)
       }
@@ -214,7 +218,9 @@ const UploaderPlugin = createComponent({
       )
     },
 
-    async handleRemove(removedMFile) {
+    async handleRemove(removedMFile, event) {
+      event.stopPropagation()
+
       const { disabled, readonly, value, form } = this
 
       if (form?.disabled.value || form?.readonly.value || disabled || readonly) {
@@ -270,7 +276,7 @@ const UploaderPlugin = createComponent({
               uploader-cover
               text
               round
-              onClick={() => this.handleRemove(file)}
+              onClick={(e) => this.handleRemove(file, e)}
             >
               <Icon class={namespace('__remove-button-icon')} uploader-cover name="close" />
             </Button>
