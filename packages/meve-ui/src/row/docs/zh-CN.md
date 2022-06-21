@@ -205,11 +205,11 @@ import Responsive from '../example/Responsive.vue'
 
 #### Row Props
 
-| 参数 | 说明 | 类型 | 默认值 | 
-| --- | --- | --- | --- | 
-| `gutter` | 列间距 | _string \| number_ | **0** |
-| `justify` | 水平排列方式 可选值为 `start` `end` `center` `space-around` `space-between` | _string_ | **start** |
-| `align` | 垂直排列方式 可选值为 `stretch` `center` `start` `end` `baseline`	 | _string_ | **-** |
+| 参数 | 说明                                                                          | 类型 | 默认值            | 
+| --- |-----------------------------------------------------------------------------| --- |----------------| 
+| `gutter` | 列间距                                                                         | _string \| number_        | **0** |
+| `justify` | 水平排列方式 可选值为 `flex-start` `flex-end` `center` `space-around` `space-between` | _string_ | **flex-start** |
+| `align` | 垂直排列方式 可选值为 `stretch` `center` `flex-start` `flex-end` `baseline`	          | _string_ | **flex-start**          |
 
 #### Col Props
 

@@ -1,7 +1,7 @@
 const justifyValidator = (justify) =>
   ['flex-start', 'flex-end', 'center', 'space-between', 'space-around'].includes(justify)
 
-const alignValidator = (align) => ['flex-start', 'center', 'flex-end'].includes(align)
+const alignValidator = (align) => ['flex-start', 'center', 'flex-end', 'stretch', 'baseline'].includes(align)
 
 export const props = {
   gutter: {
