@@ -1,11 +1,20 @@
 import { isArray, isNumber, isString } from '../utils/shared'
 import { DefaultSlots } from '../utils/create'
 
-export type SpaceAlign = 'stretch' | 'center' | 'start' | 'end' | 'baseline' | 'initial' | 'inherit'
+export type SpaceAlign =
+  | 'stretch'
+  | 'center'
+  | 'start'
+  | 'end'
+  | 'flex-start'
+  | 'flex-end'
+  | 'baseline'
+  | 'initial'
+  | 'inherit'
 
 export type SpaceDirection = 'row' | 'column'
 
-export type SpaceJustify = 'start' | 'end' | 'center' | 'space-around' | 'space-between'
+export type SpaceJustify = 'start' | 'flex-start' | 'end' | 'flex-end' | 'center' | 'space-around' | 'space-between'
 
 export type SpaceInternalSize = 'mini' | 'small' | 'normal' | 'large'
 
@@ -28,7 +37,7 @@ export const sizeValidator = (size: any): boolean =>
   internalSizeValidator(size) || isArray(size) || isNumber(size) || isString(size)
 
 export const justifyValidator = (justify: string): boolean =>
-  ['start', 'end', 'center', 'space-around', 'space-between'].includes(justify)
+  ['start', 'end', 'flex-start', 'flex-end', 'center', 'space-around', 'space-between'].includes(justify)
 
 export const props = {
   align: {

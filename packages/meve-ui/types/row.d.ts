@@ -1,8 +1,17 @@
 import { MComponent } from './component'
 
-export type RowJustify = 'start' | 'end' | 'center' | 'space-around' | 'space-between'
+export type RowJustify = 'start' | 'end' | 'center' | 'space-around' | 'space-between' | 'flex-start' | 'flex-end'
 
-export type RowAlign = 'stretch' | 'center' | 'start' | 'end' | 'baseline' | 'initial' | 'inherit'
+export type RowAlign =
+  | 'stretch'
+  | 'center'
+  | 'start'
+  | 'end'
+  | 'baseline'
+  | 'initial'
+  | 'inherit'
+  | 'flex-start'
+  | 'flex-end'
 
 export type RowProps = {
   gutter?: string | number
