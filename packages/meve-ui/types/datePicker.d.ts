@@ -44,6 +44,18 @@ export class DatePicker extends MComponent {
   open(): void
 
   close(): void
+
+  prevMonth(): void
+
+  nextMonth(): void
+
+  prevYear(): void
+
+  nextYear(): void
+
+  toNow(): void
+
+  slideTo(date: Date): void
 }
 
 export class _DatePickerComponent extends DatePicker {}

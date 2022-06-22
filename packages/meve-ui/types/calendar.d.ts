@@ -28,6 +28,8 @@ export class Calendar extends MComponent {
   nextYear(): void
 
   toNow(): void
+
+  slideTo(date: Date): void
 }
 
 export class _CalendarComponent extends Calendar {}

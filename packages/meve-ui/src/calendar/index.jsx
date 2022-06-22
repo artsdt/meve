@@ -70,6 +70,11 @@ const CalendarPlugin = createComponent({
       this.change(this.range ? [dayjs()] : dayjs())
     },
 
+    // expose
+    slideTo(nativeDate) {
+      this.current = dayjs(nativeDate)
+    },
+
     formatValue(value) {
       return dayjs(value, this.valueFormat)
     },
