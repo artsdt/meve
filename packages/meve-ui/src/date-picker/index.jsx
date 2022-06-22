@@ -30,6 +30,7 @@ const { createComponent, namespace } = createNamespace('date-picker')
 
 const DATE_FORMAT = 'YYYY-MM-DD'
 const SEPARATOR = ' - '
+const PRESSING_INTERVAL = 130
 
 const DatePickerPlugin = createComponent({
   mixins: [KeyboardActiveMixin, createChildrenMixin('form', { parentKey: 'form', childrenKey: 'formComponents' })],
@@ -217,6 +218,24 @@ const DatePickerPlugin = createComponent({
       this.enterPopover = false
     },
 
+    withPressing(callback) {
+      let timer
+
+      function handleTouchend() {
+        callback()
+        timer && clearInterval(timer)
+        document.removeEventListener('touchend', handleTouchend)
+      }
+
+      return () => {
+        document.addEventListener('touchend', handleTouchend)
+
+        timer = setInterval(() => {
+          callback()
+        }, PRESSING_INTERVAL)
+      }
+    },
+
     renderAppendIcon() {
       const calendarIcon = <Icon date-picker-cover class={namespace('__calendar-icon')} name="calendar" />
 
@@ -271,7 +290,7 @@ const DatePickerPlugin = createComponent({
             date-picker-cover
             round
             text
-            onClick={this.$refs.calendar?.prevYear ?? NOOP}
+            onTouchstart={this.withPressing(this.$refs.calendar?.prevYear ?? NOOP)}
           >
             <Icon class={namespace('__calendar-arrow-icon')} date-picker-cover name="arrow-left" />
           </Button>
@@ -281,7 +300,7 @@ const DatePickerPlugin = createComponent({
             date-picker-cover
             round
             text
-            onClick={this.$refs.calendar?.prevMonth ?? NOOP}
+            onTouchstart={this.withPressing(this.$refs.calendar?.prevMonth ?? NOOP)}
           >
             <Icon class={namespace('__calendar-arrow-icon')} date-picker-cover name="chevron-left" />
           </Button>
@@ -293,7 +312,7 @@ const DatePickerPlugin = createComponent({
             date-picker-cover
             round
             text
-            onClick={this.$refs.calendar?.nextMonth ?? NOOP}
+            onTouchstart={this.withPressing(this.$refs.calendar?.nextMonth ?? NOOP)}
           >
             <Icon class={namespace('__calendar-arrow-icon')} date-picker-cover name="chevron-right" />
           </Button>
@@ -303,7 +322,7 @@ const DatePickerPlugin = createComponent({
             date-picker-cover
             round
             text
-            onClick={this.$refs.calendar?.nextYear ?? NOOP}
+            onTouchstart={this.withPressing(this.$refs.calendar?.nextYear ?? NOOP)}
           >
             <Icon class={namespace('__calendar-arrow-icon')} date-picker-cover name="arrow-right" />
           </Button>
